@@ -16,6 +16,11 @@ jobs:
       issues: write
       security-events: write
     with:
-      images: "['ghcr.io/${{ github.repository }}/spark-delta:latest']"
+      images: |
+        [
+          'ghcr.io/${{ github.repository }}/spark-delta:latest',
+          'ghcr.io/${{ github.repository }}/strimzi-kafka-connect:latest',
+          'ghcr.io/${{ github.repository }}/cricketeerone-kafka-connect:latest'
+        ]
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
