@@ -1,0 +1,65 @@
+name: ci
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  release:
+    types:
+      - created
+
+permissions: read-all
+
+jobs:
+  build:
+    uses: miracum/.github/.github/workflows/standard-build.yaml@7c5194974a95673f832be01920169af6b0db3902 # v1.5.5
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pull-requests: write
+      actions: read
+      security-events: write
+    strategy:
+      matrix:
+        image:
+          - spark-delta
+          - strimzi-kafka-connect
+          - cricketeerone-kafka-connect
+    with:
+      image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
+      build-context: images/${{ matrix.image }}
+      enable-build-test-layer: false
+      enable-upload-test-image: false
+      enable-upload-image: false
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  lint:
+    uses: miracum/.github/.github/workflows/standard-lint.yaml@7c5194974a95673f832be01920169af6b0db3902 # v1.5.5
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      security-events: write
+      actions: read
+    with:
+      enable-validate-gradle-wrapper: false
+      enable-codeql: false
+      enable-verify-base-image-signature: false
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  release:
+    uses: miracum/.github/.github/workflows/standard-release.yaml@7c5194974a95673f832be01920169af6b0db3902 # v1.5.5
+    needs:
+      - build
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    secrets:
+      semantic-release-token: ${{ secrets.MIRACUM_BOT_SEMANTIC_RELEASE_TOKEN }}
