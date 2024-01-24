@@ -10,8 +10,9 @@ ENV CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 
 USER root
 
+# hadolint ignore=DL3041
 RUN <<EOF
-microdnf install --nodocs unzip
+microdnf install -y --nodocs unzip
 microdnf clean all
 EOF
 
