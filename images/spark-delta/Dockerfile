@@ -1,4 +1,4 @@
-FROM docker.io/library/spark:3.4.1-scala2.12-java11-python3-ubuntu@sha256:3adf35b5f50409d1b3c003af911bfaa364e2694f1b849fadb7bfad811c9107c7
+FROM docker.io/library/spark:3.4.1-scala2.12-java11-python3-ubuntu@sha256:6f47825b37da97567f6ec83f6317f0a4b5e766463bfe4c4149600f2e4c5c4cc6
 
 RUN /opt/spark/bin/spark-shell -v \
     --conf "spark.driver.extraJavaOptions=-Divy.cache.dir=/tmp -Divy.home=/tmp" \
