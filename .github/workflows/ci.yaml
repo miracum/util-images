@@ -29,6 +29,7 @@ jobs:
           - spark-delta
           - strimzi-kafka-connect
           - cricketeerone-kafka-connect
+          - apache-superset
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
       build-context: images/${{ matrix.image }}

@@ -11,6 +11,8 @@ DISABLE:
 DISABLE_LINTERS:
   - MARKDOWN_MARKDOWN_LINK_CHECK
   - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+  # false positive:   error - python package "--hash" is available for public registration. /github/workspace/images/superset/requirements.txt
+  - REPOSITORY_DUSTILOCK
 
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
