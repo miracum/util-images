@@ -10,7 +10,7 @@ EOF
 USER 185:185
 
 RUN <<EOF
-/opt/spark/bin/spark-shell -v --packages "io.delta:delta-core_2.12:2.4.0,org.apache.hadoop:hadoop-aws:3.3.1"
+/opt/spark/bin/spark-shell -v --packages "io.delta:delta-core_2.12:2.4.0,org.apache.hadoop:hadoop-aws:3.3.4"
 
 # necessary for thrift server. still need to figure out why.
 wget -P /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar
