@@ -8,7 +8,7 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends wget unzip alien libaio1 libaio-dev \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
-    && wget https://download.oracle.com/otn_software/linux/instantclient/2113000/oracle-instantclient-basic-21.13.0.0.0-1.el8.x86_64.rpm \
+    && wget -q https://download.oracle.com/otn_software/linux/instantclient/2113000/oracle-instantclient-basic-21.13.0.0.0-1.el8.x86_64.rpm \
     && alien -i oracle-instantclient-basic-21.13.0.0.0-1.el8.x86_64.rpm \
     && rm oracle-instantclient-basic-21.13.0.0.0-1.el8.x86_64.rpm
 
