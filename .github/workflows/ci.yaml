@@ -30,6 +30,7 @@ jobs:
           - strimzi-kafka-connect
           - cricketeerone-kafka-connect
           - apache-superset
+          - kyuubi-delta
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
       build-context: images/${{ matrix.image }}

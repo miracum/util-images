@@ -1,0 +1,49 @@
+image:
+  repository: ghcr.io/miracum/util-images/kyuubi-delta
+  tag: v1.2.0
+
+sparkConf:
+  # The value (templated string) is used for spark-env.sh file
+  # See example at https://github.com/apache/spark/blob/master/conf/spark-env.sh.template and Spark documentation for more details
+  sparkEnv: ~
+  #  sparkEnv: |
+  #    #!/usr/bin/env bash
+  #    export JAVA_HOME=/usr/jdk64/jdk1.8.0_152
+  #    export SPARK_LOG_DIR=/opt/spark/logs
+  #    export SPARK_LOG_MAX_FILES=5
+
+  # The value (templated string) is used for spark-defaults.conf file
+  # See example at https://github.com/apache/spark/blob/master/conf/spark-defaults.conf.template and Spark documentation for more details
+  sparkDefaults: |
+    spark.submit.deployMode=cluster
+    spark.kubernetes.container.image=ghcr.io/miracum/util-images/spark-delta:v1.1.9
+    spark.kubernetes.authenticate.driver.serviceAccountName=kyuubi
+
+    # S3 dependencies
+    spark.kubernetes.file.upload.path=s3a://kyuubi-upload/files
+    spark.jars.packages=io.delta:delta-core_2.12:2.4.0,org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.262
+
+    # S3A configuration
+    spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem
+    spark.hadoop.fs.s3a.endpoint=http://pathling-server-minio:9000
+    spark.hadoop.fs.s3a.access.key=# from env
+    spark.hadoop.fs.s3a.secret.key=# from env
+    spark.hadoop.fs.s3a.path.style.access=true
+    spark.hadoop.fs.s3a.fast.upload=true
+    spark.hadoop.fs.s3a.connection.ssl.enabled=false
+
+    # SQL config
+    spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension
+    spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog
+
+rbac:
+  rules:
+    - apiGroups: [""]
+      resources: ["pods", "services", "configmaps", "persistentvolumeclaims"]
+      verbs: ["create", "get", "list", "watch", "delete", "deletecollection"]
+    - apiGroups: [""]
+      resources: ["pods/log"]
+      verbs: ["get", "list", "watch"]
+    - apiGroups: [""]
+      resources: ["pods"]
+      verbs: ["watch"]
