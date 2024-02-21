@@ -1,4 +1,4 @@
-FROM docker.io/jupyter/all-spark-notebook:spark-3.4.1@sha256:ca30ccd3a45ab2746bd602c12a89c9d311c8e81825fe94e17f0b7835d3335849
+FROM docker.io/jupyter/pyspark-notebook:spark-3.4.1@sha256:93d072568fec20e9fd63dabc8b7af5a654001644a43b882296bcbbfb60b952a6
 WORKDIR /home/jovyan
 
 USER 0
