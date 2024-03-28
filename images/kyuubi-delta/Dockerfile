@@ -1,4 +1,4 @@
-FROM docker.io/apache/kyuubi:1.8.0-spark@sha256:eb8dbc7a475207710ee45ef14c19f673d2d10e2ad909881ff0c7fb6b2c9b50f4
+FROM docker.io/apache/kyuubi:1.9.0-spark@sha256:6b7e8205e6c744d7ff52691156e315aea085c41a3d1b715c5918e1c44d0b8ed3
 
 RUN <<EOF
 wget -q -P /opt/kyuubi/externals/spark-3.4.1-bin-hadoop3/jars https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar
