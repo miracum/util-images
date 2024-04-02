@@ -10,7 +10,9 @@ wget -q -P /usr/local/spark/jars/ https://repo1.maven.org/maven2/org/apache/hado
 wget -q -P /usr/local/spark/jars/ https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
 EOF
 
-USER 1000:100
+COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
+RUN pip install --no-cache-dir --requirement /tmp/requirements.txt && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+USER ${NB_UID}:${NB_GID}
