@@ -15,7 +15,7 @@ permissions: read-all
 
 jobs:
   build:
-    uses: miracum/.github/.github/workflows/standard-build.yaml@d312bc78e5a4ab6bafc71979f80962177abc6336 # v1.5.7
+    uses: miracum/.github/.github/workflows/standard-build.yaml@ed38f7c50102bc06b5bc2cea69b62ae341a8ddae # v1.7.0
     permissions:
       contents: read
       id-token: write
@@ -38,11 +38,12 @@ jobs:
       enable-build-test-layer: false
       enable-upload-test-image: false
       enable-upload-image: false
+      enable-trivy-scan: ${{ matrix.image != 'ml-on-fhir' }}
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
   lint:
-    uses: miracum/.github/.github/workflows/standard-lint.yaml@d312bc78e5a4ab6bafc71979f80962177abc6336 # v1.5.7
+    uses: miracum/.github/.github/workflows/standard-lint.yaml@ed38f7c50102bc06b5bc2cea69b62ae341a8ddae # v1.7.0
     permissions:
       contents: read
       pull-requests: write
@@ -57,7 +58,7 @@ jobs:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
   release:
-    uses: miracum/.github/.github/workflows/standard-release.yaml@d312bc78e5a4ab6bafc71979f80962177abc6336 # v1.5.7
+    uses: miracum/.github/.github/workflows/standard-release.yaml@ed38f7c50102bc06b5bc2cea69b62ae341a8ddae # v1.7.0
     needs:
       - build
     permissions:
