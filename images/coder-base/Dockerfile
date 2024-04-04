@@ -7,19 +7,15 @@ USER root
 # hadolint ignore=DL3008
 RUN <<EOF
 add-apt-repository ppa:deadsnakes/ppa -y
-apt-get update -y
-apt-get install -y --no-install-recommends zip unzip git curl python3.12
+apt-get update
+apt-get install -y --no-install-recommends zip unzip git curl python3.12 wget apt-transport-https gpg
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+apt-get update
+apt-get install -y --no-install-recommends temurin-17-jdk
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 apt-get clean
 rm -rf /var/lib/apt/lists/*
 EOF
 
 USER 1000:1000
-
-# hadolint ignore=SC1091
-RUN <<EOF
-curl -s "https://get.sdkman.io" | bash
-# shellcheck source=/dev/null
-source "/home/coder/.sdkman/bin/sdkman-init.sh"
-sdk install java 17.0.10-tem
-EOF
