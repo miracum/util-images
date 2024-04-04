@@ -18,6 +18,7 @@ USER 1000:1000
 
 RUN <<EOF
 curl -s "https://get.sdkman.io" | bash
+# shellcheck source=/dev/null
 source "/home/coder/.sdkman/bin/sdkman-init.sh"
 sdk install java 17.0.10-tem
 EOF
