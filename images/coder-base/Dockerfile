@@ -16,6 +16,7 @@ EOF
 
 USER 1000:1000
 
+# hadolint ignore=SC1091
 RUN <<EOF
 curl -s "https://get.sdkman.io" | bash
 # shellcheck source=/dev/null
