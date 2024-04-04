@@ -4,6 +4,7 @@ SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 USER root
 
+# hadolint ignore=DL3008
 RUN <<EOF
 add-apt-repository ppa:deadsnakes/ppa -y
 apt-get update -y
