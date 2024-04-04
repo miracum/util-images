@@ -32,6 +32,7 @@ jobs:
           - apache-superset
           - kyuubi-delta
           - ml-on-fhir
+          - coder-base
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
       build-context: images/${{ matrix.image }}
