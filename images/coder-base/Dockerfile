@@ -16,6 +16,7 @@ apt-get install -y --no-install-recommends temurin-17-jdk
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 apt-get clean
 rm -rf /var/lib/apt/lists/*
+echo "ca_certificate=/etc/ssl/certs/ca-certificates.crt" >> /etc/wgetrc
 EOF
 
 USER 1000:1000
