@@ -1,0 +1,17 @@
+jq
+zip
+unzip
+git
+curl
+wget
+python3
+python3-pip
+python3-venv
+python-is-python3
+gpg
+openjdk-17-jdk
+htop
+man
+vim
+s3cmd
+dotnet-sdk-8.0
