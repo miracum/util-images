@@ -9,12 +9,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 USER root
 
-COPY packages.txt .
+COPY packages.txt /tmp/setup/
 
 # hadolint ignore=DL3008
 RUN <<EOF
 apt-get update
-xargs -r -a packages.txt apt-get install -y --no-install-recommends
+xargs -r -a /tmp/setup/packages.txt apt-get install -y --no-install-recommends
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 apt-get clean
 rm -rf /var/lib/apt/lists/*
@@ -26,27 +26,27 @@ EOF
 
 # Spark
 RUN <<EOF
-curl -LO https://dlcdn.apache.org/spark/spark-3.4.2/spark-3.4.2-bin-hadoop3.tgz
+curl -LSsO https://dlcdn.apache.org/spark/spark-3.4.2/spark-3.4.2-bin-hadoop3.tgz
 tar xvf spark-3.4.2-bin-hadoop3.tgz
 mv spark-3.4.2-bin-hadoop3 /opt/spark
 rm spark-3.4.2-bin-hadoop3.tgz
 
-wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar
-wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/2.4.0/delta-storage-2.4.0.jar
-wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
-wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
-wget -q -P /opt/spark/jars https://github.com/apache/incubator-gluten/releases/download/v1.1.1/gluten-velox-bundle-spark3.3_2.12-1.1.1.jar
+curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar
+curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/2.4.0/delta-storage-2.4.0.jar
+curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
+curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
+curl -LSsO --output-dir /opt/spark/jars https://github.com/apache/incubator-gluten/releases/download/v1.1.1/gluten-velox-bundle-spark3.3_2.12-1.1.1.jar
 EOF
 
 # DuckDB
 RUN <<EOF
-wget https://github.com/duckdb/duckdb/releases/download/v0.10.1/duckdb_cli-linux-amd64.zip
+curl -LSsO https://github.com/duckdb/duckdb/releases/download/v0.10.1/duckdb_cli-linux-amd64.zip
 unzip duckdb_cli-linux-amd64.zip
 mv duckdb /usr/local/bin
 duckdb --version
 EOF
 
-# S3/MinIO 
+# MinIO client
 RUN <<EOF
 curl https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
 chmod +x /usr/local/bin/mc
