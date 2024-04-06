@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "draft": false,
+  "prerelease": false,
+  "include-v-in-tag": true,
+  "separate-pull-requests": true,
+  "packages": {
+    "images/apache-superset": {
+      "component": "apache-superset",
+      "release-type": "simple"
+    },
+    "images/coder-base": {
+      "component": "coder-base",
+      "release-type": "simple"
+    },
+    "images/cricketeerone-kafka-connect": {
+      "component": "cricketeerone-kafka-connect",
+      "release-type": "simple"
+    },
+    "images/kyuubi-delta": {
+      "component": "kyuubi-delta",
+      "release-type": "simple"
+    },
+    "images/ml-on-fhir": {
+      "component": "ml-on-fhir",
+      "release-type": "simple"
+    },
+    "images/spark-delta": {
+      "component": "spark-delta",
+      "release-type": "simple"
+    },
+    "images/strimzi-kafka-connect": {
+      "component": "strimzi-kafka-connect",
+      "release-type": "simple"
+    }
+  }
+}

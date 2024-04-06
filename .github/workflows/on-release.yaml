@@ -1,0 +1,59 @@
+name: ci
+
+on:
+  release:
+    types:
+      - created
+
+permissions: read-all
+
+jobs:
+  prepare:
+    runs-on: ubuntu-22.04
+    outputs:
+      component-name: ${{ steps.component-meta.outputs.component }}
+      component-version: ${{ steps.component-meta.outputs.image-version }}
+    steps:
+      - id: component-meta
+        shell: bash
+        run: |
+          tag="${{ github.ref_name }}"
+
+          regex="^(.*)-(v[0-9.]*(-.*)?)$"
+
+          if [[ $tag =~ $regex ]]; then
+              component_name="${BASH_REMATCH[1]}"
+              version="${BASH_REMATCH[2]}"
+
+              echo "Component Name: $component_name"
+              echo "Version: $version"
+
+              echo "component=$component_name" >>"$GITHUB_OUTPUT"
+              echo "version=$version" >>"$GITHUB_OUTPUT"
+          else
+              echo "tag format does not match."
+              exit 1
+          fi
+
+  build:
+    uses: miracum/.github/.github/workflows/standard-build.yaml@13d484d08281bdcb56393ed14cf15559212793b1 # v1.8.0
+    needs:
+      - prepare
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pull-requests: write
+      actions: read
+      security-events: write
+    with:
+      image: ghcr.io/${{ github.repository }}/${{ needs.prepare.outputs.component-name }}
+      build-context: images/${{ needs.prepare.outputs.component-name }}
+      enable-build-test-layer: false
+      enable-upload-test-image: false
+      enable-upload-image: false
+      image-tags: |
+        type=semver,pattern={{raw}},value=${{ needs.prepare.outputs.component-version }}
+      enable-trivy-scan: ${{ needs.prepare.outputs.component-name != 'ml-on-fhir' }}
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}

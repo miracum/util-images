@@ -4,16 +4,11 @@ on:
   pull_request:
     branches:
       - master
-  push:
-    branches:
-      - master
-  release:
-    types:
-      - created
 
 permissions: read-all
 
 jobs:
+  # on PRs keep building all images just to have a basic regression test
   build:
     uses: miracum/.github/.github/workflows/standard-build.yaml@c3f13dd53633bed28ff2667e559d74eae791a1a7 # v1.7.1
     permissions:
@@ -57,14 +52,3 @@ jobs:
       enable-verify-base-image-signature: false
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
-
-  release:
-    uses: miracum/.github/.github/workflows/standard-release.yaml@c3f13dd53633bed28ff2667e559d74eae791a1a7 # v1.7.1
-    needs:
-      - build
-    permissions:
-      contents: write
-      pull-requests: write
-      issues: write
-    secrets:
-      semantic-release-token: ${{ secrets.MIRACUM_BOT_SEMANTIC_RELEASE_TOKEN }}
