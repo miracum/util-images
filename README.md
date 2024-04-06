@@ -12,3 +12,7 @@ Collection of container images
    name to the `jobs.build.strategy.matrix.image` array.
 1. Update [schedule.yaml](.github/workflows/schedule.yaml) and add this folder
    name to the `jobs.schedule.with.images` array.
+1. Update [.release-please-manifest.json](.release-please-manifest.json) with
+   the new image and initial version.
+1. Update [release-please-config.json](release-please-config.json) and add the image
+   to the `packages` section.
