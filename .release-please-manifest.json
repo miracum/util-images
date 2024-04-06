@@ -5,5 +5,5 @@
   "images/kyuubi-delta": "1.5.2",
   "images/ml-on-fhir": "1.5.2",
   "images/spark-delta": "1.5.2",
-  "images/strimzi-kafka-connect": "1.5.2"
+  "images/strimzi-kafka-connect": "1.6.0"
 }
