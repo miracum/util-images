@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     outputs:
       component-name: ${{ steps.component-meta.outputs.component }}
-      component-version: ${{ steps.component-meta.outputs.image-version }}
+      component-version: ${{ steps.component-meta.outputs.version }}
     steps:
       - id: component-meta
         shell: bash
