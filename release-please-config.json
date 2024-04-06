@@ -6,6 +6,7 @@
   "prerelease": false,
   "include-v-in-tag": true,
   "separate-pull-requests": true,
+  "extra-label": "release-please",
   "packages": {
     "images/apache-superset": {
       "component": "apache-superset",

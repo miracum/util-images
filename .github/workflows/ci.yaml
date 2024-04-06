@@ -11,6 +11,7 @@ jobs:
   # on PRs keep building all images just to have a basic regression test
   build:
     uses: miracum/.github/.github/workflows/standard-build.yaml@c3f13dd53633bed28ff2667e559d74eae791a1a7 # v1.7.1
+    if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     permissions:
       contents: read
       id-token: write
@@ -40,6 +41,7 @@ jobs:
 
   lint:
     uses: miracum/.github/.github/workflows/standard-lint.yaml@c3f13dd53633bed28ff2667e559d74eae791a1a7 # v1.7.1
+    if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     permissions:
       contents: read
       pull-requests: write
