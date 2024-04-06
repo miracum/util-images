@@ -26,10 +26,10 @@ EOF
 
 # Spark
 RUN <<EOF
-curl -LSsO https://dlcdn.apache.org/spark/spark-3.4.2/spark-3.4.2-bin-hadoop3.tgz
-tar xvf spark-3.4.2-bin-hadoop3.tgz
-mv spark-3.4.2-bin-hadoop3 /opt/spark
-rm spark-3.4.2-bin-hadoop3.tgz
+curl -LSsO https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz
+tar xvf spark-3.4.1-bin-hadoop3.tgz
+mv spark-3.4.1-bin-hadoop3 /opt/spark
+rm spark-3.4.1-bin-hadoop3.tgz
 
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/2.4.0/delta-storage-2.4.0.jar
