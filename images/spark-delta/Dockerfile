@@ -1,4 +1,4 @@
-FROM docker.io/library/spark:3.4.1-scala2.12-java11-python3-ubuntu@sha256:c6e6c7216113eabb87e7d69d6d2fef12cf7e88eb74a907e455ea87e6f35fb5ce
+FROM docker.io/library/spark:3.4.1-scala2.12-java11-python3-ubuntu@sha256:06cfca1d0eb12423f4f36d9310d0bef9b2ee61e745efdcb044cbf5f6b76c112e
 ENV SPARK_JARS_IVY="/home/spark/.ivy"
 
 USER root
