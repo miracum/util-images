@@ -7,6 +7,19 @@
   "include-v-in-tag": true,
   "separate-pull-requests": true,
   "extra-label": "release-please",
+  "changelog-sections": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance Improvements" },
+    { "type": "docs", "section": "Documentation", "hidden": false },
+    {
+      "type": "chore",
+      "section": "Chores & Updates",
+      "hidden": false
+    },
+    { "type": "build", "section": "Build", "hidden": false },
+    { "type": "ci", "section": "CI/CD", "hidden": false }
+  ],
   "packages": {
     "images/apache-superset": {
       "component": "apache-superset",
