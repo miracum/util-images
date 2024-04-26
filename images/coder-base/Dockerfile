@@ -90,6 +90,16 @@ chmod +x /usr/local/bin/crane
 crane version
 EOF
 
+# s5cmd
+# renovate: datasource=github-releases depName=peak/s5cmd
+ARG S5CMD_VERSION=2.2.2
+ENV S5CMD_URL=https://github.com/peak/s5cmd/releases/download/v${S5CMD_VERSION}/s5cmd_${S5CMD_VERSION}_linux_amd64.deb
+RUN <<EOF
+curl -LSsO "$S5CMD_URL"
+dpkg --install s5cmd_${S5CMD_VERSION}_linux_amd64.deb
+s5cmd version
+EOF
+
 ENV SPARK_HOME=/opt/spark
 ENV PATH=$PATH:$SPARK_HOME/bin
 WORKDIR /home/coder
