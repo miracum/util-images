@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.6.1](https://github.com/miracum/util-images/compare/coder-base-v1.6.0...coder-base-v1.6.1) (2024-04-29)
+
+
+### Chores & Updates
+
+* **deps:** added s5cmd ([#43](https://github.com/miracum/util-images/issues/43)) ([0f73446](https://github.com/miracum/util-images/commit/0f73446c49acc887d9db39eb17ccd7bfd0427cc4))
+* **deps:** update all non-major dependencies ([#40](https://github.com/miracum/util-images/issues/40)) ([9532fd9](https://github.com/miracum/util-images/commit/9532fd96759994d85f3c023a3673045f1a1426b1))
+* **deps:** update all non-major dependencies ([#45](https://github.com/miracum/util-images/issues/45)) ([967e0ee](https://github.com/miracum/util-images/commit/967e0eed203fd71157014c5d547f183bc71dcd7c))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 5b582c8 ([#38](https://github.com/miracum/util-images/issues/38)) ([3a259d9](https://github.com/miracum/util-images/commit/3a259d9ce616089c11fb10c11cdcd02b54654a56))
+* **deps:** update github-actions ([#39](https://github.com/miracum/util-images/issues/39)) ([25a53a4](https://github.com/miracum/util-images/commit/25a53a4401e23ae5ee01260ffe5627c202fd48b6))
+
 ## [1.6.0](https://github.com/miracum/util-images/compare/coder-base-v1.5.2...coder-base-v1.6.0) (2024-04-06)
 
 
