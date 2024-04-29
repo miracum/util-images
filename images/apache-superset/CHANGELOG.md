@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/miracum/util-images/compare/apache-superset-v1.6.0...apache-superset-v1.6.1) (2024-04-29)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#45](https://github.com/miracum/util-images/issues/45)) ([967e0ee](https://github.com/miracum/util-images/commit/967e0eed203fd71157014c5d547f183bc71dcd7c))
+
 ## [1.6.0](https://github.com/miracum/util-images/compare/apache-superset-v1.5.2...apache-superset-v1.6.0) (2024-04-24)
 
 
