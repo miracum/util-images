@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.7.1@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
-FROM docker.io/library/ubuntu:24.04@sha256:5b582c80ed6832665ffb6181ab4d3e5e70c30c2548fbcea1de8a0a51f161be8d
+FROM docker.io/library/ubuntu:24.04@sha256:562456a05a0dbd62a671c1854868862a4687bf979a96d48ae8e766642cd911e8
 
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8
