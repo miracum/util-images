@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/miracum/util-images/compare/spark-delta-v1.6.0...spark-delta-v1.6.1) (2024-05-01)
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/library/spark:3.5.1-scala2.12-java11-python3-ubuntu docker digest to dd7fc47 ([#48](https://github.com/miracum/util-images/issues/48)) ([d0c69fe](https://github.com/miracum/util-images/commit/d0c69feca5d507caab10737f6c16ecbd3d0dfe0a))
+
 ## [1.6.0](https://github.com/miracum/util-images/compare/spark-delta-v1.5.2...spark-delta-v1.6.0) (2024-04-24)
 
 
