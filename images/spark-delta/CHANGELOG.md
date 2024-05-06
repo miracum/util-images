@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/miracum/util-images/compare/spark-delta-v1.6.1...spark-delta-v1.6.2) (2024-05-06)
+
+
+### Chores & Updates
+
+* **deps:** downgrade spark-delta to spark:3.4.1 ([#52](https://github.com/miracum/util-images/issues/52)) ([40a0002](https://github.com/miracum/util-images/commit/40a0002224073c22a0e06d53c95821d6d824e141))
+
 ## [1.6.1](https://github.com/miracum/util-images/compare/spark-delta-v1.6.0...spark-delta-v1.6.1) (2024-05-01)
 
 
