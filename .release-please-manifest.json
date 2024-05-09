@@ -2,7 +2,7 @@
   "images/apache-superset": "1.6.1",
   "images/coder-base": "1.6.1",
   "images/cricketeerone-kafka-connect": "1.6.0",
-  "images/kyuubi-delta": "1.5.2",
+  "images/kyuubi-delta": "1.6.0",
   "images/ml-on-fhir": "1.5.2",
   "images/spark-delta": "1.6.2",
   "images/strimzi-kafka-connect": "1.6.0"
