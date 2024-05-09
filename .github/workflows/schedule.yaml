@@ -24,7 +24,8 @@ jobs:
           'ghcr.io/${{ github.repository }}/apache-superset:latest',
           'ghcr.io/${{ github.repository }}/kyuubi-delta:latest',
           'ghcr.io/${{ github.repository }}/ml-on-fhir:latest',
-          'ghcr.io/${{ github.repository }}/coder-base:latest'
+          'ghcr.io/${{ github.repository }}/coder-base:latest',
+          'ghcr.io/${{ github.repository }}/hive-metastore:latest'
         ]
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}

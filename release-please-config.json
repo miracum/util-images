@@ -48,6 +48,10 @@
     "images/strimzi-kafka-connect": {
       "component": "strimzi-kafka-connect",
       "release-type": "simple"
+    },
+    "images/hive-metastore": {
+      "component": "hive-metastore",
+      "release-type": "simple"
     }
   }
 }
