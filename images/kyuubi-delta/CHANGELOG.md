@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/miracum/util-images/compare/kyuubi-delta-v1.6.0...kyuubi-delta-v1.6.1) (2024-05-10)
+
+
+### Bug Fixes
+
+* added postgresql driver ([897e7e0](https://github.com/miracum/util-images/commit/897e7e094496ca6c64a6f63a3377d3c585f32cf6))
+
 ## [1.6.0](https://github.com/miracum/util-images/compare/kyuubi-delta-v1.5.2...kyuubi-delta-v1.6.0) (2024-05-09)
 
 
