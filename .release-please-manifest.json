@@ -5,6 +5,6 @@
   "images/kyuubi-delta": "1.6.1",
   "images/ml-on-fhir": "1.5.2",
   "images/spark-delta": "1.6.2",
-  "images/strimzi-kafka-connect": "1.6.0",
+  "images/strimzi-kafka-connect": "1.7.0",
   "images/hive-metastore": "1.1.1"
 }
