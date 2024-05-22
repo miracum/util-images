@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.0](https://github.com/miracum/util-images/compare/coder-base-v1.6.1...coder-base-v1.7.0) (2024-05-22)
+
+
+### Features
+
+* update Spark to 3.5 and Delta to 3.2 ([#62](https://github.com/miracum/util-images/issues/62)) ([2e75f0f](https://github.com/miracum/util-images/commit/2e75f0f74a24309f70e9b2f70cce8778d606b0a6))
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 3f85b7c ([#59](https://github.com/miracum/util-images/issues/59)) ([afd658f](https://github.com/miracum/util-images/commit/afd658f52890da05d77ff3524d61021332f14b5c))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 562456a ([#49](https://github.com/miracum/util-images/issues/49)) ([dd3dfbe](https://github.com/miracum/util-images/commit/dd3dfbece1f7a2161490c34fe82971414d4f20ab))
+
 ## [1.6.1](https://github.com/miracum/util-images/compare/coder-base-v1.6.0...coder-base-v1.6.1) (2024-04-29)
 
 
