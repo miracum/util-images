@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/miracum/util-images/compare/spark-delta-v1.7.0...spark-delta-v1.7.1) (2024-05-25)
+
+
+### Chores & Updates
+
+* **deps:** updated spark delta to java 17 base ([#69](https://github.com/miracum/util-images/issues/69)) ([f72ccbe](https://github.com/miracum/util-images/commit/f72ccbe960d0cf18a81098ffaaca02d3be82e189))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/spark-delta-v1.6.2...spark-delta-v1.7.0) (2024-05-22)
 
 
