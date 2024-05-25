@@ -30,6 +30,7 @@ jobs:
           - ml-on-fhir
           - coder-base
           - hive-metastore
+          - warehousekeeper
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
       build-context: images/${{ matrix.image }}
