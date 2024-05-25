@@ -101,7 +101,9 @@ def cli():
     "--retention-hours",
     default=None,
     type=click.INT,
-    help="the retention threshold in hours, if none then the value from `configuration.deletedFileRetentionDuration` is used or default of 1 week otherwise.",
+    help="the retention threshold in hours, if none then the value from "
+    + "`configuration.deletedFileRetentionDuration` is used or default "
+    + "of 1 week otherwise.",
 )
 @click.option(
     "--dry-run",
@@ -113,7 +115,8 @@ def cli():
     "--enforce-retention-duration",
     default=True,
     type=click.BOOL,
-    help="when disabled, accepts retention hours smaller than the value from `configuration.deletedFileRetentionDuration`.",
+    help="when disabled, accepts retention hours smaller than the value from "
+    + "`configuration.deletedFileRetentionDuration`.",
 )
 def vacuum(
     bucket_name: str,
@@ -176,7 +179,10 @@ def optimize(bucket_name: str, database_name_prefix: str):
     required=True,
 )
 def register(bucket_name: str, database_name_prefix: str, hive_metastore: str):
-    """Register all Delta tables in the given folder in a Hive metastore using the folder as the schema name."""
+    """
+    Register all Delta tables in the given folder in a Hive metastore
+    using the folder as the schema name.
+    """
     spark = spark_builder.config(
         "spark.hive.metastore.uris", hive_metastore
     ).getOrCreate()
@@ -201,8 +207,9 @@ def register(bucket_name: str, database_name_prefix: str, hive_metastore: str):
         # the final folder name without the '.parquet' extension
         table_name = table_path.split("/")[-1].removesuffix(".parquet")
 
-        # The parametrized query below didn't work due to parsing errors from the '-quoted
-        # schema. The working query uses Python string interpolation and is technically
+        # The parametrized query below didn't work due to parsing errors
+        # from the '-quoted schema.
+        # The working query uses Python string interpolation and is technically
         # vulnerable to SQL injection.
         # spark.sql(
         #     "CREATE SCHEMA IF NOT EXISTS {schema} LOCATION {schema_path}",
@@ -216,7 +223,10 @@ def register(bucket_name: str, database_name_prefix: str, hive_metastore: str):
         logger.info(create_schema_query)
         spark.sql(create_schema_query)
 
-        create_table_query = f"CREATE TABLE IF NOT EXISTS {schema}.{table_name} USING DELTA LOCATION '{table_path}'"
+        create_table_query = (
+            f"CREATE TABLE IF NOT EXISTS {schema}.{table_name} "
+            + "USING DELTA LOCATION '{table_path}'"
+        )
         logger.info(create_table_query)
         spark.sql(create_table_query)
 
