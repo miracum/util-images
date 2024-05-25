@@ -4,7 +4,7 @@
   "images/cricketeerone-kafka-connect": "1.6.0",
   "images/kyuubi-delta": "1.7.0",
   "images/ml-on-fhir": "1.5.2",
-  "images/spark-delta": "1.7.1",
+  "images/spark-delta": "1.7.2",
   "images/strimzi-kafka-connect": "1.7.0",
   "images/hive-metastore": "1.2.0",
   "images/warehousekeeper": "0.1.0"

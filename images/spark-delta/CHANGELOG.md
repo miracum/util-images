@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/miracum/util-images/compare/spark-delta-v1.7.1...spark-delta-v1.7.2) (2024-05-25)
+
+
+### Chores & Updates
+
+* added kyuubi-spark-sql-engine jar ([9741af5](https://github.com/miracum/util-images/commit/9741af5ae766be75d5ff6a2a0ebaf6298d634361))
+
 ## [1.7.1](https://github.com/miracum/util-images/compare/spark-delta-v1.7.0...spark-delta-v1.7.1) (2024-05-25)
 
 
