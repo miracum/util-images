@@ -1,4 +1,4 @@
-FROM docker.io/library/spark:3.5.1-scala2.12-java11-python3-ubuntu@sha256:48c8adfc6a86bc7b303817a7ea1fea2c4dccd38c11cd8f7df7c40f16ace90fde
+FROM docker.io/library/spark:3.5.1-scala2.12-java17-python3-ubuntu@sha256:39773ed729461cc75078376096cc96149895e800e347b0042f12d87b0130aa08
 USER root
 
 RUN <<EOF
@@ -11,6 +11,6 @@ USER 185:185
 RUN <<EOF
 wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.2.0/delta-spark_2.12-3.2.0.jar
 wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.2.0/delta-storage-3.2.0.jar
-wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
-wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
+wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.4.0/hadoop-aws-3.4.0.jar
+wget -q -P /opt/spark/jars https://repo1.maven.org/maven2/software/amazon/awssdk/bundle/2.23.19/bundle-2.23.19.jar
 EOF
