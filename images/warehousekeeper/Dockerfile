@@ -7,6 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY warehousekeeper.py .
 
+ENV IS_RUNNING_IN_CONTAINER="true"
 USER 185:185
 ENTRYPOINT [ "python3", "/opt/warehousekeeper/warehousekeeper.py" ]
 CMD [ "--help" ]
