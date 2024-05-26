@@ -34,10 +34,6 @@ class BaseCommand(click.Command):
 
 spark_builder = (
     SparkSession.builder.appName("warehousekeeper")
-    .config(
-        "spark.jars.packages",
-        "io.delta:delta-spark_2.12:3.2.0,org.apache.hadoop:hadoop-aws:3.3.4",
-    )
     .config("spark.sql.catalogImplementation", "hive")
     .config(
         "spark.sql.catalog.spark_catalog",
@@ -47,6 +43,14 @@ spark_builder = (
     .config("spark.hadoop.fs.s3a.endpoint", os.getenv("AWS_ENDPOINT_URL"))
     .config("spark.hadoop.fs.s3a.path.style.access", "true")
 )
+
+# the base image already contains the below packages
+# this doesn't feel like a robust solution, though...
+if os.getenv("IS_RUNNING_IN_CONTAINER") is None:
+    spark_builder.config(
+        "spark.jars.packages",
+        "io.delta:delta-spark_2.12:3.2.0,org.apache.hadoop:hadoop-aws:3.3.4",
+    )
 
 
 def list_tables(bucket_name: str, prefix: str) -> Iterator[DeltaTable]:
@@ -225,7 +229,7 @@ def register(bucket_name: str, database_name_prefix: str, hive_metastore: str):
 
         create_table_query = (
             f"CREATE TABLE IF NOT EXISTS {schema}.{table_name} "
-            + "USING DELTA LOCATION '{table_path}'"
+            + f"USING DELTA LOCATION '{table_path}'"
         )
         logger.info(create_table_query)
         spark.sql(create_table_query)
