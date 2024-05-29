@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/miracum/util-images/compare/coder-base-v1.7.0...coder-base-v1.7.1) (2024-05-29)
+
+
+### Chores & Updates
+
+* **deps:** updated coder-base to latest delta, pathling, spark ([#76](https://github.com/miracum/util-images/issues/76)) ([52d33a8](https://github.com/miracum/util-images/commit/52d33a859c48db47a77be2b98283759dc8f2ec45))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/coder-base-v1.6.1...coder-base-v1.7.0) (2024-05-22)
 
 
