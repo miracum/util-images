@@ -1,4 +1,4 @@
-FROM ghcr.io/miracum/util-images/spark-delta:v1.7.1@sha256:8c79c0be040fa5c8676577c1a5c0a0bbecf1e780e9ba705770eb76dc06acb127
+FROM ghcr.io/miracum/util-images/spark-delta:v1.7.2@sha256:65ad3cb0203d665be49ff70fceb6e6d2113fb58965e2200e06f48dd7800604f2
 WORKDIR /opt/warehousekeeper
 
 COPY requirements.txt .
