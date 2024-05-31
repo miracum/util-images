@@ -6,6 +6,7 @@
 ### Chores & Updates
 
 * **deps:** update all non-major dependencies ([#78](https://github.com/miracum/util-images/issues/78)) ([eb23186](https://github.com/miracum/util-images/commit/eb23186d5b577a7d6974646a1cf65ba9489dd7d7))
+* **master:** release apache-superset 1.7.1 ([#81](https://github.com/miracum/util-images/issues/81)) ([7d0af72](https://github.com/miracum/util-images/commit/7d0af72a40b1369b769c8f1b00cf52e76b0c904e))
 
 ## [1.7.0](https://github.com/miracum/util-images/compare/apache-superset-v1.6.1...apache-superset-v1.7.0) (2024-05-22)
 
