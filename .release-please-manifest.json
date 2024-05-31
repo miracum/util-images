@@ -3,7 +3,7 @@
   "images/coder-base": "1.7.1",
   "images/cricketeerone-kafka-connect": "1.6.0",
   "images/kyuubi-delta": "1.7.0",
-  "images/ml-on-fhir": "1.5.2",
+  "images/ml-on-fhir": "1.6.0",
   "images/spark-delta": "1.7.2",
   "images/strimzi-kafka-connect": "1.7.0",
   "images/hive-metastore": "1.2.0",
