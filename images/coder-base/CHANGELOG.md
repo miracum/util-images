@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.2](https://github.com/miracum/util-images/compare/coder-base-v1.7.1...coder-base-v1.7.2) (2024-06-05)
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/bitnami/kubectl:1.30.1 docker digest to cdca6c1 ([#88](https://github.com/miracum/util-images/issues/88)) ([4f52205](https://github.com/miracum/util-images/commit/4f522050c238a994f133be3119f90e4afbcf762f))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to e3f92ab ([#90](https://github.com/miracum/util-images/issues/90)) ([7bd1b65](https://github.com/miracum/util-images/commit/7bd1b654fd84487e9ad46eb22deb2acc1b41b6bd))
+
 ## [1.7.1](https://github.com/miracum/util-images/compare/coder-base-v1.7.0...coder-base-v1.7.1) (2024-05-29)
 
 
