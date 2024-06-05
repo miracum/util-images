@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/miracum/util-images/compare/kyuubi-delta-v1.7.0...kyuubi-delta-v1.7.1) (2024-06-05)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#91](https://github.com/miracum/util-images/issues/91)) ([80e2cba](https://github.com/miracum/util-images/commit/80e2cba4e9b7f8d2f5a332611eb9ccf417f333c3))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/kyuubi-delta-v1.6.1...kyuubi-delta-v1.7.0) (2024-05-22)
 
 
