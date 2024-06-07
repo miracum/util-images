@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.7.2](https://github.com/miracum/util-images/compare/apache-superset-v1.7.1...apache-superset-v1.7.2) (2024-06-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#84](https://github.com/miracum/util-images/issues/84)) ([bb8d03e](https://github.com/miracum/util-images/commit/bb8d03e9af80291eed381d141f55a2fba0184980))
+* **deps:** update all non-major dependencies ([#91](https://github.com/miracum/util-images/issues/91)) ([80e2cba](https://github.com/miracum/util-images/commit/80e2cba4e9b7f8d2f5a332611eb9ccf417f333c3))
+* **deps:** update all non-major dependencies ([#97](https://github.com/miracum/util-images/issues/97)) ([ae76762](https://github.com/miracum/util-images/commit/ae76762fe6bd81c4128243f797b7876d6b5f6efa))
+* **deps:** update dependency duckdb to v1 ([#93](https://github.com/miracum/util-images/issues/93)) ([7c5ac79](https://github.com/miracum/util-images/commit/7c5ac79f84a6a7e264e40312c49f5cfbfb619e16))
+* **master:** release apache-superset 1.7.1 ([#82](https://github.com/miracum/util-images/issues/82)) ([10142f2](https://github.com/miracum/util-images/commit/10142f2061b632e39bc085e440b187efb5a5eb78))
+
 ## [1.7.1](https://github.com/miracum/util-images/compare/apache-superset-v1.7.0...apache-superset-v1.7.1) (2024-05-31)
 
 
