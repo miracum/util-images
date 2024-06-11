@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/miracum/util-images/compare/ml-on-fhir-v1.6.1...ml-on-fhir-v1.6.2) (2024-06-11)
+
+
+### Chores & Updates
+
+* **deps:** update dependency jupyter-server-proxy to v4.2.0 [security] ([#99](https://github.com/miracum/util-images/issues/99)) ([594175b](https://github.com/miracum/util-images/commit/594175bb8eeb5fc2f8100fa027d49838aefc7193))
+
 ## [1.6.1](https://github.com/miracum/util-images/compare/ml-on-fhir-v1.6.0...ml-on-fhir-v1.6.1) (2024-06-07)
 
 
