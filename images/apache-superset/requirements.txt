@@ -4,6 +4,7 @@ duckdb_engine==0.13.0
 deltalake==0.18.0
 duckdb==1.0.0
 cx-Oracle==8.3.0
+starrocks==1.0.6
 
 # Project is currently unsupported
 PyHive==0.7.0
