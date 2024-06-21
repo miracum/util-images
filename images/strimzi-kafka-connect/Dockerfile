@@ -1,4 +1,4 @@
-FROM quay.io/strimzi/kafka:0.41.0-kafka-3.6.1@sha256:bf49499980bbe5d4dd399de0dd396089b0fd9dd29bc46e14d39b20f1e826aec1
+FROM quay.io/strimzi/kafka:0.41.0-kafka-3.6.1@sha256:610c91e50bcdd74d3eaf3ab93531f9e6c4b4075a7c7d2908e8b689c0c7e0e5cc
 
 ENV KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
 ENV ORACLE_OJDBC_VERSION=21.11.0.0
