@@ -54,6 +54,10 @@
     "images/warehousekeeper": {
       "component": "warehousekeeper",
       "release-type": "simple"
+    },
+    "images/dsf-bpe-full": {
+      "component": "dsf-bpe-full",
+      "release-type": "simple"
     }
   }
 }
