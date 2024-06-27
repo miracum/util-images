@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.3.2...dsf-bpe-full-v1.4.0) (2024-06-27)
+
+
+### Features
+
+* added new dsf-bpe-full image ([#109](https://github.com/miracum/util-images/issues/109)) ([a7dfdb4](https://github.com/miracum/util-images/commit/a7dfdb4a4ff7700bb5f53051bad606a4385f91af))
+
 ## [1.3.2](https://gitlab.miracum.org/mii/num-diz/dsf-bpe-full-image/-/releases) (18.06.2024)
 
 ### Description
