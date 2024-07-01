@@ -40,7 +40,7 @@ curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/
 EOF
 
 # DuckDB
-# renovate: datasource=github-releases depName=helm/helm
+# renovate: datasource=github-releases depName=duckdb/duckdb
 ARG DUCKDB_VERSION=1.0.0
 ENV DUCKDB_URL=https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip
 RUN <<EOF
