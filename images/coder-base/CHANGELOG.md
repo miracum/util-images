@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.3](https://github.com/miracum/util-images/compare/coder-base-v1.7.2...coder-base-v1.7.3) (2024-07-01)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#100](https://github.com/miracum/util-images/issues/100)) ([83c176d](https://github.com/miracum/util-images/commit/83c176da1f86d04bee8f2182a99640bb520097d4))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 2e863c4 ([#104](https://github.com/miracum/util-images/issues/104)) ([30acb14](https://github.com/miracum/util-images/commit/30acb149d9962fef136a2fc6b2f66f23bcd714ab))
+
 ## [1.7.2](https://github.com/miracum/util-images/compare/coder-base-v1.7.1...coder-base-v1.7.2) (2024-06-05)
 
 
