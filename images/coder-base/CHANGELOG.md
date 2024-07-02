@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.4](https://github.com/miracum/util-images/compare/coder-base-v1.7.3...coder-base-v1.7.4) (2024-07-02)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#117](https://github.com/miracum/util-images/issues/117)) ([f777059](https://github.com/miracum/util-images/commit/f777059c5c54e1504246733adbd43fa694557986))
+* **deps:** updated duckdb to v1 ([#115](https://github.com/miracum/util-images/issues/115)) ([1b6e2e2](https://github.com/miracum/util-images/commit/1b6e2e2795a5d05da98c6f1fff350c728164b1c4))
+
 ## [1.7.3](https://github.com/miracum/util-images/compare/coder-base-v1.7.2...coder-base-v1.7.3) (2024-07-01)
 
 
