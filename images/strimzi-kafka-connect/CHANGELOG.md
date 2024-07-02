@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.7.0...strimzi-kafka-connect-v1.7.1) (2024-07-02)
+
+
+### Chores & Updates
+
+* **deps:** update quay.io/strimzi/kafka:0.41.0-kafka-3.6.1 docker digest to 610c91e ([#105](https://github.com/miracum/util-images/issues/105)) ([bf021e3](https://github.com/miracum/util-images/commit/bf021e371154e8b790826d54e11b3ac4f9c4f05e))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.6.0...strimzi-kafka-connect-v1.7.0) (2024-05-21)
 
 
