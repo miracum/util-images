@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0](https://github.com/miracum/util-images/compare/apache-superset-v1.7.2...apache-superset-v1.8.0) (2024-07-02)
+
+
+### Features
+
+* added starrocks deps to superset ([#102](https://github.com/miracum/util-images/issues/102)) ([5cf5462](https://github.com/miracum/util-images/commit/5cf54623d14cddacfc861cdb84b8fa348bcdd0b9))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#100](https://github.com/miracum/util-images/issues/100)) ([83c176d](https://github.com/miracum/util-images/commit/83c176da1f86d04bee8f2182a99640bb520097d4))
+
 ## [1.7.2](https://github.com/miracum/util-images/compare/apache-superset-v1.7.1...apache-superset-v1.7.2) (2024-06-07)
 
 
