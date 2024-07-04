@@ -1,4 +1,4 @@
-FROM docker.io/apache/superset:4.0.1@sha256:ab9467fd712cbe3738d1a7d574d6230c0b04a88af5e5e11f3fbc38e2af305162
+FROM docker.io/apache/superset:4.0.2@sha256:daaaf7c4dda511c3f0412235f5642d1b7480cb9eb0dabc1f0f5a737fd856afd4
 
 USER root
 
