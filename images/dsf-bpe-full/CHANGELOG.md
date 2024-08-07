@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.4.1...dsf-bpe-full-v1.4.2) (2024-08-07)
+
+
+### Chores & Updates
+
+* **deps:** update curlimages/curl docker digest to 8addc28 ([#131](https://github.com/miracum/util-images/issues/131)) ([7cf2f2e](https://github.com/miracum/util-images/commit/7cf2f2e61c3b16449ff2a1a160c3ddd84d1f99c9))
+
 ## [1.4.1](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.4.0...dsf-bpe-full-v1.4.1) (2024-07-12)
 
 
