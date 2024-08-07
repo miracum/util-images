@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/miracum/util-images/compare/hive-metastore-v1.2.0...hive-metastore-v1.2.1) (2024-08-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+
 ## [1.2.0](https://github.com/miracum/util-images/compare/hive-metastore-v1.1.1...hive-metastore-v1.2.0) (2024-05-22)
 
 
