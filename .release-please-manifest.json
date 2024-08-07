@@ -8,5 +8,6 @@
   "images/strimzi-kafka-connect": "1.7.0",
   "images/hive-metastore": "1.2.0",
   "images/warehousekeeper": "0.1.5",
-  "images/dsf-bpe-full": "1.4.1"
+  "images/dsf-bpe-full": "1.4.1",
+  "images/ollama": "0.1.0"
 }

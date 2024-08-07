@@ -32,6 +32,7 @@ jobs:
           - hive-metastore
           - warehousekeeper
           - dsf-bpe-full
+          - ollama
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
       build-context: images/${{ matrix.image }}
