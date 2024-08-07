@@ -58,10 +58,6 @@
     "images/dsf-bpe-full": {
       "component": "dsf-bpe-full",
       "release-type": "simple"
-    },
-    "images/ollama": {
-      "component": "ollama",
-      "release-type": "simple"
     }
   }
 }
