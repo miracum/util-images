@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.5](https://github.com/miracum/util-images/compare/coder-base-v1.7.4...coder-base-v1.7.5) (2024-08-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#127](https://github.com/miracum/util-images/issues/127)) ([fac5031](https://github.com/miracum/util-images/commit/fac50314ab1502367e2f983eadf2aacb5a5cc822))
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+* **deps:** update docker.io/bitnami/kubectl:1.30.2 docker digest to dc190b7 ([#119](https://github.com/miracum/util-images/issues/119)) ([8c6db24](https://github.com/miracum/util-images/commit/8c6db246777184370d1817f0ef50de62ba2087ce))
+
 ## [1.7.4](https://github.com/miracum/util-images/compare/coder-base-v1.7.3...coder-base-v1.7.4) (2024-07-02)
 
 
