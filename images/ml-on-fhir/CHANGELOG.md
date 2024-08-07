@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.4](https://github.com/miracum/util-images/compare/ml-on-fhir-v1.6.3...ml-on-fhir-v1.6.4) (2024-08-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#121](https://github.com/miracum/util-images/issues/121)) ([2d0bb3a](https://github.com/miracum/util-images/commit/2d0bb3aa3f48ac9dff40c5ba573a51b3eed31567))
+* **deps:** update all non-major dependencies ([#123](https://github.com/miracum/util-images/issues/123)) ([7ae28b8](https://github.com/miracum/util-images/commit/7ae28b86ef86fd4c7d4abffe76d3a05101cf2e89))
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+
 ## [1.6.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v1.6.2...ml-on-fhir-v1.6.3) (2024-07-02)
 
 
