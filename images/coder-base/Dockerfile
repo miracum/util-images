@@ -73,7 +73,7 @@ EOF
 
 # cosign
 # renovate: datasource=github-releases depName=sigstore/cosign
-ARG COSIGN_VERSION=2.3.0
+ARG COSIGN_VERSION=2.4.0
 ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
 RUN <<EOF
 curl -LSsO "$COSIGN_URL"
@@ -84,7 +84,7 @@ EOF
 
 # crane
 # renovate: datasource=github-releases depName=google/go-containerregistry
-ARG CRANE_VERSION=0.20.1
+ARG CRANE_VERSION=0.20.2
 ENV CRANE_URL=https://github.com/google/go-containerregistry/releases/download/v${CRANE_VERSION}/go-containerregistry_Linux_x86_64.tar.gz
 RUN <<EOF
 curl -LSs "$CRANE_URL" | tar xz
