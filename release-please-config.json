@@ -58,6 +58,10 @@
     "images/dsf-bpe-full": {
       "component": "dsf-bpe-full",
       "release-type": "simple"
+    },
+    "images/trino": {
+      "component": "trino",
+      "release-type": "simple"
     }
   }
 }
