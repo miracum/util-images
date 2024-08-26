@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/miracum/util-images/compare/trino-v0.1.1...trino-v0.1.2) (2024-08-26)
+
+
+### Bug Fixes
+
+* trigger release ([303c6d1](https://github.com/miracum/util-images/commit/303c6d14c7fed0301bcce3872c71342e4fe45199))
+
 ## [0.1.1](https://github.com/miracum/util-images/compare/trino-v0.1.0...trino-v0.1.1) (2024-08-26)
 
 
