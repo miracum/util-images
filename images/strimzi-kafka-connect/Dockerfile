@@ -1,11 +1,18 @@
-FROM quay.io/strimzi/kafka:0.42.0-kafka-3.7.1@sha256:6c519531cdd5f40f326b295d8827344140efe2607a1826f7f1cab8c3427f43f7
+FROM quay.io/strimzi/kafka:0.43.0-kafka-3.8.0@sha256:b2f4e8895e9ed66228512ce14aec685101fa75dc329128d47cb1c15e3aef3c9c
 
+ENV CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.7
+
+# renovate: datasource=github-tags depName=confluentinc/kafka-connect-jdbc
 ENV KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
+# renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ENV ORACLE_OJDBC_VERSION=21.11.0.0
+# renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
 ENV MSSQL_JDBC_VERSION=12.6.0
-ENV KAFKA_CONNECT_VERSION=3.5.2
-ENV CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.4
+# renovate: datasource=maven depName=org.apache.kafka:connect-file
+ENV KAFKA_CONNECT_FILE_VERSION=3.5.2
+# renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
 ENV AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.5.0
+# renovate: datasource=maven depName=com.github.castorm/kafka-connect-http
 ENV CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 
 USER root
@@ -41,7 +48,7 @@ curl -LsS https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/${ORAC
 
 curl -LsS https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/${MSSQL_JDBC_VERSION}.jre11/mssql-jdbc-${MSSQL_JDBC_VERSION}.jre11.jar > /opt/kafka/libs/mssql-jdbc-${MSSQL_JDBC_VERSION}.jre11.jar
 
-curl -LsS https://repo1.maven.org/maven2/org/apache/kafka/connect-file/${KAFKA_CONNECT_VERSION}/connect-file-${KAFKA_CONNECT_VERSION}.jar > /opt/kafka/plugins/connect-file-${KAFKA_CONNECT_VERSION}.jar
+curl -LsS https://repo1.maven.org/maven2/org/apache/kafka/connect-file/${KAFKA_CONNECT_FILE_VERSION}/connect-file-${KAFKA_CONNECT_FILE_VERSION}.jar > /opt/kafka/plugins/connect-file-${KAFKA_CONNECT_VERSION}.jar
 EOF
 
 USER 1001:1001
