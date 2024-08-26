@@ -36,7 +36,7 @@ jobs:
           fi
 
   build:
-    uses: miracum/.github/.github/workflows/standard-build.yaml@6e79e87ffce2b28fa1052cbe3ac78f9ab7a2ea77 # v1.11.3
+    uses: miracum/.github/.github/workflows/standard-build.yaml@a4eaba9236579e026f335874deae5bc70651c15c # v1.12.0
     needs:
       - prepare
     permissions:
