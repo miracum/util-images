@@ -13,5 +13,8 @@ curl -LsSO https://github.com/snowlift/trino-storage/releases/download/v${TRINO_
 unzip trino-storage-${TRINO_STORAGE_PLUGIN_VERSION}.zip -d  /usr/lib/trino/plugin/
 EOF
 
+USER 1000:1000
+
 FROM docker.io/trinodb/trino:454@sha256:b59c029be39852252a20e57d21980e0081dc1b9f08cb20dbae06deb45c42b89e
 COPY --from=downloader --chown=0:0 /usr/lib/trino/plugin/trino-storage-*/ /usr/lib/trino/plugin/storage/
+USER 1000:1000
