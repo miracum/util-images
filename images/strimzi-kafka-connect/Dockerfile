@@ -1,10 +1,8 @@
 FROM quay.io/strimzi/kafka:0.43.0-kafka-3.8.0@sha256:b2f4e8895e9ed66228512ce14aec685101fa75dc329128d47cb1c15e3aef3c9c
 
-ENV CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.7
-
-# XXX: may be outdated; https://github.com/confluentinc/kafka-connect-jdbc/tags has more recent tags.
-# renovate: datasource=maven depName=io.confluent:kafka-connect-jdbc
+ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.7
 ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
+
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ARG ORACLE_OJDBC_VERSION=21.11.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
