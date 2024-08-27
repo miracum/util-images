@@ -3,17 +3,17 @@ FROM quay.io/strimzi/kafka:0.43.0-kafka-3.8.0@sha256:b2f4e8895e9ed66228512ce14ae
 ENV CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.7
 
 # renovate: datasource=github-tags depName=confluentinc/kafka-connect-jdbc
-ENV KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
+ARG KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
-ENV ORACLE_OJDBC_VERSION=21.11.0.0
+ARG ORACLE_OJDBC_VERSION=21.11.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
-ENV MSSQL_JDBC_VERSION=12.6.0
+ARG MSSQL_JDBC_VERSION=12.6.0
 # renovate: datasource=maven depName=org.apache.kafka:connect-file
-ENV KAFKA_CONNECT_FILE_VERSION=3.5.2
+ARG KAFKA_CONNECT_FILE_VERSION=3.5.2
 # renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
-ENV AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.5.0
+ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.5.0
 # renovate: datasource=maven depName=com.github.castorm/kafka-connect-http
-ENV CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
+ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 
 USER root
 
