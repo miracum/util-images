@@ -2,8 +2,9 @@ FROM quay.io/strimzi/kafka:0.43.0-kafka-3.8.0@sha256:b2f4e8895e9ed66228512ce14ae
 
 ENV CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.7
 
-# renovate: datasource=github-tags depName=confluentinc/kafka-connect-jdbc
-ARG KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
+# XXX: may be outdated; https://github.com/confluentinc/kafka-connect-jdbc/tags has more recent tags.
+# renovate: datasource=maven depName=io.confluent:kafka-connect-jdbc
+ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ARG ORACLE_OJDBC_VERSION=21.11.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
@@ -12,7 +13,7 @@ ARG MSSQL_JDBC_VERSION=12.6.0
 ARG KAFKA_CONNECT_FILE_VERSION=3.5.2
 # renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
 ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.5.0
-# renovate: datasource=maven depName=com.github.castorm/kafka-connect-http
+# renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 
 USER root
@@ -26,9 +27,9 @@ EOF
 RUN <<EOF
 mkdir -p /opt/kafka/plugins/
 
-curl -LsSO https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/kafka-connect-jdbc/versions/${KAFKA_CONNECT_JDBC_PLUGIN_VERSION}/confluentinc-kafka-connect-jdbc-${KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
-unzip confluentinc-kafka-connect-jdbc-${KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip -d /opt/kafka/plugins/
-rm confluentinc-kafka-connect-jdbc-${KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
+curl -LsSO https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/kafka-connect-jdbc/versions/${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}/confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
+unzip confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip -d /opt/kafka/plugins/
+rm confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
 
 curl -LsSO https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/connect-transforms/versions/${CONFLUENT_CONNECT_TRANSFORMS_VERSION}/confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip
 unzip confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip -d /opt/kafka/plugins/
