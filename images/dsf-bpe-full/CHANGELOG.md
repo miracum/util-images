@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.4.1...dsf-bpe-full-v1.5.0) (2024-08-30)
+
+
+### Features
+
+* added trino, fixed dsf, renovate connect deps ([#142](https://github.com/miracum/util-images/issues/142)) ([d0bcf7d](https://github.com/miracum/util-images/commit/d0bcf7d6e303eae01c9ed8011e57941887a9c99f))
+
+
+### Chores & Updates
+
+* **deps:** update curlimages/curl docker digest to 8addc28 ([#131](https://github.com/miracum/util-images/issues/131)) ([7cf2f2e](https://github.com/miracum/util-images/commit/7cf2f2e61c3b16449ff2a1a160c3ddd84d1f99c9))
+* **deps:** update MII processes ([#145](https://github.com/miracum/util-images/issues/145)) ([6e3dc27](https://github.com/miracum/util-images/commit/6e3dc27d3d9d87bce79ce043cc83efb36881a957))
+
 ## [1.4.1](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.4.0...dsf-bpe-full-v1.4.1) (2024-07-12)
 
 
