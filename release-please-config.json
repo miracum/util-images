@@ -62,6 +62,10 @@
     "images/trino": {
       "component": "trino",
       "release-type": "simple"
+    },
+    "images/semantic-release": {
+      "component": "semantic-release",
+      "release-type": "simple"
     }
   }
 }

@@ -33,6 +33,7 @@ jobs:
           - warehousekeeper
           - dsf-bpe-full
           - trino
+          - semantic-release
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
       build-context: images/${{ matrix.image }}
