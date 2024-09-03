@@ -16,3 +16,5 @@ EOF
 COPY . .
 
 RUN npm clean-install
+
+USER 1000:1000
