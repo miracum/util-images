@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.1](https://github.com/miracum/util-images/compare/semantic-release-v1.1.0...semantic-release-v1.1.1) (2024-09-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v8 ([#153](https://github.com/miracum/util-images/issues/153)) ([272a0e9](https://github.com/miracum/util-images/commit/272a0e9dc2a452be24f30e996101281b382c0b91))
+* **deps:** update semantic-release monorepo ([#154](https://github.com/miracum/util-images/issues/154)) ([c2c0dc5](https://github.com/miracum/util-images/commit/c2c0dc545d3abbe39bca4eea347c44d74184d99a))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#138](https://github.com/miracum/util-images/issues/138)) ([97d082a](https://github.com/miracum/util-images/commit/97d082a6be9f30472a015318286ca9e9edf4eb84))
+* **deps:** update node.js to df85129 ([#159](https://github.com/miracum/util-images/issues/159)) ([e9fde17](https://github.com/miracum/util-images/commit/e9fde17b45502b1b52d178df06639352b3382b0b))
+
 ## [1.1.0](https://github.com/miracum/util-images/compare/semantic-release-v1.0.0...semantic-release-v1.1.0) (2024-09-03)
 
 
