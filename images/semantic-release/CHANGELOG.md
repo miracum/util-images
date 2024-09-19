@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/miracum/util-images/compare/semantic-release-v1.1.1...semantic-release-v1.2.0) (2024-09-19)
+
+
+### Features
+
+* added nodejs ([#164](https://github.com/miracum/util-images/issues/164)) ([05b4e71](https://github.com/miracum/util-images/commit/05b4e7199bdc76c546d49a618fb0309738589824))
+
 ## [1.1.1](https://github.com/miracum/util-images/compare/semantic-release-v1.1.0...semantic-release-v1.1.1) (2024-09-15)
 
 
