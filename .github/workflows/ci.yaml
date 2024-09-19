@@ -50,7 +50,7 @@ jobs:
         image: ${{ fromJSON(needs.get-changed-images.outputs.images-to-build) }}
     with:
       image: ghcr.io/${{ github.repository }}/${{ matrix.image }}
-      build-context: ${{ matrix.image }}
+      build-context: images/${{ matrix.image }}
       enable-build-test-layer: false
       enable-upload-test-image: false
       enable-upload-image: false
