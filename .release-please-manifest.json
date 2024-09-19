@@ -10,5 +10,5 @@
   "images/warehousekeeper": "0.1.5",
   "images/dsf-bpe-full": "1.5.0",
   "images/trino": "0.1.2",
-  "images/semantic-release": "1.2.0"
+  "images/semantic-release": "1.2.1"
 }
