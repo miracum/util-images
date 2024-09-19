@@ -15,6 +15,10 @@ COPY packages.txt /tmp/setup/
 RUN <<EOF
 apt-get update
 xargs -r -a /tmp/setup/packages.txt apt-get install -y --no-install-recommends
+
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+apt-get install -y --no-install-recommends nodejs
+
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 apt-get clean
 rm -rf /var/lib/apt/lists/*
@@ -26,17 +30,16 @@ EOF
 
 # Spark
 RUN <<EOF
-curl -LSsO https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
-tar xvf spark-3.5.1-bin-hadoop3.tgz
-mv spark-3.5.1-bin-hadoop3 /opt/spark
-rm spark-3.5.1-bin-hadoop3.tgz
+curl -LSsO https://archive.apache.org/dist/spark/spark-3.5.2/spark-3.5.2-bin-hadoop3.tgz
+tar xvf spark-3.5.2-bin-hadoop3.tgz
+mv spark-3.5.2-bin-hadoop3 /opt/spark
+rm spark-3.5.2-bin-hadoop3.tgz
 
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.2.0/delta-spark_2.12-3.2.0.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.2.0/delta-storage-3.2.0.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/pathling/library-runtime/7.0.1/library-runtime-7.0.1.jar
-# curl -LSsO --output-dir /opt/spark/jars https://github.com/apache/incubator-gluten/releases/download/v1.1.1/gluten-velox-bundle-spark3.3_2.12-1.1.1.jar
 EOF
 
 # DuckDB
