@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.8.0](https://github.com/miracum/util-images/compare/coder-base-v1.7.4...coder-base-v1.8.0) (2024-09-19)
+
+
+### Features
+
+* added nodejs ([#164](https://github.com/miracum/util-images/issues/164)) ([05b4e71](https://github.com/miracum/util-images/commit/05b4e7199bdc76c546d49a618fb0309738589824))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#127](https://github.com/miracum/util-images/issues/127)) ([fac5031](https://github.com/miracum/util-images/commit/fac50314ab1502367e2f983eadf2aacb5a5cc822))
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+* **deps:** update all non-major dependencies ([#138](https://github.com/miracum/util-images/issues/138)) ([97d082a](https://github.com/miracum/util-images/commit/97d082a6be9f30472a015318286ca9e9edf4eb84))
+* **deps:** update all non-major dependencies ([#167](https://github.com/miracum/util-images/issues/167)) ([6595e02](https://github.com/miracum/util-images/commit/6595e02dab8f6048b2bc56c4e89081c5f7aff255))
+* **deps:** update docker.io/bitnami/kubectl:1.30.2 docker digest to dc190b7 ([#119](https://github.com/miracum/util-images/issues/119)) ([8c6db24](https://github.com/miracum/util-images/commit/8c6db246777184370d1817f0ef50de62ba2087ce))
+* **deps:** update docker.io/bitnami/kubectl:1.30.3 docker digest to fc6e485 ([#147](https://github.com/miracum/util-images/issues/147)) ([3ba0903](https://github.com/miracum/util-images/commit/3ba09031235efb656036ae1eaa2c7de411dd443f))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 8a37d68 ([#148](https://github.com/miracum/util-images/issues/148)) ([4df1452](https://github.com/miracum/util-images/commit/4df1452016ed1eee1e00254f1da3ea15aa55f1ab))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to dfc1087 ([#166](https://github.com/miracum/util-images/issues/166)) ([4dbae7b](https://github.com/miracum/util-images/commit/4dbae7b6a773f9974be41053855c680e0159ddb8))
+
 ## [1.7.4](https://github.com/miracum/util-images/compare/coder-base-v1.7.3...coder-base-v1.7.4) (2024-07-02)
 
 

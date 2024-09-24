@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.10.0@sha256:865e5dd094beca432e8c0a1d5e1c465db5f998dca4e439981029b3b81fb39ed5
-FROM docker.io/library/ubuntu:24.04@sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee
+FROM docker.io/library/ubuntu:24.04@sha256:dfc10878be8d8fc9c61cbff33166cb1d1fe44391539243703c72766894fa834a
 
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8
@@ -15,6 +15,10 @@ COPY packages.txt /tmp/setup/
 RUN <<EOF
 apt-get update
 xargs -r -a /tmp/setup/packages.txt apt-get install -y --no-install-recommends
+
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+apt-get install -y --no-install-recommends nodejs
+
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 apt-get clean
 rm -rf /var/lib/apt/lists/*
@@ -26,17 +30,16 @@ EOF
 
 # Spark
 RUN <<EOF
-curl -LSsO https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
-tar xvf spark-3.5.1-bin-hadoop3.tgz
-mv spark-3.5.1-bin-hadoop3 /opt/spark
-rm spark-3.5.1-bin-hadoop3.tgz
+curl -LSsO https://archive.apache.org/dist/spark/spark-3.5.2/spark-3.5.2-bin-hadoop3.tgz
+tar xvf spark-3.5.2-bin-hadoop3.tgz
+mv spark-3.5.2-bin-hadoop3 /opt/spark
+rm spark-3.5.2-bin-hadoop3.tgz
 
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.2.0/delta-spark_2.12-3.2.0.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.2.0/delta-storage-3.2.0.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
 curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/pathling/library-runtime/7.0.1/library-runtime-7.0.1.jar
-# curl -LSsO --output-dir /opt/spark/jars https://github.com/apache/incubator-gluten/releases/download/v1.1.1/gluten-velox-bundle-spark3.3_2.12-1.1.1.jar
 EOF
 
 # DuckDB
@@ -57,12 +60,12 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/bitnami/kubectl:1.31.0@sha256:7779e585c588adde5c8feafd584c1ffc76ffbe8475236aa14c13b8afe18d9af6 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/bitnami/kubectl:1.31.1@sha256:da4a9868e20d941636087cb8624a4bb441f5249d69e8f3d27e53c7d4d280a5f3 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
 # renovate: datasource=github-releases depName=helm/helm
-ARG HELM_VERSION=3.16.0
+ARG HELM_VERSION=3.16.1
 ENV HELM_URL=https://get.helm.sh/helm-v"${HELM_VERSION}"-linux-amd64.tar.gz
 RUN <<EOF
 curl -LSs "$HELM_URL" | tar xz

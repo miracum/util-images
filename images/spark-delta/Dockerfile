@@ -1,4 +1,4 @@
-FROM docker.io/library/spark:3.5.2-scala2.12-java17-python3-ubuntu@sha256:9ac5745a89206977aea5fe3eebfa0f5696c9662f56557018ea3558282b5a2282
+FROM docker.io/library/spark:3.5.2-scala2.12-java17-python3-ubuntu@sha256:0281d18704a625043b07302fda6dd29f1ee674a9ce963a6c8e7f783ee0f5b527
 USER root
 
 RUN <<EOF
