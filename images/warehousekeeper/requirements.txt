@@ -1,5 +1,5 @@
 click==8.1.7
-pyspark==3.5.2
-deltalake==0.20.0
+pyspark==3.5.3
+deltalake==0.20.1
 loguru==0.7.2
-boto3==1.35.23
+boto3==1.35.29
