@@ -9,7 +9,7 @@ permissions: read-all
 
 jobs:
   prepare:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     outputs:
       component-name: ${{ steps.component-meta.outputs.component }}
       component-version: ${{ steps.component-meta.outputs.version }}
