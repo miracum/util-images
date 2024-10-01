@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/miracum/util-images/compare/semantic-release-v1.2.1...semantic-release-v1.2.2) (2024-10-01)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#172](https://github.com/miracum/util-images/issues/172)) ([fe140df](https://github.com/miracum/util-images/commit/fe140df191302227a5eb3d846818600e10adc180))
+* **deps:** update node.js to 6e6df5c ([#171](https://github.com/miracum/util-images/issues/171)) ([5a2a4d3](https://github.com/miracum/util-images/commit/5a2a4d3df9d0f0a0400227883f932dfdcbeedd5a))
+
 ## [1.2.1](https://github.com/miracum/util-images/compare/semantic-release-v1.2.0...semantic-release-v1.2.1) (2024-09-19)
 
 
