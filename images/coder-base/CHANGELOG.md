@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/miracum/util-images/compare/coder-base-v1.8.0...coder-base-v1.8.1) (2024-10-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#172](https://github.com/miracum/util-images/issues/172)) ([fe140df](https://github.com/miracum/util-images/commit/fe140df191302227a5eb3d846818600e10adc180))
+
 ## [1.8.0](https://github.com/miracum/util-images/compare/coder-base-v1.7.4...coder-base-v1.8.0) (2024-09-19)
 
 
