@@ -9,6 +9,6 @@
   "images/hive-metastore": "1.2.0",
   "images/warehousekeeper": "0.1.5",
   "images/dsf-bpe-full": "1.5.0",
-  "images/trino": "0.1.3",
+  "images/trino": "0.1.4",
   "images/semantic-release": "1.2.3"
 }
