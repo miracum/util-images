@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/miracum/util-images/compare/trino-v0.1.3...trino-v0.1.4) (2024-10-07)
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/trinodb/trino docker tag to v459 ([#175](https://github.com/miracum/util-images/issues/175)) ([fa43d37](https://github.com/miracum/util-images/commit/fa43d370492374d8527a0b10a00722de61305494))
+* **deps:** update docker.io/trinodb/trino docker tag to v460 ([#179](https://github.com/miracum/util-images/issues/179)) ([344ac80](https://github.com/miracum/util-images/commit/344ac802bfe48e6f23917d779992018d58728387))
+
 ## [0.1.3](https://github.com/miracum/util-images/compare/trino-v0.1.2...trino-v0.1.3) (2024-09-19)
 
 
