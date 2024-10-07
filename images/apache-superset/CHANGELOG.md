@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.1](https://github.com/miracum/util-images/compare/apache-superset-v1.8.0...apache-superset-v1.8.1) (2024-10-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#127](https://github.com/miracum/util-images/issues/127)) ([fac5031](https://github.com/miracum/util-images/commit/fac50314ab1502367e2f983eadf2aacb5a5cc822))
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+* **deps:** update all non-major dependencies ([#138](https://github.com/miracum/util-images/issues/138)) ([97d082a](https://github.com/miracum/util-images/commit/97d082a6be9f30472a015318286ca9e9edf4eb84))
+* **deps:** update all non-major dependencies ([#167](https://github.com/miracum/util-images/issues/167)) ([6595e02](https://github.com/miracum/util-images/commit/6595e02dab8f6048b2bc56c4e89081c5f7aff255))
+* **deps:** update all non-major dependencies ([#172](https://github.com/miracum/util-images/issues/172)) ([fe140df](https://github.com/miracum/util-images/commit/fe140df191302227a5eb3d846818600e10adc180))
+* **deps:** update docker.io/apache/superset:4.0.2 docker digest to 51a90d1 ([#132](https://github.com/miracum/util-images/issues/132)) ([a0ae068](https://github.com/miracum/util-images/commit/a0ae068974d44f4a063bf9047a58bad2dba74abd))
+
 ## [1.8.0](https://github.com/miracum/util-images/compare/apache-superset-v1.7.2...apache-superset-v1.8.0) (2024-07-04)
 
 
