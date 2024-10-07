@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.6](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.5...warehousekeeper-v0.1.6) (2024-10-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#100](https://github.com/miracum/util-images/issues/100)) ([83c176d](https://github.com/miracum/util-images/commit/83c176da1f86d04bee8f2182a99640bb520097d4))
+* **deps:** update all non-major dependencies ([#117](https://github.com/miracum/util-images/issues/117)) ([f777059](https://github.com/miracum/util-images/commit/f777059c5c54e1504246733adbd43fa694557986))
+* **deps:** update all non-major dependencies ([#121](https://github.com/miracum/util-images/issues/121)) ([2d0bb3a](https://github.com/miracum/util-images/commit/2d0bb3aa3f48ac9dff40c5ba573a51b3eed31567))
+* **deps:** update all non-major dependencies ([#123](https://github.com/miracum/util-images/issues/123)) ([7ae28b8](https://github.com/miracum/util-images/commit/7ae28b86ef86fd4c7d4abffe76d3a05101cf2e89))
+* **deps:** update all non-major dependencies ([#127](https://github.com/miracum/util-images/issues/127)) ([fac5031](https://github.com/miracum/util-images/commit/fac50314ab1502367e2f983eadf2aacb5a5cc822))
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+* **deps:** update all non-major dependencies ([#138](https://github.com/miracum/util-images/issues/138)) ([97d082a](https://github.com/miracum/util-images/commit/97d082a6be9f30472a015318286ca9e9edf4eb84))
+* **deps:** update all non-major dependencies ([#167](https://github.com/miracum/util-images/issues/167)) ([6595e02](https://github.com/miracum/util-images/commit/6595e02dab8f6048b2bc56c4e89081c5f7aff255))
+* **deps:** update all non-major dependencies ([#172](https://github.com/miracum/util-images/issues/172)) ([fe140df](https://github.com/miracum/util-images/commit/fe140df191302227a5eb3d846818600e10adc180))
+
 ## [0.1.5](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.4...warehousekeeper-v0.1.5) (2024-06-07)
 
 
