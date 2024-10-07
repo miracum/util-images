@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/miracum/util-images/compare/semantic-release-v1.2.2...semantic-release-v1.2.3) (2024-10-07)
+
+
+### Bug Fixes
+
+* try non-slim variant ([e29d128](https://github.com/miracum/util-images/commit/e29d1288fe1fd85ff240f23ad6c341f20c096e83))
+
 ## [1.2.2](https://github.com/miracum/util-images/compare/semantic-release-v1.2.1...semantic-release-v1.2.2) (2024-10-01)
 
 
