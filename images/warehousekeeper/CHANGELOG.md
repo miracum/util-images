@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.6...warehousekeeper-v0.1.7) (2024-10-11)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#181](https://github.com/miracum/util-images/issues/181)) ([54722cb](https://github.com/miracum/util-images/commit/54722cbee68dab4b5ea7e6c4d8e2d054929ef40b))
+
 ## [0.1.6](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.5...warehousekeeper-v0.1.6) (2024-10-07)
 
 
