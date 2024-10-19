@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.7](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.6...warehousekeeper-v0.1.7) (2024-10-19)
+
+
+### Bug Fixes
+
+* if retention_hours is set to 0, still append as `RETAIN 0 HOURS` ([#184](https://github.com/miracum/util-images/issues/184)) ([3e273aa](https://github.com/miracum/util-images/commit/3e273aaf78d9133dce0b5eb29e58e96b0d51d017))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#181](https://github.com/miracum/util-images/issues/181)) ([54722cb](https://github.com/miracum/util-images/commit/54722cbee68dab4b5ea7e6c4d8e2d054929ef40b))
+
 ## [0.1.6](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.5...warehousekeeper-v0.1.6) (2024-10-07)
 
 
