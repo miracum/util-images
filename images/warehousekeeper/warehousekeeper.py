@@ -145,8 +145,8 @@ def vacuum(
 
         vacuum_query = f"VACUUM delta.`{dt.table_uri}`"
 
-        if retention_hours:
-            vacuum_query = vacuum_query + f"RETAIN {retention_hours} HOURS"
+        if retention_hours is not None:
+            vacuum_query = vacuum_query + f" RETAIN {retention_hours} HOURS"
 
         if dry_run:
             logger.info(
