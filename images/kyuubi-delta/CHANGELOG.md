@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.3](https://github.com/miracum/util-images/compare/kyuubi-delta-v1.7.2...kyuubi-delta-v1.7.3) (2024-10-22)
+
+
+### Chores & Updates
+
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.7.2](https://github.com/miracum/util-images/compare/kyuubi-delta-v1.7.1...kyuubi-delta-v1.7.2) (2024-10-11)
 
 
