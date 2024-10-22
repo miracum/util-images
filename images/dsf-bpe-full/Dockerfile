@@ -1,8 +1,8 @@
-ARG CA_TAR_URL=https://dsf.dev/download/dsf_bpe_1_5_2.tar.gz
-ARG DSF_VERSION=1.5.2
+ARG CA_TAR_URL=https://dsf.dev/download/dsf_bpe_1_6_0.tar.gz
+ARG DSF_VERSION=1.6.0
 ARG DSF_PROCESS_PING_PONG=1.0.1.0
 ARG DSF_PROCESS_ALLOW_LIST=1.0.0.1
-ARG DSF_PROCESS_FEASIBILITY=1.0.0.6
+ARG DSF_PROCESS_FEASIBILITY=1.0.0.7
 ARG DSF_PROCESS_MII_REPORT=1.1.1.1
 ARG DSF_PROCESS_MII_DATA_TRANSFER=1.0.2.1
 ARG DSF_PROCESS_MII_DATA_SHARING=1.0.1.1
@@ -35,7 +35,7 @@ RUN mkdir -p /process /secrets && \
 USER 1000
 
 
-FROM ghcr.io/datasharingframework/bpe:1.5.2@sha256:e8f5bfa48d6eeb8b748bebf2b2245478eb69c8bb28b6f5a1e0f450946287fac9
+FROM ghcr.io/datasharingframework/bpe:1.6.0@sha256:7045623daf2283a6a81c5a3a48ff39cb784369a2252c96217b4ed4a404990c16
 
 USER root
 
