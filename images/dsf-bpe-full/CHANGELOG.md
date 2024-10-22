@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.5.1...dsf-bpe-full-v1.5.2) (2024-10-22)
+
+
+### Chores & Updates
+
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.5.1](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.5.0...dsf-bpe-full-v1.5.1) (2024-10-11)
 
 
