@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.7...warehousekeeper-v0.1.8) (2024-10-22)
+
+
+### Chores & Updates
+
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [0.1.7](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.6...warehousekeeper-v0.1.7) (2024-10-19)
 
 
