@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/miracum/util-images/compare/trino-v0.1.4...trino-v0.1.5) (2024-10-22)
+
+
+### Chores & Updates
+
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [0.1.4](https://github.com/miracum/util-images/compare/trino-v0.1.3...trino-v0.1.4) (2024-10-07)
 
 
