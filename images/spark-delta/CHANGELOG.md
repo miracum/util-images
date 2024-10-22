@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.4](https://github.com/miracum/util-images/compare/spark-delta-v1.7.3...spark-delta-v1.7.4) (2024-10-11)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#138](https://github.com/miracum/util-images/issues/138)) ([97d082a](https://github.com/miracum/util-images/commit/97d082a6be9f30472a015318286ca9e9edf4eb84))
+* **deps:** update all non-major dependencies ([#181](https://github.com/miracum/util-images/issues/181)) ([54722cb](https://github.com/miracum/util-images/commit/54722cbee68dab4b5ea7e6c4d8e2d054929ef40b))
+* **deps:** update docker.io/library/spark:3.5.1-scala2.12-java17-python3-ubuntu docker digest to 0b641b6 ([#120](https://github.com/miracum/util-images/issues/120)) ([0cf6811](https://github.com/miracum/util-images/commit/0cf6811d139f9f17e41a8eb36d536bb349ddfa92))
+* **deps:** update docker.io/library/spark:3.5.1-scala2.12-java17-python3-ubuntu docker digest to df0dc3b ([#126](https://github.com/miracum/util-images/issues/126)) ([2e7749c](https://github.com/miracum/util-images/commit/2e7749c6bbb8bf5c0e22ce67b5cf1dad0227932e))
+* **deps:** update docker.io/library/spark:3.5.1-scala2.12-java17-python3-ubuntu docker digest to f62025e ([#133](https://github.com/miracum/util-images/issues/133)) ([e366f75](https://github.com/miracum/util-images/commit/e366f75ae644e5dd62183abaaa784d1a9ba5f60f))
+* **deps:** update docker.io/library/spark:3.5.2-scala2.12-java17-python3-ubuntu docker digest to 0281d18 ([#169](https://github.com/miracum/util-images/issues/169)) ([31514ec](https://github.com/miracum/util-images/commit/31514ec3526b0d72994cbd8d7005eb2c31e30678))
+
 ## [1.7.3](https://github.com/miracum/util-images/compare/spark-delta-v1.7.2...spark-delta-v1.7.3) (2024-06-05)
 
 
