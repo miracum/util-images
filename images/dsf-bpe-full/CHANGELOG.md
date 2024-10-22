@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.5.2...dsf-bpe-full-v1.6.0) (2024-10-22)
+
+### Chores & Updates
+
+* **deps:** update to dsf version 1.6.0
+
 ## [1.5.2](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.5.1...dsf-bpe-full-v1.5.2) (2024-10-22)
 
 
