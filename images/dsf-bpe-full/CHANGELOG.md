@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.5.2...dsf-bpe-full-v1.5.3) (2024-11-14)
+
+
+### Chores & Updates
+
+* **deps:** updated mii-process-feasibility to 1.0.1.0-alpha.1 ([#205](https://github.com/miracum/util-images/issues/205)) ([1c1e7ab](https://github.com/miracum/util-images/commit/1c1e7abad9164b255d6abbc97768a05ecbb59c3d))
+
 ## [1.5.2](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.5.1...dsf-bpe-full-v1.5.2) (2024-10-22)
 
 
