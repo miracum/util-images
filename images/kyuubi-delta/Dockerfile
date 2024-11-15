@@ -1,4 +1,4 @@
-FROM docker.io/apache/kyuubi:1.9.2-spark@sha256:20eb6c48ce23829c84d00e2933e1d73aba96e776d05547c18a58f9cb6d981af4
+FROM docker.io/apache/kyuubi:1.10.0-spark@sha256:3af8e1d17c33456f51ea84e0a257351a7829a0ff2bab146abab98cb50f8d119d
 
 RUN <<EOF
 wget -q -P /opt/kyuubi/externals/spark-*/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.2.0/delta-spark_2.12-3.2.0.jar
