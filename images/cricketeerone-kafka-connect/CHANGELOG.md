@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.1...cricketeerone-kafka-connect-v1.6.2) (2024-11-21)
+
+
+### Chores & Updates
+
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.6.1](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.0...cricketeerone-kafka-connect-v1.6.1) (2024-10-07)
 
 
