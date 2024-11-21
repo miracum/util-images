@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.5](https://github.com/miracum/util-images/compare/spark-delta-v1.7.4...spark-delta-v1.7.5) (2024-11-21)
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/library/spark:3.5.3-scala2.12-java17-python3-ubuntu docker digest to 3d6e110 ([#199](https://github.com/miracum/util-images/issues/199)) ([f331e98](https://github.com/miracum/util-images/commit/f331e9816150c3f2df3fc119ee770e3d2e5f00b7))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.7.4](https://github.com/miracum/util-images/compare/spark-delta-v1.7.3...spark-delta-v1.7.4) (2024-10-11)
 
 
