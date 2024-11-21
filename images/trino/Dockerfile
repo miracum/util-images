@@ -1,4 +1,4 @@
-FROM docker.io/trinodb/trino:460@sha256:21308c2c6892f801f6d26fd9a3aadf64773c03690345f8fdc55025f4c3ffee91 AS downloader
+FROM docker.io/trinodb/trino:465@sha256:1e755166bf7920fdecdf93ccffe269f35979fe770e4dfddc1420b2b4d06988fa AS downloader
 
 # renovate: datasource=github-releases depName=snowlift/trino-storage
 ENV TRINO_STORAGE_PLUGIN_VERSION=454
@@ -15,6 +15,6 @@ EOF
 
 USER 1000:1000
 
-FROM docker.io/trinodb/trino:460@sha256:21308c2c6892f801f6d26fd9a3aadf64773c03690345f8fdc55025f4c3ffee91
+FROM docker.io/trinodb/trino:465@sha256:1e755166bf7920fdecdf93ccffe269f35979fe770e4dfddc1420b2b4d06988fa
 COPY --from=downloader /usr/lib/trino/plugin/trino-storage-*/ /usr/lib/trino/plugin/storage/
 USER 1000:1000
