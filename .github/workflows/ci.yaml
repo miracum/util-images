@@ -21,7 +21,7 @@ jobs:
 
       - name: Get changed files in the images folder
         id: changed-files
-        uses: tj-actions/changed-files@c3a1bb2c992d77180ae65be6ae6c166cf40f857c # v45.0.3
+        uses: tj-actions/changed-files@4edd678ac3f81e2dc578756871e4d00c19191daf # v45.0.4
         with:
           path: images/
           files: "./**"
@@ -35,7 +35,7 @@ jobs:
           echo "${{ steps.changed-files.outputs.all_changed_and_modified_files }}"
 
   build:
-    uses: miracum/.github/.github/workflows/standard-build.yaml@0549971ecda7c7415b7e885117576981b4b54ed2 # v1.12.8
+    uses: miracum/.github/.github/workflows/standard-build.yaml@d49d346352f8b4e6e1bdaed8a7b9663f65f327ed # v1.12.11
     needs:
       - get-changed-images
     permissions:
@@ -59,7 +59,7 @@ jobs:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
   lint:
-    uses: miracum/.github/.github/workflows/standard-lint.yaml@0549971ecda7c7415b7e885117576981b4b54ed2 # v1.12.8
+    uses: miracum/.github/.github/workflows/standard-lint.yaml@d49d346352f8b4e6e1bdaed8a7b9663f65f327ed # v1.12.11
     if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     permissions:
       contents: read
