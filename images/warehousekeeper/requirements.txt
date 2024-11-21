@@ -2,4 +2,4 @@ click==8.1.7
 pyspark==3.5.3
 deltalake==0.21.0
 loguru==0.7.2
-boto3==1.35.62
+boto3==1.35.66
