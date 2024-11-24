@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.2](https://github.com/miracum/util-images/compare/apache-superset-v1.8.1...apache-superset-v1.8.2) (2024-11-24)
+
+
+### Bug Fixes
+
+* superset image ([#211](https://github.com/miracum/util-images/issues/211)) ([32fdecb](https://github.com/miracum/util-images/commit/32fdecb12900e515bc840a6c3697733ad3295996))
+
 ## [1.8.1](https://github.com/miracum/util-images/compare/apache-superset-v1.8.0...apache-superset-v1.8.1) (2024-11-21)
 
 
