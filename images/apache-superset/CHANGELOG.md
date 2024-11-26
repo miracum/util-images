@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.3](https://github.com/miracum/util-images/compare/apache-superset-v1.8.2...apache-superset-v1.8.3) (2024-11-26)
+
+
+### Bug Fixes
+
+* downgraded trino ([6c2934a](https://github.com/miracum/util-images/commit/6c2934a0d3c81d609bcfa6128c616e936186f512))
+
 ## [1.8.2](https://github.com/miracum/util-images/compare/apache-superset-v1.8.1...apache-superset-v1.8.2) (2024-11-24)
 
 
