@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/miracum/util-images/compare/hive-metastore-v1.2.1...hive-metastore-v1.2.2) (2024-11-26)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#202](https://github.com/miracum/util-images/issues/202)) ([137491c](https://github.com/miracum/util-images/commit/137491c1ceb07d62c9386eddb7e2c0980f78550f))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.2.1](https://github.com/miracum/util-images/compare/hive-metastore-v1.2.0...hive-metastore-v1.2.1) (2024-10-11)
 
 
