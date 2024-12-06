@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.8...warehousekeeper-v0.1.9) (2024-12-06)
+
+
+### Chores & Updates
+
+* dropped kyuubi, spark-delta image, audited semantic-release, use official spark as base image for warehousekeeper ([#213](https://github.com/miracum/util-images/issues/213)) ([dd10fb6](https://github.com/miracum/util-images/commit/dd10fb6405f1929aa45e2b09722a08ad792cecfe))
+
 ## [0.1.8](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.7...warehousekeeper-v0.1.8) (2024-11-21)
 
 
