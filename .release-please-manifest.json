@@ -9,5 +9,5 @@
   "images/hive-metastore": "1.2.2",
   "images/warehousekeeper": "0.1.8",
   "images/dsf-bpe-full": "1.6.0",
-  "images/semantic-release": "1.2.3"
+  "images/semantic-release": "1.2.4"
 }
