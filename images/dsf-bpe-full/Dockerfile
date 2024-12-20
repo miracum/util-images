@@ -6,6 +6,7 @@ ARG DSF_PROCESS_FEASIBILITY=1.0.1.0-alpha.1
 ARG DSF_PROCESS_MII_REPORT=1.1.1.1
 ARG DSF_PROCESS_MII_DATA_TRANSFER=1.0.2.1
 ARG DSF_PROCESS_MII_DATA_SHARING=1.0.1.1
+ARG DSF_PROCESS_NCT_DATA_TRANSFER=1.0.0.0-M1
 
 FROM curlimages/curl:8.11.0@sha256:83a505ba2ba62f208ed6e410c268b7b9aa48f0f7b403c8108b9773b44199dbba AS deps
 
@@ -16,6 +17,7 @@ ARG DSF_PROCESS_FEASIBILITY
 ARG DSF_PROCESS_MII_REPORT
 ARG DSF_PROCESS_MII_DATA_TRANSFER
 ARG DSF_PROCESS_MII_DATA_SHARING
+ARG DSF_PROCESS_NCT_DATA_TRANSFER
 
 USER root
 
@@ -31,6 +33,10 @@ RUN mkdir -p /process /secrets && \
     curl -Lo /process/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/download/v${DSF_PROCESS_MII_DATA_TRANSFER}/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar && \
     curl -Lo /process/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/download/v${DSF_PROCESS_MII_DATA_SHARING}/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar && \
     chmod 440  /process/*
+
+# this plugin has no public source repository, so far
+COPY nct-process-data-transfer-${DSF_PROCESS_NCT_DATA_TRANSFER}.jar /process/
+RUN chmod 440  /process/*
 
 USER 1000
 
@@ -59,6 +65,7 @@ ARG DSF_PROCESS_FEASIBILITY
 ARG DSF_PROCESS_MII_REPORT
 ARG DSF_PROCESS_MII_DATA_TRANSFER
 ARG DSF_PROCESS_MII_DATA_SHARING
+ARG DSF_PROCESS_NCT_DATA_TRANSFER
 
 ARG BUILD_TIME
 ARG IMAGE_DESCRIPTION
@@ -73,6 +80,7 @@ LABEL org.miracum.mii.image.dsf-version=${DSF_VERSION} \
     org.miracum.mii.image.dsf-process-mii-report-version=${DSF_PROCESS_MII_REPORT} \
     org.miracum.mii.image.dsf-process-mii-data-transfer-version=${DSF_PROCESS_MII_DATA_TRANSFER} \
     org.miracum.mii.image.dsf-process-mii-data-sharing-version=${DSF_PROCESS_MII_DATA_SHARING} \
+    org.miracum.mii.image.dsf-process-nct-data-transfer-version=${DSF_PROCESS_NCT_DATA_TRANSFER} \
     org.opencontainers.image.base.name=ghcr.io/highmed/bpe:${DSF_VERSION} \
     org.opencontainers.image.created=${BUILD_TIME} \
     org.opencontainers.image.authors="info@miracum.de" \
