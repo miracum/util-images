@@ -8,6 +8,6 @@
   "images/strimzi-kafka-connect": "1.7.0",
   "images/hive-metastore": "1.2.2",
   "images/warehousekeeper": "0.1.8",
-  "images/dsf-bpe-full": "1.6.0",
+  "images/dsf-bpe-full": "1.6.1",
   "images/semantic-release": "1.2.3"
 }
