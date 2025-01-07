@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.2](https://github.com/miracum/util-images/compare/coder-base-v1.8.1...coder-base-v1.8.2) (2025-01-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#202](https://github.com/miracum/util-images/issues/202)) ([137491c](https://github.com/miracum/util-images/commit/137491c1ceb07d62c9386eddb7e2c0980f78550f))
+* **deps:** update all non-major dependencies ([#208](https://github.com/miracum/util-images/issues/208)) ([42dac96](https://github.com/miracum/util-images/commit/42dac969dfc89a8ca042643c34cf7ef5f1919c6b))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 278628f ([#200](https://github.com/miracum/util-images/issues/200)) ([7123eb4](https://github.com/miracum/util-images/commit/7123eb4aea824204e6ae05e425192dc51227d289))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.8.1](https://github.com/miracum/util-images/compare/coder-base-v1.8.0...coder-base-v1.8.1) (2024-10-11)
 
 
