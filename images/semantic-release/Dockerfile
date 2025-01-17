@@ -1,4 +1,4 @@
-FROM docker.io/library/node:22.11.0@sha256:5c76d05034644fa8ecc9c2aa84e0a83cd981d0ef13af5455b87b9adf5b216561
+FROM docker.io/library/node:22.13.0@sha256:fa54405993eaa6bab6b6e460f5f3e945a2e2f07942ba31c0e297a7d9c2041f62
 WORKDIR /app
 ENV NO_UPDATE_NOTIFIER=true \
     NODE_ENV=production \
