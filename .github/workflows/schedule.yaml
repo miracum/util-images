@@ -22,13 +22,11 @@ jobs:
           'ghcr.io/${{ github.repository }}/strimzi-kafka-connect:latest',
           'ghcr.io/${{ github.repository }}/cricketeerone-kafka-connect:latest',
           'ghcr.io/${{ github.repository }}/apache-superset:latest',
-          'ghcr.io/${{ github.repository }}/kyuubi-delta:latest',
           'ghcr.io/${{ github.repository }}/ml-on-fhir:latest',
           'ghcr.io/${{ github.repository }}/coder-base:latest',
           'ghcr.io/${{ github.repository }}/hive-metastore:latest',
           'ghcr.io/${{ github.repository }}/warehousekeeper:latest',
           'ghcr.io/${{ github.repository }}/dsf-bpe-full:latest',
-          'ghcr.io/${{ github.repository }}/trino:latest',
           'ghcr.io/${{ github.repository }}/semantic-release:latest'
         ]
     secrets:
