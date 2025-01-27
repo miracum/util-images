@@ -1,5 +1,5 @@
 pathling==7.0.1
 jupyter-server-proxy==4.4.0
-polars==1.14.0
-deltalake==0.21.0
+polars==1.21.0
+deltalake==0.24.0
 duckdb==1.1.3
