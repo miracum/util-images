@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.1.9](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.8...warehousekeeper-v0.1.9) (2025-01-27)
+
+
+### Features
+
+* switch to delta-rs for optimize ([#226](https://github.com/miracum/util-images/issues/226)) ([f231b7a](https://github.com/miracum/util-images/commit/f231b7a6a82d0fea25f2b9a486d9e42cf79894f7))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#219](https://github.com/miracum/util-images/issues/219)) ([c4447a4](https://github.com/miracum/util-images/commit/c4447a4209168a08b7e6d603d743199e890a89ee))
+
+
+### Chores & Updates
+
+* dropped kyuubi, spark-delta image, audited semantic-release, use official spark as base image for warehousekeeper ([#213](https://github.com/miracum/util-images/issues/213)) ([dd10fb6](https://github.com/miracum/util-images/commit/dd10fb6405f1929aa45e2b09722a08ad792cecfe))
+
 ## [0.1.8](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.7...warehousekeeper-v0.1.8) (2024-11-21)
 
 
