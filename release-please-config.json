@@ -31,10 +31,6 @@
       "component": "cricketeerone-kafka-connect",
       "release-type": "simple"
     },
-    "images/kyuubi-delta": {
-      "component": "kyuubi-delta",
-      "release-type": "simple"
-    },
     "images/ml-on-fhir": {
       "component": "ml-on-fhir",
       "release-type": "simple"
