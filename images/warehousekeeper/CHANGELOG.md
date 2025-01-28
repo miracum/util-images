@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.9...warehousekeeper-v0.1.10) (2025-01-28)
+
+
+### Features
+
+* vacuum using delta rs ([#230](https://github.com/miracum/util-images/issues/230)) ([66bdcb3](https://github.com/miracum/util-images/commit/66bdcb33b1540e7fc1a1e9779db52f801255ba16))
+
 ## [0.1.9](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.8...warehousekeeper-v0.1.9) (2025-01-27)
 
 
