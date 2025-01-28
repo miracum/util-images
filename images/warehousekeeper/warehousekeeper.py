@@ -131,31 +131,19 @@ def vacuum(
 ):
     """Run VACUUM against all Delta tables in the given folder"""
 
-    if not enforce_retention_duration:
-        spark_builder.config(
-            "spark.databricks.delta.retentionDurationCheck.enabled", "false"
-        )
-
-    spark = spark_builder.getOrCreate()
-
     for dt in list_tables(bucket_name=bucket_name, prefix=database_name_prefix):
         logger.info(
             "VACUUMing '{table}' {metadata}", table=dt.table_uri, metadata=dt.metadata()
         )
 
-        vacuum_query = f"VACUUM delta.`{dt.table_uri}`"
+        vacuumed_files = dt.vacuum(
+            enforce_retention_duration=enforce_retention_duration,
+            dry_run=dry_run,
+            retention_hours=retention_hours,
+        )
+        dt.cleanup_metadata()
 
-        if retention_hours is not None:
-            vacuum_query = vacuum_query + f" RETAIN {retention_hours} HOURS"
-
-        if dry_run:
-            logger.info(
-                "Running in dry-run mode. Only listing, not actually deleting files."
-            )
-            vacuum_query = vacuum_query + " DRY RUN"
-
-        logger.info(vacuum_query)
-        spark.sql(vacuum_query).show(truncate=False)
+        logger.info("Deleted '{vacuumed_files}'", vacuumed_files=vacuumed_files)
 
 
 @cli.command(cls=BaseCommand)
