@@ -6,6 +6,7 @@ ARG DSF_PROCESS_MII_REPORT=1.1.2.0
 ARG DSF_PROCESS_MII_DATA_TRANSFER=1.0.3.0
 ARG DSF_PROCESS_MII_DATA_SHARING=1.0.2.0
 ARG DSF_PROCESS_NCT_DATA_TRANSFER=1.0.0.0-M1
+ARG DSF_PROCESS_NUM_DASHBOARD_REPORT=1.0.0.0
 
 FROM curlimages/curl:8.11.1@sha256:c1fe1679c34d9784c1b0d1e5f62ac0a79fca01fb6377cdd33e90473c6f9f9a69 AS deps
 
@@ -16,6 +17,7 @@ ARG DSF_PROCESS_MII_REPORT
 ARG DSF_PROCESS_MII_DATA_TRANSFER
 ARG DSF_PROCESS_MII_DATA_SHARING
 ARG DSF_PROCESS_NCT_DATA_TRANSFER
+ARG DSF_PROCESS_NUM_DASHBOARD_REPORT
 
 USER root
 
@@ -27,6 +29,7 @@ RUN mkdir -p /process && \
     curl -Lo /process/mii-process-report-${DSF_PROCESS_MII_REPORT}.jar https://github.com/medizininformatik-initiative/mii-process-report/releases/download/v${DSF_PROCESS_MII_REPORT}/mii-process-report-${DSF_PROCESS_MII_REPORT}.jar && \
     curl -Lo /process/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/download/v${DSF_PROCESS_MII_DATA_TRANSFER}/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar && \
     curl -Lo /process/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/download/v${DSF_PROCESS_MII_DATA_SHARING}/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar && \
+    curl -Lo /process/num-process-dashboard-report-${DSF_PROCESS_NUM_DASHBOARD_REPORT}.jar https://github.com/medizininformatik-initiative/dsf-plugin-numdashboard/releases/download/v${DSF_PROCESS_NUM_DASHBOARD_REPORT}/num-process-dashboard-report-${DSF_PROCESS_NUM_DASHBOARD_REPORT}.jar && \    
     chmod 440  /process/*
 
 # this plugin has no public source repository, so far
@@ -46,7 +49,8 @@ ENV DEV_DSF_BPE_PROCESS_EXCLUDED="medizininformatik-initiativede_reportReceive|1
 medizininformatik-initiativede_dataReceive|1.0,\
 medizininformatik-initiativede_mergeDataSharing|1.0,\
 medizininformatik-initiativede_coordinateDataSharing|1.0,\
-dsfdev_updateAllowList|1.0"
+dsfdev_updateAllowList|1.0,\
+netzwerk-universitaetsmedizinde_reportReceive|1.0"
 
 RUN chown -R 2202:2202 /opt/bpe
 
@@ -60,6 +64,7 @@ ARG DSF_PROCESS_MII_REPORT
 ARG DSF_PROCESS_MII_DATA_TRANSFER
 ARG DSF_PROCESS_MII_DATA_SHARING
 ARG DSF_PROCESS_NCT_DATA_TRANSFER
+ARG DSF_PROCESS_NUM_DASHBOARD_REPORT
 
 ARG BUILD_TIME
 ARG IMAGE_DESCRIPTION
@@ -75,6 +80,7 @@ LABEL org.miracum.mii.image.dsf-version=${DSF_VERSION} \
     org.miracum.mii.image.dsf-process-mii-data-transfer-version=${DSF_PROCESS_MII_DATA_TRANSFER} \
     org.miracum.mii.image.dsf-process-mii-data-sharing-version=${DSF_PROCESS_MII_DATA_SHARING} \
     org.miracum.mii.image.dsf-process-nct-data-transfer-version=${DSF_PROCESS_NCT_DATA_TRANSFER} \
+    org.miracum.mii.image.dsf-plugin-numdashboard-version=${DSF_PROCESS_NUM_DASHBOARD_REPORT} \
     org.opencontainers.image.base.name=ghcr.io/highmed/bpe:${DSF_VERSION} \
     org.opencontainers.image.created=${BUILD_TIME} \
     org.opencontainers.image.authors="info@miracum.de" \
