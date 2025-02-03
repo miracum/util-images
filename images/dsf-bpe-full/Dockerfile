@@ -1,4 +1,3 @@
-ARG CA_TAR_URL=https://dsf.dev/download/dsf_bpe_1_6_0.tar.gz
 ARG DSF_VERSION=1.7.0
 ARG DSF_PROCESS_PING_PONG=1.0.1.0
 ARG DSF_PROCESS_ALLOW_LIST=1.0.0.1
@@ -11,7 +10,6 @@ ARG DSF_PROCESS_NUM_DASHBOARD_REPORT=1.0.0.0
 
 FROM curlimages/curl:8.11.1@sha256:c1fe1679c34d9784c1b0d1e5f62ac0a79fca01fb6377cdd33e90473c6f9f9a69 AS deps
 
-ARG CA_TAR_URL
 ARG DSF_PROCESS_PING_PONG
 ARG DSF_PROCESS_ALLOW_LIST
 ARG DSF_PROCESS_FEASIBILITY
@@ -25,9 +23,6 @@ USER root
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN mkdir -p /process /secrets && \
-    curl -Lo /process/bpe.tar.gz ${CA_TAR_URL} && \
-    tar -xvOz -f /process/bpe.tar.gz bpe/secrets/ssl_root_ca_certificate_file.pem > /secrets/root_ca.pem && \
-    tar -xvOz -f /process/bpe.tar.gz bpe/secrets/ssl_ca_certificate_file.pem > /secrets/ca.pem && \
     curl -Lo /process/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar https://github.com/datasharingframework/dsf-process-ping-pong/releases/download/v${DSF_PROCESS_PING_PONG}/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar && \
     curl -Lo /process/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar https://github.com/datasharingframework/dsf-process-allow-list/releases/download/v${DSF_PROCESS_ALLOW_LIST}/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar && \
     curl -Lo /process/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/download/v${DSF_PROCESS_FEASIBILITY}/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar && \
