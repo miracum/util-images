@@ -6,7 +6,7 @@
   "images/spark-delta": "1.7.5",
   "images/strimzi-kafka-connect": "1.7.0",
   "images/hive-metastore": "1.2.2",
+  "images/dsf-bpe-full": "1.6.2",
   "images/warehousekeeper": "0.1.10",
-  "images/dsf-bpe-full": "1.6.1",
   "images/semantic-release": "1.2.3"
 }
