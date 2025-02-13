@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.6.2...dsf-bpe-full-v1.7.0) (2025-02-13)
+
+
+### Features
+
+* new process plugins versions and ca files removed ([#232](https://github.com/miracum/util-images/issues/232)) ([c2fad89](https://github.com/miracum/util-images/commit/c2fad897c10b125510c51e6669965483ff9c864d))
+
 ## [1.6.2](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.6.1...dsf-bpe-full-v1.6.2) (2025-01-28)
 
 
