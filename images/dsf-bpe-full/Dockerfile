@@ -1,16 +1,14 @@
-ARG CA_TAR_URL=https://dsf.dev/download/dsf_bpe_1_6_0.tar.gz
-ARG DSF_VERSION=1.6.0
+ARG DSF_VERSION=1.7.0
 ARG DSF_PROCESS_PING_PONG=1.0.1.0
 ARG DSF_PROCESS_ALLOW_LIST=1.0.0.1
-ARG DSF_PROCESS_FEASIBILITY=1.0.1.0-alpha.1
-ARG DSF_PROCESS_MII_REPORT=1.1.1.1
-ARG DSF_PROCESS_MII_DATA_TRANSFER=1.0.2.1
-ARG DSF_PROCESS_MII_DATA_SHARING=1.0.1.1
+ARG DSF_PROCESS_FEASIBILITY=1.0.0.7
+ARG DSF_PROCESS_MII_REPORT=1.1.2.0
+ARG DSF_PROCESS_MII_DATA_TRANSFER=1.0.3.0
+ARG DSF_PROCESS_MII_DATA_SHARING=1.0.2.0
 ARG DSF_PROCESS_NCT_DATA_TRANSFER=1.0.0.0-M1
 
 FROM curlimages/curl:8.11.1@sha256:c1fe1679c34d9784c1b0d1e5f62ac0a79fca01fb6377cdd33e90473c6f9f9a69 AS deps
 
-ARG CA_TAR_URL
 ARG DSF_PROCESS_PING_PONG
 ARG DSF_PROCESS_ALLOW_LIST
 ARG DSF_PROCESS_FEASIBILITY
@@ -22,10 +20,7 @@ ARG DSF_PROCESS_NCT_DATA_TRANSFER
 USER root
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
-RUN mkdir -p /process /secrets && \
-    curl -Lo /process/bpe.tar.gz ${CA_TAR_URL} && \
-    tar -xvOz -f /process/bpe.tar.gz bpe/secrets/ssl_root_ca_certificate_file.pem > /secrets/root_ca.pem && \
-    tar -xvOz -f /process/bpe.tar.gz bpe/secrets/ssl_ca_certificate_file.pem > /secrets/ca.pem && \
+RUN mkdir -p /process && \
     curl -Lo /process/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar https://github.com/datasharingframework/dsf-process-ping-pong/releases/download/v${DSF_PROCESS_PING_PONG}/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar && \
     curl -Lo /process/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar https://github.com/datasharingframework/dsf-process-allow-list/releases/download/v${DSF_PROCESS_ALLOW_LIST}/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar && \
     curl -Lo /process/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/download/v${DSF_PROCESS_FEASIBILITY}/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar && \
@@ -46,7 +41,6 @@ FROM ghcr.io/datasharingframework/bpe:1.7.0@sha256:22c05b6ae9aa19a6e27c39e438ace
 USER root
 
 COPY --from=deps /process/*.jar /opt/bpe/process/
-COPY --from=deps /secrets/* /opt/bpe/secrets/
 
 ENV DEV_DSF_BPE_PROCESS_EXCLUDED="medizininformatik-initiativede_reportReceive|1.1,\
 medizininformatik-initiativede_dataReceive|1.0,\
