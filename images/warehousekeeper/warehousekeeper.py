@@ -122,52 +122,94 @@ def cli():
     help="when disabled, accepts retention hours smaller than the value from "
     + "`configuration.deletedFileRetentionDuration`.",
 )
+@click.option(
+    "--use-delta-rs",
+    default=True,
+    type=click.BOOL,
+    help="if enabled, use the delta-rs vacuum implementation",
+)
 def vacuum(
     bucket_name: str,
     database_name_prefix: str,
     retention_hours: int | None,
     dry_run: bool,
     enforce_retention_duration: bool,
+    use_delta_rs: bool,
 ):
     """Run VACUUM against all Delta tables in the given folder"""
+
+    if not enforce_retention_duration:
+        spark_builder.config(
+            "spark.databricks.delta.retentionDurationCheck.enabled", "false"
+        )
+
+    spark = spark_builder.getOrCreate()
 
     for dt in list_tables(bucket_name=bucket_name, prefix=database_name_prefix):
         logger.info(
             "VACUUMing '{table}' {metadata}", table=dt.table_uri, metadata=dt.metadata()
         )
 
-        vacuumed_files = dt.vacuum(
-            enforce_retention_duration=enforce_retention_duration,
-            dry_run=dry_run,
-            retention_hours=retention_hours,
-        )
-        dt.cleanup_metadata()
+        if use_delta_rs:
+            logger.info("Using delta-rs implementation")
+            vacuumed_files = dt.vacuum(
+                enforce_retention_duration=enforce_retention_duration,
+                dry_run=dry_run,
+                retention_hours=retention_hours,
+            )
+            dt.cleanup_metadata()
 
-        logger.info("Deleted '{vacuumed_files}'", vacuumed_files=vacuumed_files)
+            logger.info("Deleted '{vacuumed_files}'", vacuumed_files=vacuumed_files)
+        else:
+            logger.info("Using Spark SQL implementation")
+
+            vacuum_query = f"VACUUM delta.`{dt.table_uri}`"
+
+            if retention_hours is not None:
+                vacuum_query = vacuum_query + f" RETAIN {retention_hours} HOURS"
+
+            if dry_run:
+                logger.info(
+                    "Running in dry-run mode. Only listing, "
+                    + "not actually deleting files."
+                )
+                vacuum_query = vacuum_query + " DRY RUN"
+
+            logger.info(vacuum_query)
+            spark.sql(vacuum_query).show(truncate=False)
 
 
 @cli.command(cls=BaseCommand)
 @click.option(
     "--compression-level",
     type=click.INT,
-    help="The compression level to use",
+    help="The compression level to use. Only used if --use-delta-rs is enabled.",
     required=False,
     default=9,
 )
 @click.option(
     "--compression-type",
     type=click.STRING,
-    help="The compression type to use",
+    help="The compression type to use. Only used if --use-delta-rs is enabled.",
     required=False,
     default="ZSTD",
+)
+@click.option(
+    "--use-delta-rs",
+    default=True,
+    type=click.BOOL,
+    help="if enabled, use the delta-rs optimize implementation",
 )
 def optimize(
     bucket_name: str,
     database_name_prefix: str,
     compression_type: str,
     compression_level: int,
+    use_delta_rs: bool,
 ):
     """Run OPTIMIZE against all Delta tables in the database"""
+
+    spark = spark_builder.getOrCreate()
 
     wp = WriterProperties(
         compression=compression_type,
@@ -180,8 +222,16 @@ def optimize(
             table=dt.table_uri,
             metadata=dt.metadata(),
         )
-        metrics = dt.optimize.compact(writer_properties=wp)
-        logger.info(metrics)
+
+        if use_delta_rs:
+            logger.info("Using delta-rs implementation")
+            metrics = dt.optimize.compact(writer_properties=wp)
+            logger.info(metrics)
+        else:
+            logger.info("Using Spark SQL implementation")
+            optimize_query = f"OPTIMIZE delta.`{dt.table_uri}`"
+            logger.info(optimize_query)
+            spark.sql(optimize_query).show(truncate=False)
 
 
 @cli.command(cls=BaseCommand)
