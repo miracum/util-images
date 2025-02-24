@@ -170,7 +170,8 @@ def vacuum(
 
             if dry_run:
                 logger.info(
-                    "Running in dry-run mode. Only listing, not actually deleting files."
+                    "Running in dry-run mode. Only listing, "
+                    + "not actually deleting files."
                 )
                 vacuum_query = vacuum_query + " DRY RUN"
 
