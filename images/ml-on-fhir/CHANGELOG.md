@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.6.4](https://github.com/miracum/util-images/compare/ml-on-fhir-v1.6.3...ml-on-fhir-v1.6.4) (2025-02-24)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#219](https://github.com/miracum/util-images/issues/219)) ([c4447a4](https://github.com/miracum/util-images/commit/c4447a4209168a08b7e6d603d743199e890a89ee))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#121](https://github.com/miracum/util-images/issues/121)) ([2d0bb3a](https://github.com/miracum/util-images/commit/2d0bb3aa3f48ac9dff40c5ba573a51b3eed31567))
+* **deps:** update all non-major dependencies ([#123](https://github.com/miracum/util-images/issues/123)) ([7ae28b8](https://github.com/miracum/util-images/commit/7ae28b86ef86fd4c7d4abffe76d3a05101cf2e89))
+* **deps:** update all non-major dependencies ([#134](https://github.com/miracum/util-images/issues/134)) ([fadff82](https://github.com/miracum/util-images/commit/fadff82147a2ed0dac75f8ac0bef4d097f9bcced))
+* **deps:** update all non-major dependencies ([#138](https://github.com/miracum/util-images/issues/138)) ([97d082a](https://github.com/miracum/util-images/commit/97d082a6be9f30472a015318286ca9e9edf4eb84))
+* **deps:** update all non-major dependencies ([#167](https://github.com/miracum/util-images/issues/167)) ([6595e02](https://github.com/miracum/util-images/commit/6595e02dab8f6048b2bc56c4e89081c5f7aff255))
+* **deps:** update all non-major dependencies ([#172](https://github.com/miracum/util-images/issues/172)) ([fe140df](https://github.com/miracum/util-images/commit/fe140df191302227a5eb3d846818600e10adc180))
+* **deps:** update all non-major dependencies ([#181](https://github.com/miracum/util-images/issues/181)) ([54722cb](https://github.com/miracum/util-images/commit/54722cbee68dab4b5ea7e6c4d8e2d054929ef40b))
+* **deps:** update all non-major dependencies ([#202](https://github.com/miracum/util-images/issues/202)) ([137491c](https://github.com/miracum/util-images/commit/137491c1ceb07d62c9386eddb7e2c0980f78550f))
+* **deps:** update all non-major dependencies ([#208](https://github.com/miracum/util-images/issues/208)) ([42dac96](https://github.com/miracum/util-images/commit/42dac969dfc89a8ca042643c34cf7ef5f1919c6b))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+
 ## [1.6.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v1.6.2...ml-on-fhir-v1.6.3) (2024-07-02)
 
 
