@@ -1,6 +1,6 @@
 {
   "images/apache-superset": "1.8.3",
-  "images/coder-base": "1.8.1",
+  "images/coder-base": "1.8.2",
   "images/cricketeerone-kafka-connect": "1.6.2",
   "images/ml-on-fhir": "1.6.3",
   "images/spark-delta": "1.7.5",
