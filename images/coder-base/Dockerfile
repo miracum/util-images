@@ -60,7 +60,7 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/bitnami/kubectl:1.32.1@sha256:87687743e2b62fa8642b1e8f21835dd08e37c3a1d56b5c51f1eeb385a8630c36 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/bitnami/kubectl:1.32.1@sha256:49d20448fd06913877158ff07dfa05fc0504946439974214863e1a8ae99bf60f /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
