@@ -1,4 +1,4 @@
-FROM docker.io/library/spark:3.5.4-scala2.12-java17-python3-ubuntu@sha256:4133c4efd3731f87f13d107ade3f9a98370a19a6561fad7d95fd3bd06019a864
+FROM docker.io/library/spark:3.5.4-scala2.12-java17-python3-ubuntu@sha256:fc4737f79bb92df7509e17aede94c30c3d0c198087c207d6b32ba0c96ce984a3
 WORKDIR /opt/warehousekeeper
 USER root
 
