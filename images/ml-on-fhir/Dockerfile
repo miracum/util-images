@@ -1,4 +1,5 @@
 FROM docker.io/rocker/binder:4.4.2@sha256:4b2c5045000173a166ed0e69b830de8699aadae33abde559f3abd647dab0c7d2
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG NB_UID=1000 \
     NB_GID=100
 USER 0
