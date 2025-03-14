@@ -7,7 +7,7 @@ USER 0
 # hadolint ignore=DL3008
 RUN <<EOF
 apt-get -y update
-apt-get install --no-install-recommends -y openjdk-17-jre-headless ca-certificates-java
+apt-get install --no-install-recommends -y openjdk-17-jre-headless
 rm -rf /var/lib/apt/lists/*
 EOF
 
