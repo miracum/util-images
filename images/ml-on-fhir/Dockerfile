@@ -3,6 +3,7 @@ ARG NB_UID=1000 \
     NB_GID=100
 USER 0
 
+# hadolint ignore=DL3008
 RUN <<EOF
 apt-get -y update
 apt-get install --no-install-recommends -y openjdk-17-jre-headless ca-certificates-java
