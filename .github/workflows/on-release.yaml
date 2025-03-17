@@ -5,7 +5,8 @@ on:
     types:
       - created
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   prepare:
@@ -16,12 +17,12 @@ jobs:
     steps:
       - id: component-meta
         shell: bash
+        env:
+          TAG: "${{ github.ref_name }}"
         run: |
-          tag="${{ github.ref_name }}"
-
           regex="^(.*)-(v[0-9.]*(-.*)?)$"
 
-          if [[ $tag =~ $regex ]]; then
+          if [[ ${TAG} =~ $regex ]]; then
               component_name="${BASH_REMATCH[1]}"
               version="${BASH_REMATCH[2]}"
 

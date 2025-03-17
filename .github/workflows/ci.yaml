@@ -5,7 +5,8 @@ on:
     branches:
       - master
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   get-changed-images:
@@ -31,8 +32,10 @@ jobs:
           matrix: true
 
       - name: print
+        env:
+          CHANGED_FILES_LIST: "${{ steps.changed-files.outputs.all_changed_and_modified_files }}"
         run: |
-          echo "${{ steps.changed-files.outputs.all_changed_and_modified_files }}"
+          echo "${CHANGED_FILES_LIST}"
 
   build:
     uses: miracum/.github/.github/workflows/standard-build.yaml@b09452445e168de479d5059026e8e8a54d11c8d8 # v1.13.2
