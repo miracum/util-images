@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.1...ml-on-fhir-v2.0.2) (2025-03-17)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#252](https://github.com/miracum/util-images/issues/252)) ([88233ec](https://github.com/miracum/util-images/commit/88233ecc8c253079fb474ce34ac18957eea9d609))
+
 ## [2.0.1](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.0...ml-on-fhir-v2.0.1) (2025-03-14)
 
 

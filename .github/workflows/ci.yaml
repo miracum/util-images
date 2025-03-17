@@ -5,7 +5,8 @@ on:
     branches:
       - master
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   get-changed-images:
@@ -21,7 +22,7 @@ jobs:
 
       - name: Get changed files in the images folder
         id: changed-files
-        uses: tj-actions/changed-files@dcc7a0cba800f454d79fff4b993e8c3555bcc0a8 # v45.0.7
+        uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32 # v46.0.1
         with:
           path: images/
           files: "./**"
@@ -31,11 +32,13 @@ jobs:
           matrix: true
 
       - name: print
+        env:
+          CHANGED_FILES_LIST: "${{ steps.changed-files.outputs.all_changed_and_modified_files }}"
         run: |
-          echo "${{ steps.changed-files.outputs.all_changed_and_modified_files }}"
+          echo "${CHANGED_FILES_LIST}"
 
   build:
-    uses: miracum/.github/.github/workflows/standard-build.yaml@b09452445e168de479d5059026e8e8a54d11c8d8 # v1.13.2
+    uses: miracum/.github/.github/workflows/standard-build.yaml@061614f984847163156095116168d113da0c88d9 # v1.16.2
     needs:
       - get-changed-images
     permissions:
@@ -59,7 +62,7 @@ jobs:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
   lint:
-    uses: miracum/.github/.github/workflows/standard-lint.yaml@b09452445e168de479d5059026e8e8a54d11c8d8 # v1.13.2
+    uses: miracum/.github/.github/workflows/standard-lint.yaml@061614f984847163156095116168d113da0c88d9 # v1.16.2
     if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     permissions:
       contents: read
