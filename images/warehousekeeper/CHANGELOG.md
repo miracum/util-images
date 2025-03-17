@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.12](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.11...warehousekeeper-v0.1.12) (2025-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#244](https://github.com/miracum/util-images/issues/244)) ([cd72e08](https://github.com/miracum/util-images/commit/cd72e08c33a8b618d1d1da2a2f0ba925866e804c))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#252](https://github.com/miracum/util-images/issues/252)) ([88233ec](https://github.com/miracum/util-images/commit/88233ecc8c253079fb474ce34ac18957eea9d609))
+* **deps:** update docker.io/library/spark:3.5.4-scala2.12-java17-python3-ubuntu docker digest to fc4737f ([#239](https://github.com/miracum/util-images/issues/239)) ([c818103](https://github.com/miracum/util-images/commit/c8181031fc72a19616339162d3f1504ad0a8612f))
+
 ## [0.1.11](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.10...warehousekeeper-v0.1.11) (2025-02-24)
 
 
