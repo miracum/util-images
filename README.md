@@ -1,5 +1,7 @@
 # util-images
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/miracum/util-images/badge)](https://scorecard.dev/viewer/?uri=github.com/miracum/util-images)
+
 Collection of container images
 
 ## Add a new image
