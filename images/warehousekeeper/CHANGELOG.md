@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.13](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.12...warehousekeeper-v0.1.13) (2025-03-19)
+
+
+### Chores & Updates
+
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [0.1.12](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.11...warehousekeeper-v0.1.12) (2025-03-17)
 
 
