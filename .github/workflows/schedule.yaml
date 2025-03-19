@@ -19,7 +19,6 @@ jobs:
     with:
       images: |
         [
-          'ghcr.io/${{ github.repository }}/spark-delta:latest',
           'ghcr.io/${{ github.repository }}/strimzi-kafka-connect:latest',
           'ghcr.io/${{ github.repository }}/cricketeerone-kafka-connect:latest',
           'ghcr.io/${{ github.repository }}/apache-superset:latest',

@@ -35,10 +35,6 @@
       "component": "ml-on-fhir",
       "release-type": "simple"
     },
-    "images/spark-delta": {
-      "component": "spark-delta",
-      "release-type": "simple"
-    },
     "images/strimzi-kafka-connect": {
       "component": "strimzi-kafka-connect",
       "release-type": "simple"
