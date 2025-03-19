@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.2.4](https://github.com/miracum/util-images/compare/semantic-release-v1.2.3...semantic-release-v1.2.4) (2025-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#219](https://github.com/miracum/util-images/issues/219)) ([c4447a4](https://github.com/miracum/util-images/commit/c4447a4209168a08b7e6d603d743199e890a89ee))
+* **deps:** update all non-major dependencies ([#244](https://github.com/miracum/util-images/issues/244)) ([cd72e08](https://github.com/miracum/util-images/commit/cd72e08c33a8b618d1d1da2a2f0ba925866e804c))
+* **deps:** update dependency @semantic-release/exec to v7 ([#245](https://github.com/miracum/util-images/issues/245)) ([28ac438](https://github.com/miracum/util-images/commit/28ac438408c607fec3bff94f2293d4aae7b67f28))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#202](https://github.com/miracum/util-images/issues/202)) ([137491c](https://github.com/miracum/util-images/commit/137491c1ceb07d62c9386eddb7e2c0980f78550f))
+* dropped kyuubi, spark-delta image, audited semantic-release, use official spark as base image for warehousekeeper ([#213](https://github.com/miracum/util-images/issues/213)) ([dd10fb6](https://github.com/miracum/util-images/commit/dd10fb6405f1929aa45e2b09722a08ad792cecfe))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [1.2.3](https://github.com/miracum/util-images/compare/semantic-release-v1.2.2...semantic-release-v1.2.3) (2024-10-07)
 
 
