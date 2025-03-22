@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/miracum/util-images/compare/ollama-nonroot-v0.1.2...ollama-nonroot-v0.1.3) (2025-03-22)
+
+
+### Chores & Updates
+
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [0.1.2](https://github.com/miracum/util-images/compare/ollama-nonroot-v0.1.1...ollama-nonroot-v0.1.2) (2025-03-17)
 
 
