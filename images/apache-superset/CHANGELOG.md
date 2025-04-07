@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.5](https://github.com/miracum/util-images/compare/apache-superset-v1.8.4...apache-superset-v1.8.5) (2025-04-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#269](https://github.com/miracum/util-images/issues/269)) ([cb5dc6b](https://github.com/miracum/util-images/commit/cb5dc6bb4daf499735548af8f9601b23b0be4b9e))
+
 ## [1.8.4](https://github.com/miracum/util-images/compare/apache-superset-v1.8.3...apache-superset-v1.8.4) (2025-03-19)
 
 
