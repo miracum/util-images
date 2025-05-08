@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.2...cricketeerone-kafka-connect-v1.6.3) (2025-05-02)
+
+
+### Chores & Updates
+
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [1.6.2](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.1...cricketeerone-kafka-connect-v1.6.2) (2024-11-21)
 
 
