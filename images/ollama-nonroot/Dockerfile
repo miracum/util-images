@@ -1,4 +1,4 @@
-FROM docker.io/ollama/ollama:0.6.7@sha256:b8dc25402640713e75314143ebd0181774a96efa2a0da441370342d3e948cf16
+FROM docker.io/ollama/ollama:0.6.8@sha256:50ab2378567a62b811a2967759dd91f254864c3495cbe50576bd8a85bc6edd56
 
 RUN groupadd -r -g 65532 ollama && useradd --create-home --shell /bin/bash --uid 65532 -g ollama ollama
 
