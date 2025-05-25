@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.0.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.2...ml-on-fhir-v2.0.3) (2025-05-25)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#289](https://github.com/miracum/util-images/issues/289)) ([7a77497](https://github.com/miracum/util-images/commit/7a774975f5cdf12caa987292a509faf455c11afb))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#269](https://github.com/miracum/util-images/issues/269)) ([cb5dc6b](https://github.com/miracum/util-images/commit/cb5dc6bb4daf499735548af8f9601b23b0be4b9e))
+* **deps:** update all non-major dependencies ([#275](https://github.com/miracum/util-images/issues/275)) ([705d26e](https://github.com/miracum/util-images/commit/705d26eead05a118d23ba05d4ff71bb27cea53e8))
+* **deps:** update all non-major dependencies ([#279](https://github.com/miracum/util-images/issues/279)) ([2ea8573](https://github.com/miracum/util-images/commit/2ea85736840458fbf4f4a05389eb1372e50f1386))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [2.0.2](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.1...ml-on-fhir-v2.0.2) (2025-03-17)
 
 
