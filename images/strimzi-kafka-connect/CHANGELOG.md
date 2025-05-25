@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.8.0](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.7.0...strimzi-kafka-connect-v1.8.0) (2025-05-25)
+
+
+### Features
+
+* added trino, fixed dsf, renovate connect deps ([#142](https://github.com/miracum/util-images/issues/142)) ([d0bcf7d](https://github.com/miracum/util-images/commit/d0bcf7d6e303eae01c9ed8011e57941887a9c99f))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#219](https://github.com/miracum/util-images/issues/219)) ([c4447a4](https://github.com/miracum/util-images/commit/c4447a4209168a08b7e6d603d743199e890a89ee))
+* **deps:** update all non-major dependencies ([#283](https://github.com/miracum/util-images/issues/283)) ([f60ff55](https://github.com/miracum/util-images/commit/f60ff559e16df2d6d90cc1df9489d48042fada5d))
+* ENV -&gt; ARG ([5618682](https://github.com/miracum/util-images/commit/5618682e58536475a6244bd4742e084d3a9719d7))
+* quote curls ([2385988](https://github.com/miracum/util-images/commit/23859889b32b6a013bd042d0aa45dc1317a47bb1))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#127](https://github.com/miracum/util-images/issues/127)) ([fac5031](https://github.com/miracum/util-images/commit/fac50314ab1502367e2f983eadf2aacb5a5cc822))
+* **deps:** update all non-major dependencies ([#202](https://github.com/miracum/util-images/issues/202)) ([137491c](https://github.com/miracum/util-images/commit/137491c1ceb07d62c9386eddb7e2c0980f78550f))
+* **deps:** update quay.io/strimzi/kafka:0.41.0-kafka-3.6.1 docker digest to 610c91e ([#105](https://github.com/miracum/util-images/issues/105)) ([bf021e3](https://github.com/miracum/util-images/commit/bf021e371154e8b790826d54e11b3ac4f9c4f05e))
+* **deps:** update quay.io/strimzi/kafka:0.45.0-kafka-3.8.0 docker digest to 1fb0cac ([#242](https://github.com/miracum/util-images/issues/242)) ([379c201](https://github.com/miracum/util-images/commit/379c20161753139a4c96315cece6dea5972ab808))
+* **hadolint:** fix hadolint complaints in strimzi connect ([#146](https://github.com/miracum/util-images/issues/146)) ([6a72909](https://github.com/miracum/util-images/commit/6a72909707f1e60cb665eca9507a401dc706ff43))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+* **renovate:** drop confluent packages from renovation ([94195cf](https://github.com/miracum/util-images/commit/94195cfe366dcc2fd7e76c3182534bad27489a91))
+* **renovate:** fix data sources ([bb1f946](https://github.com/miracum/util-images/commit/bb1f94670ee42f1c76809a99f0bbc386001ed69f))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.6.0...strimzi-kafka-connect-v1.7.0) (2024-05-21)
 
 
