@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.15.1@sha256:9857836c9ee4268391bb5b09f9f157f3c91bb15821bb77969642813b0d00518d
-FROM docker.io/library/ubuntu:24.04@sha256:1e622c5f073b4f6bfad6632f2616c7f59ef256e96fe78bf6a595d1dc4376ac02
+FROM docker.io/library/ubuntu:24.04@sha256:6015f66923d7afbc53558d7ccffd325d43b4e249f41a6e93eef074c9505d2233
 
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8
@@ -60,7 +60,7 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/bitnami/kubectl:1.33.0@sha256:0f6b5088710f1c6d2d41f5e19a15663b7fef07d89699247aaaad92975be7eed6 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/bitnami/kubectl:1.33.0@sha256:f737259db1fb8d90b18bcacd6233291ce22c31ac452ca71dc7aad48e90f85ac1 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
