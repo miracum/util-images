@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.7.1](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.0...dsf-bpe-full-v1.7.1) (2025-06-05)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#244](https://github.com/miracum/util-images/issues/244)) ([cd72e08](https://github.com/miracum/util-images/commit/cd72e08c33a8b618d1d1da2a2f0ba925866e804c))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#269](https://github.com/miracum/util-images/issues/269)) ([cb5dc6b](https://github.com/miracum/util-images/commit/cb5dc6bb4daf499735548af8f9601b23b0be4b9e))
+* **deps:** update all non-major dependencies ([#296](https://github.com/miracum/util-images/issues/296)) ([c7dfffd](https://github.com/miracum/util-images/commit/c7dfffdf7b28a97bcc666e3c44313e7d24fc3337))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.6.2...dsf-bpe-full-v1.7.0) (2025-02-13)
 
 
