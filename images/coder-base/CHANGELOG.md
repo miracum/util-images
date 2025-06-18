@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.8.2](https://github.com/miracum/util-images/compare/coder-base-v1.8.1...coder-base-v1.8.2) (2025-06-18)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#219](https://github.com/miracum/util-images/issues/219)) ([c4447a4](https://github.com/miracum/util-images/commit/c4447a4209168a08b7e6d603d743199e890a89ee))
+* **deps:** update all non-major dependencies ([#244](https://github.com/miracum/util-images/issues/244)) ([cd72e08](https://github.com/miracum/util-images/commit/cd72e08c33a8b618d1d1da2a2f0ba925866e804c))
+* **deps:** update all non-major dependencies ([#289](https://github.com/miracum/util-images/issues/289)) ([7a77497](https://github.com/miracum/util-images/commit/7a774975f5cdf12caa987292a509faf455c11afb))
+
+
+### Chores & Updates
+
+* **deps:** bumped spark and delta ([#303](https://github.com/miracum/util-images/issues/303)) ([07d4ee4](https://github.com/miracum/util-images/commit/07d4ee419fca0372ab964b8537bdd751401a2159))
+* **deps:** update all digest updates ([#287](https://github.com/miracum/util-images/issues/287)) ([28e1729](https://github.com/miracum/util-images/commit/28e17290bda40eaa8b1520ce06459d7d305159ba))
+* **deps:** update all digest updates ([#295](https://github.com/miracum/util-images/issues/295)) ([5887920](https://github.com/miracum/util-images/commit/588792052d11e980a0445f7d418760a90da5421f))
+* **deps:** update all non-major dependencies ([#202](https://github.com/miracum/util-images/issues/202)) ([137491c](https://github.com/miracum/util-images/commit/137491c1ceb07d62c9386eddb7e2c0980f78550f))
+* **deps:** update all non-major dependencies ([#208](https://github.com/miracum/util-images/issues/208)) ([42dac96](https://github.com/miracum/util-images/commit/42dac969dfc89a8ca042643c34cf7ef5f1919c6b))
+* **deps:** update all non-major dependencies ([#252](https://github.com/miracum/util-images/issues/252)) ([88233ec](https://github.com/miracum/util-images/commit/88233ecc8c253079fb474ce34ac18957eea9d609))
+* **deps:** update all non-major dependencies ([#275](https://github.com/miracum/util-images/issues/275)) ([705d26e](https://github.com/miracum/util-images/commit/705d26eead05a118d23ba05d4ff71bb27cea53e8))
+* **deps:** update all non-major dependencies ([#279](https://github.com/miracum/util-images/issues/279)) ([2ea8573](https://github.com/miracum/util-images/commit/2ea85736840458fbf4f4a05389eb1372e50f1386))
+* **deps:** update all non-major dependencies ([#296](https://github.com/miracum/util-images/issues/296)) ([c7dfffd](https://github.com/miracum/util-images/commit/c7dfffdf7b28a97bcc666e3c44313e7d24fc3337))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 1e622c5 ([#273](https://github.com/miracum/util-images/issues/273)) ([8f3edc2](https://github.com/miracum/util-images/commit/8f3edc2cd75d0aa86f945f6893f4a028b8fc40d6))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 278628f ([#200](https://github.com/miracum/util-images/issues/200)) ([7123eb4](https://github.com/miracum/util-images/commit/7123eb4aea824204e6ae05e425192dc51227d289))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 7229784 ([#240](https://github.com/miracum/util-images/issues/240)) ([63867c3](https://github.com/miracum/util-images/commit/63867c30b6b64571d53db10cd969fd9b5d9fe673))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 80dd3c3 ([#223](https://github.com/miracum/util-images/issues/223)) ([2167d51](https://github.com/miracum/util-images/commit/2167d518d6da25113a7357a05847f1a57b6f6500))
+* **deps:** update docker/dockerfile:1.14.0 docker digest to 4c68376 ([#251](https://github.com/miracum/util-images/issues/251)) ([7b88167](https://github.com/miracum/util-images/commit/7b881674d6bf28cb4b18f9064861e8627c3d9188))
+* **master:** release dsf-bpe-full 1.5.1 ([#185](https://github.com/miracum/util-images/issues/185)) ([c482910](https://github.com/miracum/util-images/commit/c482910bc6099ede6c223b2444d3732b5a9f5214))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+
 ## [1.8.1](https://github.com/miracum/util-images/compare/coder-base-v1.8.0...coder-base-v1.8.1) (2024-10-11)
 
 
