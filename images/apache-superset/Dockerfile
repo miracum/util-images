@@ -19,9 +19,6 @@ EOF
 WORKDIR /app
 COPY requirements.txt .
 
-RUN <<EOF
-. /app/.venv/bin/activate
-uv pip install --no-cache-dir -r requirements.txt
-EOF
+RUN . /app/.venv/bin/activate && uv pip install --no-cache-dir -r requirements.txt
 
 USER superset
