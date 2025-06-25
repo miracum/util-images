@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.7](https://github.com/miracum/util-images/compare/apache-superset-v1.8.6...apache-superset-v1.8.7) (2025-06-25)
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/apache/superset docker tag to v5 ([#304](https://github.com/miracum/util-images/issues/304)) ([5a24a57](https://github.com/miracum/util-images/commit/5a24a571acbfb2703e69872916da2769c24ba181))
+
 ## [1.8.6](https://github.com/miracum/util-images/compare/apache-superset-v1.8.5...apache-superset-v1.8.6) (2025-05-25)
 
 
