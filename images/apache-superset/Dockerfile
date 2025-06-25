@@ -1,4 +1,5 @@
 FROM docker.io/apache/superset:v5.0.0@sha256:3cc32e16caf2dfc4a5873b00cf2361d3f0a0fce4a90f53de807fc6bb894f2504
+SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 USER root
 
@@ -17,6 +18,10 @@ EOF
 
 WORKDIR /app
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+RUN <<EOF
+. /app/.venv/bin/activate
+uv pip install --no-cache-dir -r requirements.txt
+EOF
 
 USER superset
