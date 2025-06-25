@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/miracum/util-images/compare/apache-superset-v1.8.7...apache-superset-v1.9.0) (2025-06-25)
+
+
+### Features
+
+* support for superset v5 ([#306](https://github.com/miracum/util-images/issues/306)) ([d106922](https://github.com/miracum/util-images/commit/d1069223b1aa142e61421b3ffb4f65dd8817521c))
+
 ## [1.8.7](https://github.com/miracum/util-images/compare/apache-superset-v1.8.6...apache-superset-v1.8.7) (2025-06-25)
 
 
