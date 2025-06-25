@@ -1,5 +1,5 @@
 {
-  "images/apache-superset": "1.9.0",
+  "images/apache-superset": "1.9.1",
   "images/coder-base": "1.8.2",
   "images/cricketeerone-kafka-connect": "1.6.2",
   "images/ml-on-fhir": "2.0.2",
