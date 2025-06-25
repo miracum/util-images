@@ -19,6 +19,7 @@ EOF
 WORKDIR /app
 COPY requirements.txt .
 
+# hadolint ignore=SC1091
 RUN <<EOF
 source /app/.venv/bin/activate
 uv pip install --no-cache-dir -r requirements.txt
