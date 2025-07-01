@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.4](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.3...cricketeerone-kafka-connect-v1.6.4) (2025-07-01)
+
+
+### Chores & Updates
+
+* **deps:** added postgresql to kafka connect image ([82d7a79](https://github.com/miracum/util-images/commit/82d7a799cb21896075eccc596eda53eeab89269e))
+* **master:** release cricketeerone-kafka-connect 1.6.3 ([#293](https://github.com/miracum/util-images/issues/293)) ([8aa5ad0](https://github.com/miracum/util-images/commit/8aa5ad040d924d96488016f397cec067873802bf))
+* **master:** release cricketeerone-kafka-connect 1.6.3 ([#301](https://github.com/miracum/util-images/issues/301)) ([f6bbb58](https://github.com/miracum/util-images/commit/f6bbb587bd09619a286cc3be57c6bbd4dd37aee8))
+
 ## [1.6.3](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.2...cricketeerone-kafka-connect-v1.6.3) (2025-07-01)
 
 
