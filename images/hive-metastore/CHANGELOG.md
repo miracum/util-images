@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.5](https://github.com/miracum/util-images/compare/hive-metastore-v1.2.4...hive-metastore-v1.2.5) (2025-07-11)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#308](https://github.com/miracum/util-images/issues/308)) ([212a42c](https://github.com/miracum/util-images/commit/212a42c8045bc0cc33985036643f777339366b03))
+* update hive metastore deps ([#322](https://github.com/miracum/util-images/issues/322)) ([d7b3ce5](https://github.com/miracum/util-images/commit/d7b3ce5783ee8c8dbca827aa2f22cde6b1b58f6d))
+
 ## [1.2.4](https://github.com/miracum/util-images/compare/hive-metastore-v1.2.3...hive-metastore-v1.2.4) (2025-04-07)
 
 
