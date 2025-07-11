@@ -44,7 +44,7 @@ EOF
 
 # DuckDB
 # renovate: datasource=github-releases depName=duckdb/duckdb
-ARG DUCKDB_VERSION=1.3.1
+ARG DUCKDB_VERSION=1.3.2
 ENV DUCKDB_URL=https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip
 RUN <<EOF
 curl -LSsO ${DUCKDB_URL}
@@ -60,12 +60,12 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/bitnami/kubectl:1.33.1@sha256:9081a6f83f4febf47369fc46b6f0f7683c7db243df5b43fc9defe51b0471a950 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/bitnami/kubectl:1.33.2@sha256:e706851b19c0c4e668614b7c5a6b0c5bbcfbe7fb73f5d999250e0da8bfff42c6 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
 # renovate: datasource=github-releases depName=helm/helm
-ARG HELM_VERSION=3.18.3
+ARG HELM_VERSION=3.18.4
 ENV HELM_URL=https://get.helm.sh/helm-v"${HELM_VERSION}"-linux-amd64.tar.gz
 RUN <<EOF
 curl -LSs "$HELM_URL" | tar xz
