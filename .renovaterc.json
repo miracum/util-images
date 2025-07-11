@@ -1,5 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>miracum/.github//renovate/default"],
-  "ignoreDeps": ["docker.io/apache/hive"]
+  "ignoreDeps": ["docker.io/apache/hive"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^images\\/cricketeerone-kafka-connect\\/Dockerfile$/",
+        "/^images\\/strimzi-kafka-connect\\/Dockerfile$/"
+      ],
+      "matchStrings": [
+        "\\s+# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( extractVersion=(?<extractVersion>.*?))?\\s.+?_VERSION=(?<currentValue>.*)"
+      ]
+    }
+  ]
 }
