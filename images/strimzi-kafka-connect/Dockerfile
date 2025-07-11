@@ -4,11 +4,11 @@ ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.4.7
 ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.7.4
 
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
-ARG ORACLE_OJDBC_VERSION=21.11.0.0
+ARG ORACLE_OJDBC_VERSION=21.18.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
-ARG MSSQL_JDBC_VERSION=12.6.0
+ARG MSSQL_JDBC_VERSION=12.10.1.jre11
 # renovate: datasource=maven depName=org.apache.kafka:connect-file
-ARG KAFKA_CONNECT_FILE_VERSION=3.5.2
+ARG KAFKA_CONNECT_FILE_VERSION=3.9.1
 # renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
 ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
