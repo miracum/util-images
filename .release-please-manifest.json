@@ -6,7 +6,7 @@
   "images/strimzi-kafka-connect": "1.8.0",
   "images/hive-metastore": "1.2.5",
   "images/dsf-bpe-full": "1.7.0",
-  "images/warehousekeeper": "0.1.12",
+  "images/warehousekeeper": "0.1.13",
   "images/semantic-release": "1.2.3",
   "images/ollama-nonroot": "0.1.9"
 }
