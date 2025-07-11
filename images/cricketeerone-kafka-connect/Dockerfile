@@ -1,4 +1,4 @@
-FROM docker.io/cricketeerone/apache-kafka-connect:4.0.0-confluent-hub@sha256:99392f8684008848431b3010ceee5b7b0cce075fdc483982da7d1845ccc299a1
+FROM docker.io/cricketeerone/apache-kafka-connect:4.0.0-confluent-hub@sha256:15454efc2dcff3e94317837f5fa72c02d10ec3d55faff4946929d1bc23bf4b26
 ENV ORACLE_OJDBC_VERSION=21.11.0.0
 
 WORKDIR /tmp
