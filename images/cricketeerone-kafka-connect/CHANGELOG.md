@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.5](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.4...cricketeerone-kafka-connect-v1.6.5) (2025-07-11)
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#320](https://github.com/miracum/util-images/issues/320)) ([9404ae0](https://github.com/miracum/util-images/commit/9404ae0bf1af2738b361320cb5cc6273dba5e113))
+* **deps:** updated deps for connect images ([#325](https://github.com/miracum/util-images/issues/325)) ([4c7412c](https://github.com/miracum/util-images/commit/4c7412cdce7d164528e390886db7d86063ccb260))
+
 ## [1.6.4](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.3...cricketeerone-kafka-connect-v1.6.4) (2025-07-01)
 
 
