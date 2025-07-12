@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.2](https://github.com/miracum/util-images/compare/apache-superset-v1.9.1...apache-superset-v1.9.2) (2025-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#321](https://github.com/miracum/util-images/issues/321)) ([e2d4d6d](https://github.com/miracum/util-images/commit/e2d4d6dddafea513b8d406953505b21f7bee48db))
+
 ## [1.9.1](https://github.com/miracum/util-images/compare/apache-superset-v1.9.0...apache-superset-v1.9.1) (2025-06-25)
 
 
