@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.1](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.0...strimzi-kafka-connect-v1.8.1) (2025-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#317](https://github.com/miracum/util-images/issues/317)) ([905465d](https://github.com/miracum/util-images/commit/905465d8d05e80e01e4e5399c8013a3e633bc508))
+* **deps:** update all non-major dependencies ([#326](https://github.com/miracum/util-images/issues/326)) ([ec8e320](https://github.com/miracum/util-images/commit/ec8e320227c7123e87b41b4ee9304addbd566134))
+
+
+### Chores & Updates
+
+* **deps:** update dependency com.oracle.database.jdbc:ojdbc11 to v23 ([#327](https://github.com/miracum/util-images/issues/327)) ([323cc91](https://github.com/miracum/util-images/commit/323cc91f9dd14664f70ea0a9228ecf83ddba47f8))
+* **deps:** update dependency org.apache.kafka:connect-file to v4 ([#328](https://github.com/miracum/util-images/issues/328)) ([65d5139](https://github.com/miracum/util-images/commit/65d51392124b2410dc3ada218e315ec4711c7ff1))
+
 ## [1.8.0](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.7.0...strimzi-kafka-connect-v1.8.0) (2025-05-25)
 
 
