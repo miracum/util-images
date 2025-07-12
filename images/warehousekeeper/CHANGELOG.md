@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.1.13](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.12...warehousekeeper-v0.1.13) (2025-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#283](https://github.com/miracum/util-images/issues/283)) ([f60ff55](https://github.com/miracum/util-images/commit/f60ff559e16df2d6d90cc1df9489d48042fada5d))
+* **deps:** update all non-major dependencies ([#289](https://github.com/miracum/util-images/issues/289)) ([7a77497](https://github.com/miracum/util-images/commit/7a774975f5cdf12caa987292a509faf455c11afb))
+* **deps:** update all non-major dependencies ([#308](https://github.com/miracum/util-images/issues/308)) ([212a42c](https://github.com/miracum/util-images/commit/212a42c8045bc0cc33985036643f777339366b03))
+* **deps:** update all non-major dependencies ([#317](https://github.com/miracum/util-images/issues/317)) ([905465d](https://github.com/miracum/util-images/commit/905465d8d05e80e01e4e5399c8013a3e633bc508))
+* **deps:** update all non-major dependencies ([#321](https://github.com/miracum/util-images/issues/321)) ([e2d4d6d](https://github.com/miracum/util-images/commit/e2d4d6dddafea513b8d406953505b21f7bee48db))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#278](https://github.com/miracum/util-images/issues/278)) ([c1e49e5](https://github.com/miracum/util-images/commit/c1e49e5a0029d09b38b3e67b1a962a3400cf7677))
+* **deps:** update all digest updates ([#287](https://github.com/miracum/util-images/issues/287)) ([28e1729](https://github.com/miracum/util-images/commit/28e17290bda40eaa8b1520ce06459d7d305159ba))
+* **deps:** update all digest updates ([#320](https://github.com/miracum/util-images/issues/320)) ([9404ae0](https://github.com/miracum/util-images/commit/9404ae0bf1af2738b361320cb5cc6273dba5e113))
+* **deps:** update all non-major dependencies ([#269](https://github.com/miracum/util-images/issues/269)) ([cb5dc6b](https://github.com/miracum/util-images/commit/cb5dc6bb4daf499735548af8f9601b23b0be4b9e))
+* **deps:** update all non-major dependencies ([#275](https://github.com/miracum/util-images/issues/275)) ([705d26e](https://github.com/miracum/util-images/commit/705d26eead05a118d23ba05d4ff71bb27cea53e8))
+* **deps:** update all non-major dependencies ([#279](https://github.com/miracum/util-images/issues/279)) ([2ea8573](https://github.com/miracum/util-images/commit/2ea85736840458fbf4f4a05389eb1372e50f1386))
+* **deps:** update all non-major dependencies ([#285](https://github.com/miracum/util-images/issues/285)) ([22e7550](https://github.com/miracum/util-images/commit/22e75504aeb5d86965f64ad3d574a72fa3ddd555))
+* **deps:** update all non-major dependencies ([#296](https://github.com/miracum/util-images/issues/296)) ([c7dfffd](https://github.com/miracum/util-images/commit/c7dfffdf7b28a97bcc666e3c44313e7d24fc3337))
+* **deps:** update dependency deltalake to v1 ([#298](https://github.com/miracum/util-images/issues/298)) ([80861e2](https://github.com/miracum/util-images/commit/80861e2a8f659f18870c78b92826fd9df84ffb83))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+* **master:** release warehousekeeper 0.1.13 ([#262](https://github.com/miracum/util-images/issues/262)) ([905cba2](https://github.com/miracum/util-images/commit/905cba2221fbffd669828df06bf9fdd418ed5cee))
+
 ## [0.1.13](https://github.com/miracum/util-images/compare/warehousekeeper-v0.1.12...warehousekeeper-v0.1.13) (2025-05-25)
 
 
