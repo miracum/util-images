@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.3](https://github.com/miracum/util-images/compare/apache-superset-v1.9.2...apache-superset-v1.9.3) (2025-07-13)
+
+
+### Chores & Updates
+
+* **deps:** use non-deprecated python oracle and updated strimzi connect ([#330](https://github.com/miracum/util-images/issues/330)) ([ec2c085](https://github.com/miracum/util-images/commit/ec2c085d610467abeb0456de2e96833880497435))
+
 ## [1.9.2](https://github.com/miracum/util-images/compare/apache-superset-v1.9.1...apache-superset-v1.9.2) (2025-07-12)
 
 
