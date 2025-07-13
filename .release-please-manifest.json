@@ -3,7 +3,7 @@
   "images/coder-base": "1.8.2",
   "images/cricketeerone-kafka-connect": "1.6.5",
   "images/ml-on-fhir": "2.0.2",
-  "images/strimzi-kafka-connect": "1.8.1",
+  "images/strimzi-kafka-connect": "1.8.2",
   "images/hive-metastore": "1.2.5",
   "images/dsf-bpe-full": "1.7.0",
   "images/warehousekeeper": "0.1.13",
