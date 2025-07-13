@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.2](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.1...strimzi-kafka-connect-v1.8.2) (2025-07-13)
+
+
+### Chores & Updates
+
+* **deps:** use non-deprecated python oracle and updated strimzi connect ([#330](https://github.com/miracum/util-images/issues/330)) ([ec2c085](https://github.com/miracum/util-images/commit/ec2c085d610467abeb0456de2e96833880497435))
+
 ## [1.8.1](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.0...strimzi-kafka-connect-v1.8.1) (2025-07-12)
 
 
