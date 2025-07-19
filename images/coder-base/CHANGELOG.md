@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.8.3](https://github.com/miracum/util-images/compare/coder-base-v1.8.2...coder-base-v1.8.3) (2025-07-19)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#308](https://github.com/miracum/util-images/issues/308)) ([212a42c](https://github.com/miracum/util-images/commit/212a42c8045bc0cc33985036643f777339366b03))
+* **deps:** update all non-major dependencies ([#321](https://github.com/miracum/util-images/issues/321)) ([e2d4d6d](https://github.com/miracum/util-images/commit/e2d4d6dddafea513b8d406953505b21f7bee48db))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#307](https://github.com/miracum/util-images/issues/307)) ([02e068e](https://github.com/miracum/util-images/commit/02e068ea4e3675455754a88701d98301f78d975d))
+* **deps:** update all digest updates ([#320](https://github.com/miracum/util-images/issues/320)) ([9404ae0](https://github.com/miracum/util-images/commit/9404ae0bf1af2738b361320cb5cc6273dba5e113))
+* **deps:** update all digest updates ([#335](https://github.com/miracum/util-images/issues/335)) ([1dc92c8](https://github.com/miracum/util-images/commit/1dc92c83fa4128fc6444d8b83759ba2559a93283))
+* **deps:** update all non-major dependencies ([#336](https://github.com/miracum/util-images/issues/336)) ([506cb86](https://github.com/miracum/util-images/commit/506cb862597208bf1300516d50a8581bfe246e9d))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [1.8.2](https://github.com/miracum/util-images/compare/coder-base-v1.8.1...coder-base-v1.8.2) (2025-06-18)
 
 
