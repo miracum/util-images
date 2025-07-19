@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.3](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.2...strimzi-kafka-connect-v1.8.3) (2025-07-19)
+
+
+### Chores & Updates
+
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [1.8.2](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.1...strimzi-kafka-connect-v1.8.2) (2025-07-13)
 
 
