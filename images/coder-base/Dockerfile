@@ -60,7 +60,7 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/bitnami/kubectl:1.33.2@sha256:e706851b19c0c4e668614b7c5a6b0c5bbcfbe7fb73f5d999250e0da8bfff42c6 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/bitnami/kubectl:1.33.3@sha256:cd354d5b25562b195b277125439c23e4046902d7f1abc0dc3c75aad04d298c17 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
@@ -76,7 +76,7 @@ EOF
 
 # cosign
 # renovate: datasource=github-releases depName=sigstore/cosign
-ARG COSIGN_VERSION=2.5.2
+ARG COSIGN_VERSION=2.5.3
 ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
 RUN <<EOF
 curl -LSsO "$COSIGN_URL"
