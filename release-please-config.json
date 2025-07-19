@@ -58,6 +58,10 @@
     "images/ollama-nonroot": {
       "component": "ollama-nonroot",
       "release-type": "simple"
+    },
+    "images/vllm-nonroot": {
+      "component": "vllm-nonroot",
+      "release-type": "simple"
     }
   }
 }
