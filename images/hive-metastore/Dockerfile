@@ -16,11 +16,12 @@ USER 0
 # Ususally, apt-get update & upgrade is a bad idea in Container images as it causes image builds to become non-reproducible.
 # Unfortunately, the base image is quite old and not regularly updated, so we need to do this to get the latest security updates.
 # The altenative would be to use a a default Ubuntu image and install Hive manually.
+# hadolint ignore=DL3008
 RUN <<EOF
 chown -R 1000:1000 /opt/hive
 apt-get update
 apt-get upgrade -y
-apt-get install -y gettext-base
+apt-get install -y --no-install-recommends gettext-base
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 apt-get clean
 rm -rf /var/lib/apt/lists/*
