@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.10](https://github.com/miracum/util-images/compare/ollama-nonroot-v0.1.9...ollama-nonroot-v0.1.10) (2025-08-07)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#345](https://github.com/miracum/util-images/issues/345)) ([50a4db7](https://github.com/miracum/util-images/commit/50a4db7da910f4714cc4d334bfa480d712089dc6))
+* **deps:** update all non-major dependencies ([#348](https://github.com/miracum/util-images/issues/348)) ([7b01e89](https://github.com/miracum/util-images/commit/7b01e89092acfa243dec8dbb033c009001681af2))
+* **deps:** update all non-major dependencies ([#351](https://github.com/miracum/util-images/issues/351)) ([c780aa4](https://github.com/miracum/util-images/commit/c780aa4d3602310fb10d2a19c69d32d83c869038))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [0.1.9](https://github.com/miracum/util-images/compare/ollama-nonroot-v0.1.8...ollama-nonroot-v0.1.9) (2025-07-11)
 
 
