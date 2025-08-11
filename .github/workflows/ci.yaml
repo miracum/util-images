@@ -16,7 +16,7 @@ jobs:
       images-to-build: ${{ steps.changed-files.outputs.all_changed_and_modified_files }}
     steps:
       - name: "Checkout code"
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
         with:
           persist-credentials: false
 
@@ -38,7 +38,7 @@ jobs:
           echo "${CHANGED_FILES_LIST}"
 
   build:
-    uses: miracum/.github/.github/workflows/standard-build.yaml@ca714dd2f958a70aa44fd62a7711321bf88b0236 # v1.16.19
+    uses: miracum/.github/.github/workflows/standard-build.yaml@61598243fff8ce6ef7bd312e26d586b2dd10d7b3 # v1.16.23
     needs:
       - get-changed-images
     permissions:
@@ -62,7 +62,7 @@ jobs:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
   lint:
-    uses: miracum/.github/.github/workflows/standard-lint.yaml@ca714dd2f958a70aa44fd62a7711321bf88b0236 # v1.16.19
+    uses: miracum/.github/.github/workflows/standard-lint.yaml@61598243fff8ce6ef7bd312e26d586b2dd10d7b3 # v1.16.23
     if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     permissions:
       contents: read
