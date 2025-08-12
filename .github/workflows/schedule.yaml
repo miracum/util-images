@@ -25,7 +25,6 @@ jobs:
           'ghcr.io/${{ github.repository }}/ml-on-fhir:latest',
           'ghcr.io/${{ github.repository }}/coder-base:latest',
           'ghcr.io/${{ github.repository }}/hive-metastore:latest',
-          'ghcr.io/${{ github.repository }}/warehousekeeper:latest',
           'ghcr.io/${{ github.repository }}/dsf-bpe-full:latest',
           'ghcr.io/${{ github.repository }}/semantic-release:latest',
           'ghcr.io/${{ github.repository }}/ollama-nonroot:latest'
