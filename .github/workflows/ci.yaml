@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   get-changed-images:
+    name: get changed images
     runs-on: ubuntu-24.04
     if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     outputs:

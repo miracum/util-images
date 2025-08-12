@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   prepare:
+    name: prepare
     runs-on: ubuntu-24.04
     outputs:
       component-name: ${{ steps.component-meta.outputs.component }}
