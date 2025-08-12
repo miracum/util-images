@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.11](https://github.com/miracum/util-images/compare/ollama-nonroot-v0.1.10...ollama-nonroot-v0.1.11) (2025-08-12)
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#353](https://github.com/miracum/util-images/issues/353)) ([7ffc06c](https://github.com/miracum/util-images/commit/7ffc06ccc0835eda91bf7a0009399af9854e234c))
+
 ## [0.1.10](https://github.com/miracum/util-images/compare/ollama-nonroot-v0.1.9...ollama-nonroot-v0.1.10) (2025-08-07)
 
 
