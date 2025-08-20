@@ -7,5 +7,5 @@
   "images/hive-metastore": "1.3.0",
   "images/dsf-bpe-full": "1.7.0",
   "images/semantic-release": "1.2.3",
-  "images/ollama-nonroot": "0.1.11"
+  "images/ollama-nonroot": "0.1.12"
 }
