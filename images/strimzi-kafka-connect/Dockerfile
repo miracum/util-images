@@ -13,6 +13,8 @@ ARG KAFKA_CONNECT_FILE_VERSION=4.0.0
 ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
+# renovate: datasource=maven depName=io.trino:trino-jdbc
+ARG TRINO_JDBC_VERSION=476
 
 USER root
 
@@ -48,6 +50,8 @@ curl -LsS "https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/${ORA
 curl -LsS "https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/${MSSQL_JDBC_VERSION}.jre11/mssql-jdbc-${MSSQL_JDBC_VERSION}.jre11.jar" > "/opt/kafka/libs/mssql-jdbc-${MSSQL_JDBC_VERSION}.jre11.jar"
 
 curl -LsS "https://repo1.maven.org/maven2/org/apache/kafka/connect-file/${KAFKA_CONNECT_FILE_VERSION}/connect-file-${KAFKA_CONNECT_FILE_VERSION}.jar" > "/opt/kafka/plugins/connect-file-${KAFKA_CONNECT_VERSION}.jar"
+
+curl -LsSO https://repo1.maven.org/maven2/io/trino/trino-jdbc/${TRINO_JDBC_VERSION}/trino-jdbc-${TRINO_JDBC_VERSION}.jar > "/opt/kafka/plugins/trino-jdbc-${TRINO_JDBC_VERSION}.jar"
 EOF
 
 USER 1001:1001

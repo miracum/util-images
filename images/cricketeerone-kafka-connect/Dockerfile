@@ -16,13 +16,15 @@ EOF
 WORKDIR /app/libs/confluentinc-kafka-connect-jdbc/lib/
 
 RUN <<EOF
-curl -LsSO https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0/mysql-connector-j-9.3.0.jar
+curl -LsSO https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.4.0/mysql-connector-j-9.4.0.jar
 
-curl -LsSO https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.4/mariadb-java-client-3.5.4.jar
+curl -LsSO https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.5/mariadb-java-client-3.5.5.jar
 
-curl -LsSO https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/23.8.0.25.04/ojdbc11-23.8.0.25.04.jar
+curl -LsSO https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/23.9.0.25.07/ojdbc11-23.9.0.25.07.jar
 
 curl -LsSO https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.7/postgresql-42.7.7.jar
+
+curl -LsSO https://repo1.maven.org/maven2/io/trino/trino-jdbc/476/trino-jdbc-476.jar
 EOF
 
 WORKDIR /
