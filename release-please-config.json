@@ -50,10 +50,6 @@
     "images/semantic-release": {
       "component": "semantic-release",
       "release-type": "simple"
-    },
-    "images/ollama-nonroot": {
-      "component": "ollama-nonroot",
-      "release-type": "simple"
     }
   }
 }
