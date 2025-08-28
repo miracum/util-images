@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.2...ml-on-fhir-v2.0.3) (2025-08-22)
+## [2.0.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.2...ml-on-fhir-v2.0.3) (2025-08-28)
 
 
 ### Bug Fixes
@@ -23,6 +23,7 @@
 * **deps:** update all non-major dependencies ([#358](https://github.com/miracum/util-images/issues/358)) ([e66ada4](https://github.com/miracum/util-images/commit/e66ada4f6474a7fd7bccf605e6426366edeab983))
 * **deps:** update dependency deltalake to v1 ([#298](https://github.com/miracum/util-images/issues/298)) ([80861e2](https://github.com/miracum/util-images/commit/80861e2a8f659f18870c78b92826fd9df84ffb83))
 * **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release ml-on-fhir 2.0.3 ([#263](https://github.com/miracum/util-images/issues/263)) ([696a2b2](https://github.com/miracum/util-images/commit/696a2b2dea3b951d501c54a8e91f1768569886a4))
 * **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
 * **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
 
