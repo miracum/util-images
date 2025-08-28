@@ -1,5 +1,31 @@
 # Changelog
 
+## [2.0.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.2...ml-on-fhir-v2.0.3) (2025-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#289](https://github.com/miracum/util-images/issues/289)) ([7a77497](https://github.com/miracum/util-images/commit/7a774975f5cdf12caa987292a509faf455c11afb))
+* **deps:** update all non-major dependencies ([#308](https://github.com/miracum/util-images/issues/308)) ([212a42c](https://github.com/miracum/util-images/commit/212a42c8045bc0cc33985036643f777339366b03))
+* **deps:** update all non-major dependencies ([#321](https://github.com/miracum/util-images/issues/321)) ([e2d4d6d](https://github.com/miracum/util-images/commit/e2d4d6dddafea513b8d406953505b21f7bee48db))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#269](https://github.com/miracum/util-images/issues/269)) ([cb5dc6b](https://github.com/miracum/util-images/commit/cb5dc6bb4daf499735548af8f9601b23b0be4b9e))
+* **deps:** update all non-major dependencies ([#275](https://github.com/miracum/util-images/issues/275)) ([705d26e](https://github.com/miracum/util-images/commit/705d26eead05a118d23ba05d4ff71bb27cea53e8))
+* **deps:** update all non-major dependencies ([#279](https://github.com/miracum/util-images/issues/279)) ([2ea8573](https://github.com/miracum/util-images/commit/2ea85736840458fbf4f4a05389eb1372e50f1386))
+* **deps:** update all non-major dependencies ([#336](https://github.com/miracum/util-images/issues/336)) ([506cb86](https://github.com/miracum/util-images/commit/506cb862597208bf1300516d50a8581bfe246e9d))
+* **deps:** update all non-major dependencies ([#345](https://github.com/miracum/util-images/issues/345)) ([50a4db7](https://github.com/miracum/util-images/commit/50a4db7da910f4714cc4d334bfa480d712089dc6))
+* **deps:** update all non-major dependencies ([#348](https://github.com/miracum/util-images/issues/348)) ([7b01e89](https://github.com/miracum/util-images/commit/7b01e89092acfa243dec8dbb033c009001681af2))
+* **deps:** update all non-major dependencies ([#351](https://github.com/miracum/util-images/issues/351)) ([c780aa4](https://github.com/miracum/util-images/commit/c780aa4d3602310fb10d2a19c69d32d83c869038))
+* **deps:** update all non-major dependencies ([#353](https://github.com/miracum/util-images/issues/353)) ([7ffc06c](https://github.com/miracum/util-images/commit/7ffc06ccc0835eda91bf7a0009399af9854e234c))
+* **deps:** update all non-major dependencies ([#358](https://github.com/miracum/util-images/issues/358)) ([e66ada4](https://github.com/miracum/util-images/commit/e66ada4f6474a7fd7bccf605e6426366edeab983))
+* **deps:** update dependency deltalake to v1 ([#298](https://github.com/miracum/util-images/issues/298)) ([80861e2](https://github.com/miracum/util-images/commit/80861e2a8f659f18870c78b92826fd9df84ffb83))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [2.0.2](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.1...ml-on-fhir-v2.0.2) (2025-03-17)
 
 
