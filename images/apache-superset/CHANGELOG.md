@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.9.4](https://github.com/miracum/util-images/compare/apache-superset-v1.9.3...apache-superset-v1.9.4) (2025-08-28)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#366](https://github.com/miracum/util-images/issues/366)) ([892aa08](https://github.com/miracum/util-images/commit/892aa087f65005bfb88a19e97843d3de6c28b322))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#345](https://github.com/miracum/util-images/issues/345)) ([50a4db7](https://github.com/miracum/util-images/commit/50a4db7da910f4714cc4d334bfa480d712089dc6))
+* **deps:** update all non-major dependencies ([#358](https://github.com/miracum/util-images/issues/358)) ([e66ada4](https://github.com/miracum/util-images/commit/e66ada4f6474a7fd7bccf605e6426366edeab983))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [1.9.3](https://github.com/miracum/util-images/compare/apache-superset-v1.9.2...apache-superset-v1.9.3) (2025-07-13)
 
 
