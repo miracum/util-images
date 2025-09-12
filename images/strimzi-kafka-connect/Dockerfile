@@ -46,7 +46,7 @@ EOF
 RUN <<EOF
 curl -fLsS "https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/${ORACLE_OJDBC_VERSION}/ojdbc11-${ORACLE_OJDBC_VERSION}.jar" > "/opt/kafka/libs/ojdbc11-${ORACLE_OJDBC_VERSION}.jar"
 
-curl -fLsS "https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/${MSSQL_JDBC_VERSION}.jre11/mssql-jdbc-${MSSQL_JDBC_VERSION}.jre11.jar" > "/opt/kafka/libs/mssql-jdbc-${MSSQL_JDBC_VERSION}.jre11.jar"
+curl -fLsS "https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/${MSSQL_JDBC_VERSION}/mssql-jdbc-${MSSQL_JDBC_VERSION}.jar" > "/opt/kafka/libs/mssql-jdbc-${MSSQL_JDBC_VERSION}.jar"
 
 curl -fLsS "https://repo1.maven.org/maven2/org/apache/kafka/connect-file/${KAFKA_CONNECT_FILE_VERSION}/connect-file-${KAFKA_CONNECT_FILE_VERSION}.jar" > "/opt/kafka/plugins/connect-file-${KAFKA_CONNECT_VERSION}.jar"
 EOF
