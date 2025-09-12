@@ -26,11 +26,11 @@ EOF
 RUN <<EOF
 mkdir -p /opt/kafka/plugins/
 
-curl -fLsSO https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/kafka-connect-jdbc/versions/${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}/confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
+curl -fLsSO https://hub-downloads.confluent.io/api/plugins/confluentinc/kafka-connect-jdbc/versions/${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}/confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
 unzip confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip -d /opt/kafka/plugins/
 rm confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
 
-curl -fLsSO https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/connect-transforms/versions/${CONFLUENT_CONNECT_TRANSFORMS_VERSION}/confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip
+curl -fLsSO https://hub-downloads.confluent.io/api/plugins/confluentinc/connect-transforms/versions/${CONFLUENT_CONNECT_TRANSFORMS_VERSION}/confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip
 unzip confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip -d /opt/kafka/plugins/
 rm confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip
 
