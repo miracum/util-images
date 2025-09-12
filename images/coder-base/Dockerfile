@@ -30,16 +30,16 @@ EOF
 
 # Spark
 RUN <<EOF
-curl -LSsO https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
+curl -fLSsO https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
 tar xvf spark-3.5.5-bin-hadoop3.tgz
 mv spark-3.5.5-bin-hadoop3 /opt/spark
 rm spark-3.5.5-bin-hadoop3.tgz
 
-curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.3.2/delta-spark_2.12-3.3.2.jar
-curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.3.2/delta-storage-3.3.2.jar
-curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
-curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
-curl -LSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/pathling/library-runtime/7.2.0/library-runtime-7.2.0.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.3.2/delta-spark_2.12-3.3.2.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.3.2/delta-storage-3.3.2.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/pathling/library-runtime/7.2.0/library-runtime-7.2.0.jar
 EOF
 
 # DuckDB
@@ -47,7 +47,7 @@ EOF
 ARG DUCKDB_VERSION=1.3.2
 ENV DUCKDB_URL=https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip
 RUN <<EOF
-curl -LSsO ${DUCKDB_URL}
+curl -fLSsO ${DUCKDB_URL}
 unzip duckdb_cli-linux-amd64.zip
 mv duckdb /usr/local/bin
 duckdb --version
@@ -55,7 +55,7 @@ EOF
 
 # MinIO client
 RUN <<EOF
-curl https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
+curl -f https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
 chmod +x /usr/local/bin/mc
 EOF
 
@@ -68,7 +68,7 @@ RUN kubectl version --client
 ARG HELM_VERSION=3.18.6
 ENV HELM_URL=https://get.helm.sh/helm-v"${HELM_VERSION}"-linux-amd64.tar.gz
 RUN <<EOF
-curl -LSs "$HELM_URL" | tar xz
+curl -fLSs "$HELM_URL" | tar xz
 mv linux-amd64/helm /usr/local/bin/helm
 chmod +x /usr/local/bin/helm
 helm version
@@ -79,7 +79,7 @@ EOF
 ARG COSIGN_VERSION=2.5.3
 ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
 RUN <<EOF
-curl -LSsO "$COSIGN_URL"
+curl -fLSsO "$COSIGN_URL"
 mv ./cosign-linux-amd64 /usr/local/bin/cosign
 chmod +x /usr/local/bin/cosign
 cosign version
@@ -90,7 +90,7 @@ EOF
 ARG CRANE_VERSION=0.20.6
 ENV CRANE_URL=https://github.com/google/go-containerregistry/releases/download/v${CRANE_VERSION}/go-containerregistry_Linux_x86_64.tar.gz
 RUN <<EOF
-curl -LSs "$CRANE_URL" | tar xz
+curl -fLSs "$CRANE_URL" | tar xz
 mv ./crane /usr/local/bin/crane
 chmod +x /usr/local/bin/crane
 crane version
@@ -101,7 +101,7 @@ EOF
 ARG S5CMD_VERSION=2.3.0
 ENV S5CMD_URL=https://github.com/peak/s5cmd/releases/download/v${S5CMD_VERSION}/s5cmd_${S5CMD_VERSION}_linux_amd64.deb
 RUN <<EOF
-curl -LSsO "$S5CMD_URL"
+curl -fLSsO "$S5CMD_URL"
 dpkg --install s5cmd_${S5CMD_VERSION}_linux_amd64.deb
 s5cmd version
 EOF

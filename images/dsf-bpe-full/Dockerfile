@@ -21,12 +21,12 @@ USER root
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN mkdir -p /process && \
-    curl -Lo /process/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar https://github.com/datasharingframework/dsf-process-ping-pong/releases/download/v${DSF_PROCESS_PING_PONG}/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar && \
-    curl -Lo /process/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar https://github.com/datasharingframework/dsf-process-allow-list/releases/download/v${DSF_PROCESS_ALLOW_LIST}/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar && \
-    curl -Lo /process/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/download/v${DSF_PROCESS_FEASIBILITY}/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar && \
-    curl -Lo /process/mii-process-report-${DSF_PROCESS_MII_REPORT}.jar https://github.com/medizininformatik-initiative/mii-process-report/releases/download/v${DSF_PROCESS_MII_REPORT}/mii-process-report-${DSF_PROCESS_MII_REPORT}.jar && \
-    curl -Lo /process/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/download/v${DSF_PROCESS_MII_DATA_TRANSFER}/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar && \
-    curl -Lo /process/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/download/v${DSF_PROCESS_MII_DATA_SHARING}/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar && \
+    curl -fLo /process/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar https://github.com/datasharingframework/dsf-process-ping-pong/releases/download/v${DSF_PROCESS_PING_PONG}/dsf-process-ping-pong-${DSF_PROCESS_PING_PONG}.jar && \
+    curl -fLo /process/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar https://github.com/datasharingframework/dsf-process-allow-list/releases/download/v${DSF_PROCESS_ALLOW_LIST}/dsf-process-allow-list-${DSF_PROCESS_ALLOW_LIST}.jar && \
+    curl -fLo /process/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/download/v${DSF_PROCESS_FEASIBILITY}/mii-process-feasibility-${DSF_PROCESS_FEASIBILITY}.jar && \
+    curl -fLo /process/mii-process-report-${DSF_PROCESS_MII_REPORT}.jar https://github.com/medizininformatik-initiative/mii-process-report/releases/download/v${DSF_PROCESS_MII_REPORT}/mii-process-report-${DSF_PROCESS_MII_REPORT}.jar && \
+    curl -fLo /process/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/download/v${DSF_PROCESS_MII_DATA_TRANSFER}/mii-process-data-transfer-${DSF_PROCESS_MII_DATA_TRANSFER}.jar && \
+    curl -fLo /process/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/download/v${DSF_PROCESS_MII_DATA_SHARING}/mii-process-data-sharing-${DSF_PROCESS_MII_DATA_SHARING}.jar && \
     chmod 440  /process/*
 
 # this plugin has no public source repository, so far
