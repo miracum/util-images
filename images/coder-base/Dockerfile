@@ -29,16 +29,17 @@ useradd coder --create-home --shell=/bin/bash --uid=10001 --user-group
 EOF
 
 # Spark
+ARG SPARK_VERSION=3.5.6
 RUN <<EOF
-curl -fLSsO https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
-tar xvf spark-3.5.5-bin-hadoop3.tgz
-mv spark-3.5.5-bin-hadoop3 /opt/spark
-rm spark-3.5.5-bin-hadoop3.tgz
+curl -fLSsO https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop3.tgz
+tar xvf spark-${SPARK_VERSION}-bin-hadoop3.tgz
+mv spark-${SPARK_VERSION}-bin-hadoop3 /opt/spark
+rm spark-${SPARK_VERSION}-bin-hadoop3.tgz
 
 curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.3.2/delta-spark_2.12-3.3.2.jar
 curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.3.2/delta-storage-3.3.2.jar
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.6/hadoop-aws-3.3.6.jar
+curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.791/aws-java-sdk-bundle-1.12.791.jar
 curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/pathling/library-runtime/7.2.0/library-runtime-7.2.0.jar
 EOF
 
