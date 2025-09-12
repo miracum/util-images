@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.8.3](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.2...strimzi-kafka-connect-v1.8.3) (2025-09-12)
+
+
+### Bug Fixes
+
+* docker image builds exit with non-zero code if curl fails ([#370](https://github.com/miracum/util-images/issues/370)) ([dffa350](https://github.com/miracum/util-images/commit/dffa350a933cc7edfdce046c56543c7c6b48d3af))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#345](https://github.com/miracum/util-images/issues/345)) ([50a4db7](https://github.com/miracum/util-images/commit/50a4db7da910f4714cc4d334bfa480d712089dc6))
+* **deps:** update dependency com.microsoft.sqlserver:mssql-jdbc to v13 ([#363](https://github.com/miracum/util-images/issues/363)) ([58ae572](https://github.com/miracum/util-images/commit/58ae5726a1df883bebb0e90e706c517b9c406c0a))
+* **deps:** updates kafka to 3.9.1 ([#368](https://github.com/miracum/util-images/issues/368)) ([47c16fd](https://github.com/miracum/util-images/commit/47c16fde5a3999a3f0d45c696e708596ef96f5e0))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [1.8.2](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.1...strimzi-kafka-connect-v1.8.2) (2025-07-13)
 
 
