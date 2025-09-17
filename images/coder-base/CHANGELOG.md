@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.8.4](https://github.com/miracum/util-images/compare/coder-base-v1.8.3...coder-base-v1.8.4) (2025-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#377](https://github.com/miracum/util-images/issues/377)) ([7ab7db1](https://github.com/miracum/util-images/commit/7ab7db119c2a31b5b88ec8520019dea609af43ba))
+* docker image builds exit with non-zero code if curl fails ([#370](https://github.com/miracum/util-images/issues/370)) ([dffa350](https://github.com/miracum/util-images/commit/dffa350a933cc7edfdce046c56543c7c6b48d3af))
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 353675e ([#375](https://github.com/miracum/util-images/issues/375)) ([109f117](https://github.com/miracum/util-images/commit/109f117aa68122217bc6b1b7afac1abcb5c66ce4))
+
 ## [1.8.3](https://github.com/miracum/util-images/compare/coder-base-v1.8.2...coder-base-v1.8.3) (2025-08-22)
 
 
