@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.7.1](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.0...dsf-bpe-full-v1.7.1) (2025-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#244](https://github.com/miracum/util-images/issues/244)) ([cd72e08](https://github.com/miracum/util-images/commit/cd72e08c33a8b618d1d1da2a2f0ba925866e804c))
+* **deps:** update all non-major dependencies ([#308](https://github.com/miracum/util-images/issues/308)) ([212a42c](https://github.com/miracum/util-images/commit/212a42c8045bc0cc33985036643f777339366b03))
+* **deps:** update all non-major dependencies ([#377](https://github.com/miracum/util-images/issues/377)) ([7ab7db1](https://github.com/miracum/util-images/commit/7ab7db119c2a31b5b88ec8520019dea609af43ba))
+* docker image builds exit with non-zero code if curl fails ([#370](https://github.com/miracum/util-images/issues/370)) ([dffa350](https://github.com/miracum/util-images/commit/dffa350a933cc7edfdce046c56543c7c6b48d3af))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#269](https://github.com/miracum/util-images/issues/269)) ([cb5dc6b](https://github.com/miracum/util-images/commit/cb5dc6bb4daf499735548af8f9601b23b0be4b9e))
+* **deps:** update all non-major dependencies ([#296](https://github.com/miracum/util-images/issues/296)) ([c7dfffd](https://github.com/miracum/util-images/commit/c7dfffdf7b28a97bcc666e3c44313e7d24fc3337))
+* **deps:** update all non-major dependencies ([#336](https://github.com/miracum/util-images/issues/336)) ([506cb86](https://github.com/miracum/util-images/commit/506cb862597208bf1300516d50a8581bfe246e9d))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.12 ([#257](https://github.com/miracum/util-images/issues/257)) ([ab5ee7a](https://github.com/miracum/util-images/commit/ab5ee7a4c6c3877bde4922aa7736a9550b0f9574))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [1.7.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.6.2...dsf-bpe-full-v1.7.0) (2025-02-13)
 
 
