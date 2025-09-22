@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.5](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.4...strimzi-kafka-connect-v1.8.5) (2025-09-22)
+
+
+### Bug Fixes
+
+* **docker:** update Dockerfiles for coder-base and strimzi-kafka-connect images ([#379](https://github.com/miracum/util-images/issues/379)) ([11db082](https://github.com/miracum/util-images/commit/11db082cd571fbe82f0039f42101dc7bd5fb560f))
+
 ## [1.8.4](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.3...strimzi-kafka-connect-v1.8.4) (2025-09-17)
 
 
