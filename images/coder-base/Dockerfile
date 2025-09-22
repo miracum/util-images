@@ -1,6 +1,4 @@
-# syntax=docker/dockerfile:1.18.0@sha256:dabfc0969b935b2080555ace70ee69a5261af8a8f1b4df97b9e7fbcf6722eddf
 FROM docker.io/library/ubuntu:24.04@sha256:353675e2a41babd526e2b837d7ec780c2a05bca0164f7ea5dbbd433d21d166fc
-
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8
 
@@ -28,20 +26,6 @@ echo "ca_certificate=/etc/ssl/certs/ca-certificates.crt" >> /etc/wgetrc
 useradd coder --create-home --shell=/bin/bash --uid=10001 --user-group
 EOF
 
-# Spark
-RUN <<EOF
-curl -fLSsO https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
-tar xvf spark-3.5.5-bin-hadoop3.tgz
-mv spark-3.5.5-bin-hadoop3 /opt/spark
-rm spark-3.5.5-bin-hadoop3.tgz
-
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.3.2/delta-spark_2.12-3.3.2.jar
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/io/delta/delta-storage/3.3.2/delta-storage-3.3.2.jar
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
-curl -fLSsO --output-dir /opt/spark/jars https://repo1.maven.org/maven2/au/csiro/pathling/library-runtime/7.2.0/library-runtime-7.2.0.jar
-EOF
-
 # DuckDB
 # renovate: datasource=github-releases depName=duckdb/duckdb
 ARG DUCKDB_VERSION=1.4.0
@@ -60,7 +44,7 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/bitnami/kubectl:1.33.4@sha256:ed0b31a0508da84ee655c5c6e01bd3897fc56ad6cf69debb27fa1893a06d2246 /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/rancher/kubectl:v1.34.0@sha256:ff3cdadeac7eae628b59debe73302bb41337098dc3f15dfb3f3c5a59b046d23c /bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
@@ -106,7 +90,5 @@ dpkg --install s5cmd_${S5CMD_VERSION}_linux_amd64.deb
 s5cmd version
 EOF
 
-ENV SPARK_HOME=/opt/spark
-ENV PATH=$PATH:$SPARK_HOME/bin
 WORKDIR /home/coder
 USER 10001:10001
