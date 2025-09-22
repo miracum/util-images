@@ -1,4 +1,4 @@
-FROM quay.io/strimzi/kafka:0.47.0-kafka-3.9.1@sha256:8a793cdf5084cdb72c6663419530985158b16330a518720e9e9d1d96babbaf7e
+FROM quay.io/strimzi/kafka:0.45.1-kafka-3.9.1@sha256:ba52ed046b1dccdbd96f4e68057ce014d862a7c9c1fc670760c023b9aa09f23f
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
