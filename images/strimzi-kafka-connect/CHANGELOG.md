@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.6](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.5...strimzi-kafka-connect-v1.8.6) (2025-09-23)
+
+
+### Bug Fixes
+
+* data source name ([0b737f5](https://github.com/miracum/util-images/commit/0b737f54b416dacbe164f41da6ac52f00f89eafb))
+
 ## [1.8.5](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.4...strimzi-kafka-connect-v1.8.5) (2025-09-22)
 
 
