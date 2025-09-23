@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.5](https://github.com/miracum/util-images/compare/coder-base-v1.8.4...coder-base-v1.8.5) (2025-09-23)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#382](https://github.com/miracum/util-images/issues/382)) ([5b1b401](https://github.com/miracum/util-images/commit/5b1b40170888d36077bb1a8f2944391f90751f5b))
+* **docker:** update Dockerfiles for coder-base and strimzi-kafka-connect images ([#379](https://github.com/miracum/util-images/issues/379)) ([11db082](https://github.com/miracum/util-images/commit/11db082cd571fbe82f0039f42101dc7bd5fb560f))
+
 ## [1.8.4](https://github.com/miracum/util-images/compare/coder-base-v1.8.3...coder-base-v1.8.4) (2025-09-17)
 
 
