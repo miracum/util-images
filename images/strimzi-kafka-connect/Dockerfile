@@ -14,7 +14,7 @@ ARG KAFKA_CONNECT_FILE_VERSION=4.1.0
 ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
-# renovate: datasource=github-releases depName=Aiven-streamthoughts/kafka-connect-file-pulse
+# renovate: datasource=github-releases depName=streamthoughts/kafka-connect-file-pulse
 ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.15.0
 
 USER root
