@@ -1,4 +1,4 @@
-FROM quay.io/strimzi/kafka:0.45.1-kafka-3.9.1@sha256:ba52ed046b1dccdbd96f4e68057ce014d862a7c9c1fc670760c023b9aa09f23f
+FROM quay.io/strimzi/kafka:0.47.0-kafka-3.9.1@sha256:7942736f66e3379e2b14623c78b4c24174ffb560ebf0134d9704568e94b6a250
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
@@ -15,7 +15,7 @@ ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 # renovate: datasource=github-releases depName=streamthoughts/kafka-connect-file-pulse
-ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.15.0
+ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.16.0
 
 USER root
 
