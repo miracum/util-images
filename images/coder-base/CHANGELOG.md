@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.5](https://github.com/miracum/util-images/compare/coder-base-v1.8.4...coder-base-v1.8.5) (2025-10-22)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#382](https://github.com/miracum/util-images/issues/382)) ([5b1b401](https://github.com/miracum/util-images/commit/5b1b40170888d36077bb1a8f2944391f90751f5b))
+* **deps:** update all non-major dependencies ([#385](https://github.com/miracum/util-images/issues/385)) ([633e597](https://github.com/miracum/util-images/commit/633e597eb121f4522c5e1e1b20b2118f04209abf))
+* **docker:** update Dockerfiles for coder-base and strimzi-kafka-connect images ([#379](https://github.com/miracum/util-images/issues/379)) ([11db082](https://github.com/miracum/util-images/commit/11db082cd571fbe82f0039f42101dc7bd5fb560f))
+
+
+### Chores & Updates
+
+* **deps:** update dependency sigstore/cosign to v3 ([#390](https://github.com/miracum/util-images/issues/390)) ([82f0ced](https://github.com/miracum/util-images/commit/82f0ced87dd373b4388af8670424d4bc89ad59c4))
+
 ## [1.8.4](https://github.com/miracum/util-images/compare/coder-base-v1.8.3...coder-base-v1.8.4) (2025-09-17)
 
 
