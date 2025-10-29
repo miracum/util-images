@@ -9,7 +9,7 @@ python3-pip
 python3-venv
 python-is-python3
 gpg
-openjdk-17-jdk
+openjdk-21-jdk
 htop
 man
 vim
