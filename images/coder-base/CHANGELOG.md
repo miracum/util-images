@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/miracum/util-images/compare/coder-base-v2.0.0...coder-base-v2.0.1) (2025-10-31)
+
+
+### Chores & Updates
+
+* **deps:** added more packages ([#396](https://github.com/miracum/util-images/issues/396)) ([371c928](https://github.com/miracum/util-images/commit/371c9283e971e2c2d357201019f3da5b3ba9d187))
+
 ## [2.0.0](https://github.com/miracum/util-images/compare/coder-base-v1.8.4...coder-base-v2.0.0) (2025-10-30)
 
 
