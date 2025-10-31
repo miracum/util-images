@@ -25,14 +25,6 @@ rm -rf /var/lib/apt/lists/*
 echo "ca_certificate=/etc/ssl/certs/ca-certificates.crt" >> /etc/wgetrc
 
 useradd coder --create-home --shell=/bin/bash --uid=10001 --user-group
-
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk version
-echo "n" | sdk install java 25.0.1-tem
-echo "y" | sdk install java 21.0.8-tem
 EOF
 
 # DuckDB
@@ -101,3 +93,13 @@ EOF
 
 WORKDIR /home/coder
 USER 10001:10001
+
+RUN <<EOF
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+echo "n" | sdk install java 25.0.1-tem
+echo "y" | sdk install java 21.0.8-tem
+EOF
