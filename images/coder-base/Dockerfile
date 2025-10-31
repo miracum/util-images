@@ -1,6 +1,7 @@
 FROM docker.io/library/ubuntu:24.04@sha256:353675e2a41babd526e2b837d7ec780c2a05bca0164f7ea5dbbd433d21d166fc
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
-ENV LANG=en_US.UTF-8
+ENV LANG=en_US.UTF-8 \
+    PATH="$PATH:/home/coder/.local/bin"
 
 # not set as an env var so only available during build
 ARG DEBIAN_FRONTEND=noninteractive
@@ -24,6 +25,14 @@ rm -rf /var/lib/apt/lists/*
 echo "ca_certificate=/etc/ssl/certs/ca-certificates.crt" >> /etc/wgetrc
 
 useradd coder --create-home --shell=/bin/bash --uid=10001 --user-group
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+echo "n" | sdk install java 25.0.1-tem
+echo "y" | sdk install java 21.0.8-tem
 EOF
 
 # DuckDB
