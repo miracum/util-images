@@ -1,4 +1,4 @@
-FROM docker.io/library/node:22.21.1@sha256:4f6d253e4ddf8407f79f9cd06a70272af5bf4f640d89241dac680f13a332dbad
+FROM docker.io/library/node:22.21.1@sha256:dcf06103a9d4087e3244a51697adbbb85331dcb7161dbe994ca1cd07dd32e2a5
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 WORKDIR /app
 ENV NO_UPDATE_NOTIFIER=true \
