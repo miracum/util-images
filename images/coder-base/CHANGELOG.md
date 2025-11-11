@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.2](https://github.com/miracum/util-images/compare/coder-base-v2.0.1...coder-base-v2.0.2) (2025-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#407](https://github.com/miracum/util-images/issues/407)) ([94200f9](https://github.com/miracum/util-images/commit/94200f9c6f75217939272638e98b64da89e77bb2))
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 66460d5 ([#398](https://github.com/miracum/util-images/issues/398)) ([ebd77eb](https://github.com/miracum/util-images/commit/ebd77eb81ee157623f7d41aefd7b54facfd94380))
+
 ## [2.0.1](https://github.com/miracum/util-images/compare/coder-base-v2.0.0...coder-base-v2.0.1) (2025-10-31)
 
 
