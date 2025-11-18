@@ -1,7 +1,7 @@
 {
   "images/apache-superset": "1.9.3",
   "images/coder-base": "2.0.2",
-  "images/cricketeerone-kafka-connect": "1.6.5",
+  "images/cricketeerone-kafka-connect": "1.6.6",
   "images/ml-on-fhir": "2.0.3",
   "images/strimzi-kafka-connect": "1.8.5",
   "images/hive-metastore": "1.3.0",
