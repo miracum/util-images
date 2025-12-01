@@ -16,6 +16,8 @@ ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 # renovate: datasource=github-releases depName=streamthoughts/kafka-connect-file-pulse
 ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.16.0
+# renovate: datasource=maven depName=io.trino:trino-jdbc
+ARG TRINO_JDBC_VERSION=478
 
 USER root
 
@@ -48,6 +50,7 @@ curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/or
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/${MSSQL_JDBC_VERSION}/mssql-jdbc-${MSSQL_JDBC_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/org/apache/kafka/connect-file/${KAFKA_CONNECT_FILE_VERSION}/connect-file-${KAFKA_CONNECT_FILE_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/github/castorm/kafka-connect-http/${CASTORM_KAFKA_CONNECT_HTTP_VERSION}/kafka-connect-http-${CASTORM_KAFKA_CONNECT_HTTP_VERSION}.jar"
+curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/io/trino/trino-jdbc/${TRINO_JDBC_VERSION}/trino-jdbc-${TRINO_JDBC_VERSION}.jar"
 EOF
 
 USER 1001:1001
