@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.8.6](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.5...strimzi-kafka-connect-v1.8.6) (2025-12-01)
+
+
+### Bug Fixes
+
+* data source name ([0b737f5](https://github.com/miracum/util-images/commit/0b737f54b416dacbe164f41da6ac52f00f89eafb))
+* **deps:** update all non-major dependencies ([#385](https://github.com/miracum/util-images/issues/385)) ([633e597](https://github.com/miracum/util-images/commit/633e597eb121f4522c5e1e1b20b2118f04209abf))
+
+
+### Chores & Updates
+
+* **deps:** added trino jdbc to kafka connect ([#416](https://github.com/miracum/util-images/issues/416)) ([04eb971](https://github.com/miracum/util-images/commit/04eb971bdab93e7288165f66d457c176985d8ff1))
+* **deps:** update all non-major dependencies ([#388](https://github.com/miracum/util-images/issues/388)) ([a1c4d25](https://github.com/miracum/util-images/commit/a1c4d25f3ff86400174eb1d779f4fc58174e6503))
+* **deps:** update all non-major dependencies ([#399](https://github.com/miracum/util-images/issues/399)) ([447ac99](https://github.com/miracum/util-images/commit/447ac99c56f0ce43de0f0f1d06d187299b8c2f80))
+
 ## [1.8.5](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.4...strimzi-kafka-connect-v1.8.5) (2025-09-22)
 
 
