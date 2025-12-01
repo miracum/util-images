@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.6.6](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.5...cricketeerone-kafka-connect-v1.6.6) (2025-12-01)
+
+
+### Bug Fixes
+
+* docker image builds exit with non-zero code if curl fails ([#370](https://github.com/miracum/util-images/issues/370)) ([dffa350](https://github.com/miracum/util-images/commit/dffa350a933cc7edfdce046c56543c7c6b48d3af))
+
+
+### Chores & Updates
+
+* **deps:** added trino jdbc to kafka connect ([#416](https://github.com/miracum/util-images/issues/416)) ([04eb971](https://github.com/miracum/util-images/commit/04eb971bdab93e7288165f66d457c176985d8ff1))
+* **master:** release apache-superset 1.9.3 ([#333](https://github.com/miracum/util-images/issues/333)) ([773f940](https://github.com/miracum/util-images/commit/773f940026bdfcb5267e9f370574c3e8c8be31fd))
+* **master:** release warehousekeeper 0.1.14 ([#334](https://github.com/miracum/util-images/issues/334)) ([5c291be](https://github.com/miracum/util-images/commit/5c291be253dd6224cd6eb3664a98bd79f3299409))
+
 ## [1.6.5](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.4...cricketeerone-kafka-connect-v1.6.5) (2025-07-11)
 
 
