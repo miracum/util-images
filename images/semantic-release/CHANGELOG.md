@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.5](https://github.com/miracum/util-images/compare/semantic-release-v1.2.4...semantic-release-v1.2.5) (2025-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#407](https://github.com/miracum/util-images/issues/407)) ([94200f9](https://github.com/miracum/util-images/commit/94200f9c6f75217939272638e98b64da89e77bb2))
+
+
+### Chores & Updates
+
+* **deps:** update node.js to dcf0610 ([#406](https://github.com/miracum/util-images/issues/406)) ([9b68cc9](https://github.com/miracum/util-images/commit/9b68cc906a826377fb2d58069c67eb8ca9099479))
+* **deps:** update node.js to v24 ([#402](https://github.com/miracum/util-images/issues/402)) ([51a9b93](https://github.com/miracum/util-images/commit/51a9b93a6d8093e6313ae4c0fab48175ebff2673))
+
 ## [1.2.4](https://github.com/miracum/util-images/compare/semantic-release-v1.2.3...semantic-release-v1.2.4) (2025-11-04)
 
 
