@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.7](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.6...strimzi-kafka-connect-v1.8.7) (2025-12-02)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#412](https://github.com/miracum/util-images/issues/412)) ([f5b6776](https://github.com/miracum/util-images/commit/f5b67766a66a60ab3481800e10413e79c9983fb0))
+
 ## [1.8.6](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.5...strimzi-kafka-connect-v1.8.6) (2025-12-01)
 
 
