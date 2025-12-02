@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.8](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.7...strimzi-kafka-connect-v1.8.8) (2025-12-02)
+
+
+### Chores & Updates
+
+* **deps:** downgraded strimzi ([0ee1d6a](https://github.com/miracum/util-images/commit/0ee1d6af058b35c07ef5f23e6f1a7d8cce257bb5))
+
 ## [1.8.7](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.6...strimzi-kafka-connect-v1.8.7) (2025-12-02)
 
 
