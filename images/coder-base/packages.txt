@@ -13,7 +13,7 @@ htop
 man
 vim
 s3cmd
-dotnet-sdk-8.0
+dotnet-sdk-10.0
 nano
 r-base
 r-base-dev

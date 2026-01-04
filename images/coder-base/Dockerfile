@@ -102,4 +102,5 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 echo "n" | sdk install java 25.0.1-tem
 echo "y" | sdk install java 21.0.8-tem
+java --version
 EOF
