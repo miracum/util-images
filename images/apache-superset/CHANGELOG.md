@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/miracum/util-images/compare/apache-superset-v1.9.5...apache-superset-v2.0.0) (2026-01-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* update docker.io/apache/superset docker tag to v6 ([#427](https://github.com/miracum/util-images/issues/427))
+
+### Features
+
+* update docker.io/apache/superset docker tag to v6 ([#427](https://github.com/miracum/util-images/issues/427)) ([d4515d9](https://github.com/miracum/util-images/commit/d4515d956163646403d78704f8c973148702157d))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#424](https://github.com/miracum/util-images/issues/424)) ([e551035](https://github.com/miracum/util-images/commit/e55103568e35e041080e50ab84f318ab138900b3))
+
 ## [1.9.5](https://github.com/miracum/util-images/compare/apache-superset-v1.9.4...apache-superset-v1.9.5) (2025-12-02)
 
 
