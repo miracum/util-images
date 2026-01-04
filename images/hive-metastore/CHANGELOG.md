@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.1](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.0...hive-metastore-v1.3.1) (2026-01-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#377](https://github.com/miracum/util-images/issues/377)) ([7ab7db1](https://github.com/miracum/util-images/commit/7ab7db119c2a31b5b88ec8520019dea609af43ba))
+* **deps:** update all non-major dependencies ([#407](https://github.com/miracum/util-images/issues/407)) ([94200f9](https://github.com/miracum/util-images/commit/94200f9c6f75217939272638e98b64da89e77bb2))
+* docker image builds exit with non-zero code if curl fails ([#370](https://github.com/miracum/util-images/issues/370)) ([dffa350](https://github.com/miracum/util-images/commit/dffa350a933cc7edfdce046c56543c7c6b48d3af))
+
 ## [1.3.0](https://github.com/miracum/util-images/compare/hive-metastore-v1.2.5...hive-metastore-v1.3.0) (2025-08-05)
 
 
