@@ -1,4 +1,4 @@
-FROM docker.io/apache/superset:v5.0.0@sha256:3cc32e16caf2dfc4a5873b00cf2361d3f0a0fce4a90f53de807fc6bb894f2504
+FROM docker.io/apache/superset:6.0.0@sha256:6f6c9982bd64d81797bd4f33834f2ce4a4653c8ac8322f1e5f9df9b0332d092a
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 USER root
