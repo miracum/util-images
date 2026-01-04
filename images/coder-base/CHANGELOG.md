@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.0.3](https://github.com/miracum/util-images/compare/coder-base-v2.0.2...coder-base-v2.0.3) (2026-01-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#412](https://github.com/miracum/util-images/issues/412)) ([f5b6776](https://github.com/miracum/util-images/commit/f5b67766a66a60ab3481800e10413e79c9983fb0))
+* **deps:** update all non-major dependencies ([#424](https://github.com/miracum/util-images/issues/424)) ([e551035](https://github.com/miracum/util-images/commit/e55103568e35e041080e50ab84f318ab138900b3))
+
+
+### Chores & Updates
+
+* **deps:** update dependency helm/helm to v4 ([#413](https://github.com/miracum/util-images/issues/413)) ([a4e1f08](https://github.com/miracum/util-images/commit/a4e1f0886949ff044265fae75ffe13b004adabc5))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to c35e29c ([#410](https://github.com/miracum/util-images/issues/410)) ([8de8e40](https://github.com/miracum/util-images/commit/8de8e4054138b257bd322b6195b27e2dc280e3bb))
+* **deps:** updated to .net 10 ([#430](https://github.com/miracum/util-images/issues/430)) ([13818eb](https://github.com/miracum/util-images/commit/13818ebd2724c895fa472b7280bc0e9188f8b2fe))
+
 ## [2.0.2](https://github.com/miracum/util-images/compare/coder-base-v2.0.1...coder-base-v2.0.2) (2025-11-11)
 
 
