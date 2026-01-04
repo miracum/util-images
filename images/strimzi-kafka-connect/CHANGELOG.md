@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.9](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.8...strimzi-kafka-connect-v1.8.9) (2026-01-04)
+
+
+### Chores & Updates
+
+* **deps:** update dependency io.trino:trino-jdbc to v479 ([#426](https://github.com/miracum/util-images/issues/426)) ([7d62f75](https://github.com/miracum/util-images/commit/7d62f757492333d6ca15317d9b5868bb9854435a))
+* **deps:** updated to .net 10 ([#430](https://github.com/miracum/util-images/issues/430)) ([13818eb](https://github.com/miracum/util-images/commit/13818ebd2724c895fa472b7280bc0e9188f8b2fe))
+
 ## [1.8.8](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.7...strimzi-kafka-connect-v1.8.8) (2025-12-02)
 
 
