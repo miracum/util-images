@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.4](https://github.com/miracum/util-images/compare/coder-base-v2.0.3...coder-base-v2.0.4) (2026-01-07)
+
+
+### Chores & Updates
+
+* **deps:** openssh client ([89e9bd5](https://github.com/miracum/util-images/commit/89e9bd5166f4c936008c623874dcc482d30718b5))
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [2.0.3](https://github.com/miracum/util-images/compare/coder-base-v2.0.2...coder-base-v2.0.3) (2026-01-04)
 
 
