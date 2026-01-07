@@ -17,3 +17,4 @@ dotnet-sdk-10.0
 nano
 r-base
 r-base-dev
+openssh-client
