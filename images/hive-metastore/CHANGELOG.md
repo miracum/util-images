@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.1...hive-metastore-v1.3.2) (2026-01-09)
+
+
+### Chores & Updates
+
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [1.3.1](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.0...hive-metastore-v1.3.1) (2026-01-04)
 
 
