@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.0](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.6...cricketeerone-kafka-connect-v1.7.0) (2026-01-09)
+
+
+### Features
+
+* added MSSQL connector ([#440](https://github.com/miracum/util-images/issues/440)) ([cdc516f](https://github.com/miracum/util-images/commit/cdc516f0d8b3b7f604d57e6e9bd43e09f630c7c1))
+
+
+### Chores & Updates
+
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [1.6.6](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.6.5...cricketeerone-kafka-connect-v1.6.6) (2025-12-01)
 
 
