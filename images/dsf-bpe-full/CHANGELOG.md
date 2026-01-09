@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.3](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.2...dsf-bpe-full-v1.7.3) (2026-01-09)
+
+
+### Chores & Updates
+
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [1.7.2](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.1...dsf-bpe-full-v1.7.2) (2025-11-24)
 
 
