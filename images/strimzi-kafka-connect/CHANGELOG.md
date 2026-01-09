@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.10](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.9...strimzi-kafka-connect-v1.8.10) (2026-01-09)
+
+
+### Chores & Updates
+
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [1.8.9](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.8...strimzi-kafka-connect-v1.8.9) (2026-01-04)
 
 
