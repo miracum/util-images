@@ -1,6 +1,6 @@
 {
+  "images/coder-base": "2.0.5",
   "images/apache-superset": "2.0.1",
-  "images/coder-base": "2.0.4",
   "images/cricketeerone-kafka-connect": "1.7.1",
   "images/ml-on-fhir": "2.0.3",
   "images/strimzi-kafka-connect": "1.8.9",
