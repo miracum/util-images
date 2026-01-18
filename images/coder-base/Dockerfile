@@ -50,7 +50,7 @@ RUN kubectl version --client
 
 # Helm
 # renovate: datasource=github-releases depName=helm/helm
-ARG HELM_VERSION=4.0.4
+ARG HELM_VERSION=4.0.5
 ENV HELM_URL=https://get.helm.sh/helm-v"${HELM_VERSION}"-linux-amd64.tar.gz
 RUN <<EOF
 curl -fLSs "$HELM_URL" | tar xz
@@ -61,7 +61,7 @@ EOF
 
 # cosign
 # renovate: datasource=github-releases depName=sigstore/cosign
-ARG COSIGN_VERSION=3.0.3
+ARG COSIGN_VERSION=3.0.4
 ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
 RUN <<EOF
 curl -fLSsO "$COSIGN_URL"
