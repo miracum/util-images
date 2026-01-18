@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/miracum/util-images/compare/apache-superset-v2.0.0...apache-superset-v2.0.1) (2026-01-18)
+
+
+### Chores & Updates
+
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [2.0.0](https://github.com/miracum/util-images/compare/apache-superset-v1.9.5...apache-superset-v2.0.0) (2026-01-04)
 
 
