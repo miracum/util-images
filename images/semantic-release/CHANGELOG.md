@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.8](https://github.com/miracum/util-images/compare/semantic-release-v1.2.7...semantic-release-v1.2.8) (2026-01-18)
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#441](https://github.com/miracum/util-images/issues/441)) ([9e578bc](https://github.com/miracum/util-images/commit/9e578bc7cf0459351ca77755e8740b8af8106861))
+* **deps:** update all non-major dependencies ([#443](https://github.com/miracum/util-images/issues/443)) ([b5241ed](https://github.com/miracum/util-images/commit/b5241ed7feb43b691a6a5943187ecd26933b4d65))
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [1.2.7](https://github.com/miracum/util-images/compare/semantic-release-v1.2.6...semantic-release-v1.2.7) (2026-01-04)
 
 
