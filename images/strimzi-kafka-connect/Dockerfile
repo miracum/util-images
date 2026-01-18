@@ -15,7 +15,7 @@ ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 # renovate: datasource=github-releases depName=streamthoughts/kafka-connect-file-pulse
-ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.16.0
+ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.17.0
 # renovate: datasource=maven depName=io.trino:trino-jdbc
 ARG TRINO_JDBC_VERSION=479
 
