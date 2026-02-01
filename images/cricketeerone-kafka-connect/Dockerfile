@@ -5,7 +5,7 @@ ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
 ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.9.2
 
 # renovate: datasource=maven depName=com.mysql:mysql-connector-j
-ARG MYSQL_JDBC_VERSION=9.5.0
+ARG MYSQL_JDBC_VERSION=9.6.0
 # renovate: datasource=maven depName=org.mariadb.jdbc:mariadb-java-client
 ARG MARIADB_JDBC_VERSION=3.5.7
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
