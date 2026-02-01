@@ -1,5 +1,5 @@
 Authlib==1.6.6
 trino==0.336.0
-duckdb==1.4.3
+duckdb==1.4.4
 psycopg2-binary==2.9.11
-oracledb==3.4.1
+oracledb==3.4.2
