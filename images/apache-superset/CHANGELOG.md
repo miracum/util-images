@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/miracum/util-images/compare/apache-superset-v2.0.1...apache-superset-v2.1.0) (2026-02-06)
+
+
+### Features
+
+* added mysqlclient ([#451](https://github.com/miracum/util-images/issues/451)) ([24b3118](https://github.com/miracum/util-images/commit/24b31184a8d4cacef9fc3b03562b9501d14315a8))
+
+
+### Chores & Updates
+
+* **deps:** update all non-major dependencies ([#449](https://github.com/miracum/util-images/issues/449)) ([c0b0150](https://github.com/miracum/util-images/commit/c0b015005e86560ec24c4c2689780ddcc727e0ef))
+
 ## [2.0.1](https://github.com/miracum/util-images/compare/apache-superset-v2.0.0...apache-superset-v2.0.1) (2026-01-18)
 
 
