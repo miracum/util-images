@@ -8,7 +8,7 @@ USER root
 RUN <<EOF
 set -e
 apt-get update -y
-apt-get install -y --no-install-recommends alien libaio-dev libaio1 unzip wget
+apt-get install -y --no-install-recommends alien libaio-dev libaio1 unzip wget default-libmysqlclient-dev build-essential pkg-config
 rm -rf /var/lib/apt/lists/*
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 wget -q https://download.oracle.com/otn_software/linux/instantclient/2360000/oracle-instantclient-basic-23.6.0.24.10-1.el9.x86_64.rpm
