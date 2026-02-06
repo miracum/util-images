@@ -1,10 +1,10 @@
 {
   "images/coder-base": "2.0.6",
-  "images/apache-superset": "2.0.1",
+  "images/apache-superset": "2.1.0",
   "images/cricketeerone-kafka-connect": "1.7.1",
   "images/ml-on-fhir": "2.0.3",
   "images/strimzi-kafka-connect": "1.8.9",
   "images/hive-metastore": "1.3.2",
-  "images/dsf-bpe-full": "1.7.2",
+  "images/dsf-bpe-full": "1.7.3",
   "images/semantic-release": "1.2.8"
 }

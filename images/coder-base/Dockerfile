@@ -15,7 +15,7 @@ RUN <<EOF
 apt-get update
 xargs -r -a /tmp/setup/packages.txt apt-get install -y --no-install-recommends
 
-curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
 apt-get install -y --no-install-recommends nodejs
 
 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
@@ -100,6 +100,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
-echo "n" | sdk install java 25.0.1-tem
-echo "y" | sdk install java 21.0.8-tem
+echo "n" | sdk install java 17.0.18-tem
+echo "n" | sdk install java 21.0.9-tem
+echo "n" | sdk install java 25.0.2-tem
+sdk default java 21.0.9-tem
 EOF
