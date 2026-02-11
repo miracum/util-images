@@ -1,7 +1,6 @@
 FROM docker.io/library/ubuntu:24.04@sha256:cd1dba651b3080c3686ecf4e3c4220f026b521fb76978881737d24f200828b2b
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
-ENV LANG=en_US.UTF-8 \
-    PATH="$PATH:/home/coder/.local/bin"
+ENV LANG=en_US.UTF-8
 
 # not set as an env var so only available during build
 ARG DEBIAN_FRONTEND=noninteractive
@@ -91,13 +90,20 @@ dpkg --install s5cmd_${S5CMD_VERSION}_linux_amd64.deb
 s5cmd version
 EOF
 
+# install uv globally
+RUN <<EOF
+curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="/usr/local/bin" sh
+uv --version
+EOF
+
 WORKDIR /home/coder
 USER 10001:10001
 
 RUN <<EOF
-curl -LsSf https://astral.sh/uv/install.sh | sh
+echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 
-curl -s "https://get.sdkman.io" | bash
+curl -s "https://get.sdkman.io?ci=true" | bash
+
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 echo "n" | sdk install java 17.0.18-tem
@@ -105,3 +111,8 @@ echo "n" | sdk install java 21.0.9-tem
 echo "n" | sdk install java 25.0.2-tem
 sdk default java 21.0.9-tem
 EOF
+
+USER root
+RUN cp /home/coder/.bashrc /etc/skel/
+
+USER 10001:10001
