@@ -99,6 +99,8 @@ EOF
 WORKDIR /home/coder
 USER 10001:10001
 
+# see exceptions: <https://www.shellcheck.net/wiki/SC2016>
+# hadolint ignore=SC2016
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 
