@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.7](https://github.com/miracum/util-images/compare/coder-base-v2.0.6...coder-base-v2.0.7) (2026-02-11)
+
+
+### Bug Fixes
+
+* coder uv and sdkman setup ([#456](https://github.com/miracum/util-images/issues/456)) ([a71854b](https://github.com/miracum/util-images/commit/a71854b9ff0119aef87ac66d8ca57f90d1ffba87))
+
 ## [2.0.6](https://github.com/miracum/util-images/compare/coder-base-v2.0.5...coder-base-v2.0.6) (2026-02-06)
 
 
