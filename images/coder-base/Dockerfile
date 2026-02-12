@@ -97,6 +97,12 @@ curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="/usr/loca
 uv --version
 EOF
 
+# install sdkman globally
+RUN <<EOF
+curl -s "https://get.sdkman.io?ci=true" | bash
+sdk --version
+EOF
+
 WORKDIR /home/coder
 USER 10001:10001
 
@@ -104,8 +110,6 @@ USER 10001:10001
 # hadolint ignore=SC2016
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
-
-curl -s "https://get.sdkman.io?ci=true" | bash
 
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
