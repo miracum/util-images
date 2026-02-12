@@ -102,6 +102,10 @@ RUN <<EOF
 curl -s "https://get.sdkman.io?ci=true" | bash
 source "/usr/local/sdkman/bin/sdkman-init.sh"
 sdk version
+echo "n" | sdk install java 17.0.18-tem
+echo "n" | sdk install java 21.0.9-tem
+echo "n" | sdk install java 25.0.2-tem
+sdk default java 21.0.9-tem
 EOF
 
 WORKDIR /home/coder
@@ -112,13 +116,7 @@ USER 10001:10001
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && source "/usr/local/sdkman/bin/sdkman-init.sh"' >> ~/.bashrc
-
-source "/usr/local/sdkman/bin/sdkman-init.sh"
-sdk version
-echo "n" | sdk install java 17.0.18-tem
-echo "n" | sdk install java 21.0.9-tem
-echo "n" | sdk install java 25.0.2-tem
-sdk default java 21.0.9-tem
+java --version
 EOF
 
 USER root
