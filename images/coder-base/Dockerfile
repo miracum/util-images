@@ -101,7 +101,7 @@ EOF
 RUN <<EOF
 curl -s "https://get.sdkman.io?ci=true" | bash
 source "/usr/local/sdkman/bin/sdkman-init.sh"
-sdk --version
+sdk version
 EOF
 
 WORKDIR /home/coder
