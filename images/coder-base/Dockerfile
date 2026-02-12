@@ -117,7 +117,6 @@ USER 10001:10001
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && source "/usr/local/sdkman/bin/sdkman-init.sh"' >> ~/.bashrc
-sdk version
 java --version
 EOF
 
