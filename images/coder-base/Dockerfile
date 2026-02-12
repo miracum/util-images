@@ -111,6 +111,7 @@ USER 10001:10001
 # hadolint ignore=SC2016
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
+echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && source "/usr/local/sdkman/bin/sdkman-init.sh"' >> ~/.bashrc
 
 source "/usr/local/sdkman/bin/sdkman-init.sh"
 sdk version
