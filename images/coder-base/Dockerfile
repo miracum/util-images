@@ -112,7 +112,7 @@ USER 10001:10001
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+source "/usr/local/sdkman/bin/sdkman-init.sh"
 sdk version
 echo "n" | sdk install java 17.0.18-tem
 echo "n" | sdk install java 21.0.9-tem
