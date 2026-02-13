@@ -1,6 +1,8 @@
 FROM docker.io/library/ubuntu:24.04@sha256:cd1dba651b3080c3686ecf4e3c4220f026b521fb76978881737d24f200828b2b
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
-ENV LANG=en_US.UTF-8
+ENV LANG=en_US.UTF-8 \
+    SDKMAN_DIR="/usr/local/sdkman" \
+    PATH="$PATH:/usr/local/sdkman/bin/"
 
 # not set as an env var so only available during build
 ARG DEBIAN_FRONTEND=noninteractive
@@ -96,6 +98,17 @@ curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="/usr/loca
 uv --version
 EOF
 
+# install sdkman globally
+RUN <<EOF
+curl -s "https://get.sdkman.io?ci=true" | bash
+source "/usr/local/sdkman/bin/sdkman-init.sh"
+sdk version
+echo "n" | sdk install java 17.0.18-tem
+echo "n" | sdk install java 21.0.9-tem
+echo "n" | sdk install java 25.0.2-tem
+sdk default java 21.0.9-tem
+EOF
+
 WORKDIR /home/coder
 USER 10001:10001
 
@@ -103,15 +116,9 @@ USER 10001:10001
 # hadolint ignore=SC2016
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
-
-curl -s "https://get.sdkman.io?ci=true" | bash
-
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk version
-echo "n" | sdk install java 17.0.18-tem
-echo "n" | sdk install java 21.0.9-tem
-echo "n" | sdk install java 25.0.2-tem
-sdk default java 21.0.9-tem
+echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && source "/usr/local/sdkman/bin/sdkman-init.sh"' >> ~/.bashrc
+source "/usr/local/sdkman/bin/sdkman-init.sh"
+java --version
 EOF
 
 USER root
