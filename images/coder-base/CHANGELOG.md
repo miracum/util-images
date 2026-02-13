@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/miracum/util-images/compare/coder-base-v2.0.7...coder-base-v2.1.0) (2026-02-13)
+
+
+### Features
+
+* install sdkman globally ([#458](https://github.com/miracum/util-images/issues/458)) ([3665b25](https://github.com/miracum/util-images/commit/3665b2506838d05849304a47c2163bf535f071dd))
+
 ## [2.0.7](https://github.com/miracum/util-images/compare/coder-base-v2.0.6...coder-base-v2.0.7) (2026-02-11)
 
 
