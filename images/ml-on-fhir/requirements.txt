@@ -1,4 +1,4 @@
-pathling==7.2.0
+pathling==9.3.0
 polars==1.37.1
 deltalake==1.4.1
 duckdb==1.4.4
