@@ -46,7 +46,7 @@ chmod +x /usr/local/bin/mc
 EOF
 
 # kubectl
-COPY --from=docker.io/rancher/kubectl:v1.35.1@sha256:9e365be67e373fa097a429b6e8590caf7ddc17fb34bbea0837360619e2552916 /bin/kubectl /usr/local/bin/kubectl
+COPY --from=docker.io/rancher/kubectl:v1.35.2@sha256:25cae09dd56c549742c0ac0458f17553a724f261f4e8a119b56d93d7eeeeb638 /bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
 # Helm
@@ -73,7 +73,7 @@ EOF
 
 # crane
 # renovate: datasource=github-releases depName=google/go-containerregistry
-ARG CRANE_VERSION=0.21.0
+ARG CRANE_VERSION=0.21.2
 ENV CRANE_URL=https://github.com/google/go-containerregistry/releases/download/v${CRANE_VERSION}/go-containerregistry_Linux_x86_64.tar.gz
 RUN <<EOF
 curl -fLSs "$CRANE_URL" | tar xz
