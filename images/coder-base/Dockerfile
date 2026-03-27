@@ -2,7 +2,7 @@ FROM docker.io/library/ubuntu:24.04@sha256:d1e2e92c075e5ca139d51a140fff46f84315c
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8 \
     SDKMAN_DIR="/usr/local/sdkman" \
-    PATH="$PATH:/usr/local/sdkman/bin/"
+    PATH="$PATH:/usr/local/sdkman/bin/:/home/coder/.local/bin/"
 
 # not set as an env var so only available during build
 ARG DEBIAN_FRONTEND=noninteractive
