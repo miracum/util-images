@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.8.10](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.9...strimzi-kafka-connect-v1.8.10) (2026-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#463](https://github.com/miracum/util-images/issues/463)) ([1119925](https://github.com/miracum/util-images/commit/111992539f78e53e41e71b725ee76004ceb5539d))
+* **deps:** update all non-major dependencies ([#473](https://github.com/miracum/util-images/issues/473)) ([40c424a](https://github.com/miracum/util-images/commit/40c424adb3fc4704ecb8d96beee697aeeedbdaca))
+
+
+### Chores & Updates
+
+* added fastmcp and jsontransform ([#478](https://github.com/miracum/util-images/issues/478)) ([393ae54](https://github.com/miracum/util-images/commit/393ae5409d0c39f36a4e62da32ed0690f992b2d3))
+* **deps:** update all non-major dependencies ([#443](https://github.com/miracum/util-images/issues/443)) ([b5241ed](https://github.com/miracum/util-images/commit/b5241ed7feb43b691a6a5943187ecd26933b4d65))
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [1.8.9](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.8...strimzi-kafka-connect-v1.8.9) (2026-01-04)
 
 
