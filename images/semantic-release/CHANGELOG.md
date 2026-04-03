@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.10](https://github.com/miracum/util-images/compare/semantic-release-v1.2.9...semantic-release-v1.2.10) (2026-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#473](https://github.com/miracum/util-images/issues/473)) ([40c424a](https://github.com/miracum/util-images/commit/40c424adb3fc4704ecb8d96beee697aeeedbdaca))
+
+
+### Chores & Updates
+
+* **deps:** lock file maintenance ([#467](https://github.com/miracum/util-images/issues/467)) ([f40b718](https://github.com/miracum/util-images/commit/f40b71834a01d5164220c6feffcee2eb3925b2c7))
+* **deps:** lock file maintenance ([#472](https://github.com/miracum/util-images/issues/472)) ([5b91a47](https://github.com/miracum/util-images/commit/5b91a47036ed9df2cafe2599ef847aedcb020ad5))
+* **deps:** lock file maintenance ([#474](https://github.com/miracum/util-images/issues/474)) ([ac85108](https://github.com/miracum/util-images/commit/ac851081ee6a627aae666228f2d8118d7cd15259))
+
 ## [1.2.9](https://github.com/miracum/util-images/compare/semantic-release-v1.2.8...semantic-release-v1.2.9) (2026-03-04)
 
 
