@@ -19,3 +19,4 @@ r-base
 r-base-dev
 openssh-client
 zstd
+graphviz

@@ -3,6 +3,7 @@ SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
 ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.8.4
+ARG REDHATINSIGHTS_EXPANDJSONSMT_VERSION=0.0.7
 
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ARG ORACLE_OJDBC_VERSION=23.26.1.0.0
@@ -45,6 +46,10 @@ rm transforms-for-apache-kafka-connect-${AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNE
 curl -fLsSO https://github.com/streamthoughts/kafka-connect-file-pulse/releases/download/v${KAFKA_CONNECT_FILE_PULSE_VERSION}/streamthoughts-kafka-connect-file-pulse-${KAFKA_CONNECT_FILE_PULSE_VERSION}.zip
 unzip streamthoughts-kafka-connect-file-pulse-${KAFKA_CONNECT_FILE_PULSE_VERSION}.zip -d /opt/kafka/plugins/
 rm streamthoughts-kafka-connect-file-pulse-${KAFKA_CONNECT_FILE_PULSE_VERSION}.zip
+
+curl -fLsSO https://hub-downloads.confluent.io/api/plugins/redhatinsights/expandjsonsmt/versions/${REDHATINSIGHTS_EXPANDJSONSMT_VERSION}/redhatinsights-expandjsonsmt-${REDHATINSIGHTS_EXPANDJSONSMT_VERSION}.zip
+unzip redhatinsights-expandjsonsmt-${REDHATINSIGHTS_EXPANDJSONSMT_VERSION}.zip -d /opt/kafka/plugins/
+rm redhatinsights-expandjsonsmt-${REDHATINSIGHTS_EXPANDJSONSMT_VERSION}.zip
 
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/${ORACLE_OJDBC_VERSION}/ojdbc11-${ORACLE_OJDBC_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/${MSSQL_JDBC_VERSION}/mssql-jdbc-${MSSQL_JDBC_VERSION}.jar"
