@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.1](https://github.com/miracum/util-images/compare/apache-superset-v2.1.0...apache-superset-v2.1.1) (2026-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#463](https://github.com/miracum/util-images/issues/463)) ([1119925](https://github.com/miracum/util-images/commit/111992539f78e53e41e71b725ee76004ceb5539d))
+* **deps:** update all non-major dependencies ([#469](https://github.com/miracum/util-images/issues/469)) ([473313e](https://github.com/miracum/util-images/commit/473313edcf47ccd80e5e8f664347ed4b7588ca53))
+* **deps:** update all non-major dependencies ([#473](https://github.com/miracum/util-images/issues/473)) ([40c424a](https://github.com/miracum/util-images/commit/40c424adb3fc4704ecb8d96beee697aeeedbdaca))
+
+
+### Chores & Updates
+
+* added fastmcp and jsontransform ([#478](https://github.com/miracum/util-images/issues/478)) ([393ae54](https://github.com/miracum/util-images/commit/393ae5409d0c39f36a4e62da32ed0690f992b2d3))
+
 ## [2.1.0](https://github.com/miracum/util-images/compare/apache-superset-v2.0.1...apache-superset-v2.1.0) (2026-02-06)
 
 
