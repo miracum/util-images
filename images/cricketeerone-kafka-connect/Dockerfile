@@ -3,6 +3,7 @@ SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
 ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.9.2
+ARG REDHATINSIGHTS_EXPANDJSONSMT_VERSION=0.0.7
 
 # renovate: datasource=maven depName=com.mysql:mysql-connector-j
 ARG MYSQL_JDBC_VERSION=9.6.0
@@ -27,6 +28,10 @@ confluent-hub install --no-prompt \
 confluent-hub install --no-prompt \
     --component-dir /app/libs --worker-configs /app/resources/connect-distributed.properties -- \
     confluentinc/connect-transforms:${CONFLUENT_CONNECT_TRANSFORMS_VERSION}
+
+confluent-hub install --no-prompt \
+    --component-dir /app/libs --worker-configs /app/resources/connect-distributed.properties -- \
+    redhatinsights/expandjsonsmt:${REDHATINSIGHTS_EXPANDJSONSMT_VERSION}
 EOF
 
 WORKDIR /app/libs/confluentinc-kafka-connect-jdbc/lib/
