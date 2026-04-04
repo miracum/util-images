@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.4](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.7.3...cricketeerone-kafka-connect-v1.7.4) (2026-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#473](https://github.com/miracum/util-images/issues/473)) ([40c424a](https://github.com/miracum/util-images/commit/40c424adb3fc4704ecb8d96beee697aeeedbdaca))
+
+
+### Chores & Updates
+
+* **deps:** added expandjsonsmt ([#480](https://github.com/miracum/util-images/issues/480)) ([21988c3](https://github.com/miracum/util-images/commit/21988c341877a93665ad78ebb56e54913f147fa0))
+
 ## [1.7.3](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.7.2...cricketeerone-kafka-connect-v1.7.3) (2026-03-04)
 
 
