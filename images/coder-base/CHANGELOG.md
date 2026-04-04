@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.1.2](https://github.com/miracum/util-images/compare/coder-base-v2.1.1...coder-base-v2.1.2) (2026-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#473](https://github.com/miracum/util-images/issues/473)) ([40c424a](https://github.com/miracum/util-images/commit/40c424adb3fc4704ecb8d96beee697aeeedbdaca))
+
+
+### Chores & Updates
+
+* added fastmcp and jsontransform ([#478](https://github.com/miracum/util-images/issues/478)) ([393ae54](https://github.com/miracum/util-images/commit/393ae5409d0c39f36a4e62da32ed0690f992b2d3))
+* **deps:** install zstd ([#475](https://github.com/miracum/util-images/issues/475)) ([d7d7784](https://github.com/miracum/util-images/commit/d7d77846af918097bafae6259269e1682025435e))
+
 ## [2.1.1](https://github.com/miracum/util-images/compare/coder-base-v2.1.0...coder-base-v2.1.1) (2026-03-04)
 
 
