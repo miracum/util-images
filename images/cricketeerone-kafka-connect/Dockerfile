@@ -14,7 +14,7 @@ ARG ORACLE_OJDBC_VERSION=23.26.1.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
 ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=io.trino:trino-jdbc
-ARG TRINO_JDBC_VERSION=479
+ARG TRINO_JDBC_VERSION=480
 # renovate: datasource=maven depName=org.postgresql:postgresql
 ARG POSTGRESQL_VERSION=42.7.10
 
