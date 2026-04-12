@@ -30,7 +30,7 @@ EOF
 
 # DuckDB
 # renovate: datasource=github-releases depName=duckdb/duckdb
-ARG DUCKDB_VERSION=1.5.0
+ARG DUCKDB_VERSION=1.5.1
 ENV DUCKDB_URL=https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip
 RUN <<EOF
 curl -fLSsO ${DUCKDB_URL}
