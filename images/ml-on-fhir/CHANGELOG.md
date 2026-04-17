@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.0.4](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.3...ml-on-fhir-v2.0.4) (2026-04-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#377](https://github.com/miracum/util-images/issues/377)) ([7ab7db1](https://github.com/miracum/util-images/commit/7ab7db119c2a31b5b88ec8520019dea609af43ba))
+* **deps:** update all non-major dependencies ([#385](https://github.com/miracum/util-images/issues/385)) ([633e597](https://github.com/miracum/util-images/commit/633e597eb121f4522c5e1e1b20b2118f04209abf))
+* **deps:** update all non-major dependencies ([#407](https://github.com/miracum/util-images/issues/407)) ([94200f9](https://github.com/miracum/util-images/commit/94200f9c6f75217939272638e98b64da89e77bb2))
+* **deps:** update all non-major dependencies ([#412](https://github.com/miracum/util-images/issues/412)) ([f5b6776](https://github.com/miracum/util-images/commit/f5b67766a66a60ab3481800e10413e79c9983fb0))
+* **deps:** update all non-major dependencies ([#424](https://github.com/miracum/util-images/issues/424)) ([e551035](https://github.com/miracum/util-images/commit/e55103568e35e041080e50ab84f318ab138900b3))
+* **deps:** update all non-major dependencies ([#463](https://github.com/miracum/util-images/issues/463)) ([1119925](https://github.com/miracum/util-images/commit/111992539f78e53e41e71b725ee76004ceb5539d))
+* **deps:** update all non-major dependencies ([#473](https://github.com/miracum/util-images/issues/473)) ([40c424a](https://github.com/miracum/util-images/commit/40c424adb3fc4704ecb8d96beee697aeeedbdaca))
+
+
+### Chores & Updates
+
+* added fastmcp and jsontransform ([#478](https://github.com/miracum/util-images/issues/478)) ([393ae54](https://github.com/miracum/util-images/commit/393ae5409d0c39f36a4e62da32ed0690f992b2d3))
+* **deps:** update all non-major dependencies ([#388](https://github.com/miracum/util-images/issues/388)) ([a1c4d25](https://github.com/miracum/util-images/commit/a1c4d25f3ff86400174eb1d779f4fc58174e6503))
+* **deps:** update all non-major dependencies ([#399](https://github.com/miracum/util-images/issues/399)) ([447ac99](https://github.com/miracum/util-images/commit/447ac99c56f0ce43de0f0f1d06d187299b8c2f80))
+* **deps:** update all non-major dependencies ([#443](https://github.com/miracum/util-images/issues/443)) ([b5241ed](https://github.com/miracum/util-images/commit/b5241ed7feb43b691a6a5943187ecd26933b4d65))
+* **deps:** update all non-major dependencies ([#449](https://github.com/miracum/util-images/issues/449)) ([c0b0150](https://github.com/miracum/util-images/commit/c0b015005e86560ec24c4c2689780ddcc727e0ef))
+* **deps:** update dependency pyarrow to v21 ([#349](https://github.com/miracum/util-images/issues/349)) ([68b4802](https://github.com/miracum/util-images/commit/68b4802f94c4033a3c1cfa49fd693837353bf279))
+* **master:** release strimzi-kafka-connect 1.8.9 ([#431](https://github.com/miracum/util-images/issues/431)) ([21474e0](https://github.com/miracum/util-images/commit/21474e0cc15f8451f80d73ce7dad94ddefa79ed2))
+
 ## [2.0.3](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.2...ml-on-fhir-v2.0.3) (2025-08-22)
 
 
