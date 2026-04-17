@@ -1,4 +1,4 @@
-Authlib==1.6.9
+Authlib==1.6.11
 trino==0.337.0
 duckdb==1.5.0
 psycopg2-binary==2.9.11
