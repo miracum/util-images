@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/miracum/util-images/compare/apache-superset-v2.1.1...apache-superset-v2.1.2) (2026-04-17)
+
+
+### Chores & Updates
+
+* **deps:** update dependency authlib to v1.6.11 [security] ([#486](https://github.com/miracum/util-images/issues/486)) ([f5dfc88](https://github.com/miracum/util-images/commit/f5dfc88001d7caa3bed9363980a235509716b3ca))
+
 ## [2.1.1](https://github.com/miracum/util-images/compare/apache-superset-v2.1.0...apache-superset-v2.1.1) (2026-04-03)
 
 
