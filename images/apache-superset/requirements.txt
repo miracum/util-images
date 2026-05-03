@@ -1,7 +1,7 @@
-Authlib==1.6.11
+Authlib==1.7.0
 trino==0.337.0
-duckdb==1.5.0
+duckdb==1.5.2
 psycopg2-binary==2.9.11
 oracledb==3.4.2
 mysqlclient==2.2.8
-fastmcp==3.2.0
+fastmcp==3.2.4
