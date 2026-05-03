@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.11](https://github.com/miracum/util-images/compare/semantic-release-v1.2.10...semantic-release-v1.2.11) (2026-04-17)
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#479](https://github.com/miracum/util-images/issues/479)) ([013d540](https://github.com/miracum/util-images/commit/013d54094f512fcaad6404ef607fd4f0b41d7523))
+
 ## [1.2.10](https://github.com/miracum/util-images/compare/semantic-release-v1.2.9...semantic-release-v1.2.10) (2026-04-03)
 
 
