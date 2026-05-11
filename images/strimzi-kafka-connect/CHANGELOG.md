@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.12](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.11...strimzi-kafka-connect-v1.8.12) (2026-05-11)
+
+
+### Bug Fixes
+
+* switched to joshuagrisham's kafka connect json smt ([#488](https://github.com/miracum/util-images/issues/488)) ([2bdde7a](https://github.com/miracum/util-images/commit/2bdde7a06d77f49910d3da4bcf1d3b17c8b43538))
+
 ## [1.8.11](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.10...strimzi-kafka-connect-v1.8.11) (2026-05-03)
 
 
