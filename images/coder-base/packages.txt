@@ -20,3 +20,4 @@ r-base-dev
 openssh-client
 zstd
 graphviz
+tmux
