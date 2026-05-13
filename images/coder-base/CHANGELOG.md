@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.4](https://github.com/miracum/util-images/compare/coder-base-v2.1.3...coder-base-v2.1.4) (2026-05-13)
+
+
+### Chores & Updates
+
+* **deps:** add tmux to packages list ([#490](https://github.com/miracum/util-images/issues/490)) ([90b205e](https://github.com/miracum/util-images/commit/90b205ee48bf656d93887b5708f443969a90928e))
+
 ## [2.1.3](https://github.com/miracum/util-images/compare/coder-base-v2.1.2...coder-base-v2.1.3) (2026-05-03)
 
 
