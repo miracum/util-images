@@ -6,9 +6,9 @@ ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.9.2
 ARG REDHATINSIGHTS_EXPANDJSONSMT_VERSION=0.0.7
 
 # renovate: datasource=maven depName=com.mysql:mysql-connector-j
-ARG MYSQL_JDBC_VERSION=9.6.0
+ARG MYSQL_JDBC_VERSION=9.7.0
 # renovate: datasource=maven depName=org.mariadb.jdbc:mariadb-java-client
-ARG MARIADB_JDBC_VERSION=3.5.7
+ARG MARIADB_JDBC_VERSION=3.5.8
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ARG ORACLE_OJDBC_VERSION=23.26.1.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
@@ -16,7 +16,7 @@ ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=io.trino:trino-jdbc
 ARG TRINO_JDBC_VERSION=480
 # renovate: datasource=maven depName=org.postgresql:postgresql
-ARG POSTGRESQL_VERSION=42.7.10
+ARG POSTGRESQL_VERSION=42.7.11
 
 WORKDIR /app/libs/
 
