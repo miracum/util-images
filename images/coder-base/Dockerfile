@@ -92,6 +92,16 @@ dpkg --install s5cmd_${S5CMD_VERSION}_linux_amd64.deb
 s5cmd version
 EOF
 
+# Argo CLI
+# renovate: datasource=github-releases depName=argoproj/argo-workflows
+ARG ARGO_VERSION=4.0.5
+ENV ARGO_URL=https://github.com/argoproj/argo-workflows/releases/download/v${ARGO_VERSION}/argo-linux-amd64.gz
+RUN <<EOF
+curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
+chmod +x /usr/local/bin/argo
+argo version
+EOF
+
 # install uv globally
 RUN <<EOF
 curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="/usr/local/bin" sh
