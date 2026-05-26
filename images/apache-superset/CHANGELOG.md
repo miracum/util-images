@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.3](https://github.com/miracum/util-images/compare/apache-superset-v2.1.2...apache-superset-v2.1.3) (2026-05-26)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#498](https://github.com/miracum/util-images/issues/498)) ([ba97e7c](https://github.com/miracum/util-images/commit/ba97e7c33198aec2372097a8b5595543597c6b3c))
+
+
+### Chores & Updates
+
+* **deps:** fastmcp ([d8946de](https://github.com/miracum/util-images/commit/d8946de2ece0966310c7e22a17e262c3879fece2))
+* **deps:** superset 6.1.0 ([876a62d](https://github.com/miracum/util-images/commit/876a62d6eeb0ea686c732a6acfc5f496dc7fabf0))
+* **deps:** update dependency authlib to v1.6.12 [security] ([#493](https://github.com/miracum/util-images/issues/493)) ([2796fb2](https://github.com/miracum/util-images/commit/2796fb23b21f0d08a0df18c4e4c6a400c4c3ac5f))
+
 ## [2.1.2](https://github.com/miracum/util-images/compare/apache-superset-v2.1.1...apache-superset-v2.1.2) (2026-04-17)
 
 
