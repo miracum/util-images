@@ -4,4 +4,4 @@ duckdb==1.5.2
 psycopg2-binary==2.9.12
 oracledb==3.4.2
 mysqlclient==2.2.8
-fastmcp==3.2.4
+apache-superset[fastmcp]==6.1.0
