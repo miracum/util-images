@@ -2,6 +2,6 @@ Authlib==1.7.2
 trino==0.337.0
 duckdb==1.5.2
 psycopg2-binary==2.9.12
-oracledb==3.4.2
+oracledb==4.0.0
 mysqlclient==2.2.8
 apache-superset[fastmcp]==6.1.0
