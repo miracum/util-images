@@ -1,15 +1,15 @@
-FROM quay.io/strimzi/kafka:0.45.2-kafka-3.8.0@sha256:24f83460f4a904a0511c81e981ba27d72229cef985b222e983dd7eb7a2f49d0f
+FROM quay.io/strimzi/kafka:1.0.0-kafka-4.2.0@sha256:87c6b1c1081bfc25f88a0490d580f5696f5e419482d686df612cdfdf04711059
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
-ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.8.4
+ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.9.4
 
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
-ARG ORACLE_OJDBC_VERSION=23.26.1.0.0
+ARG ORACLE_OJDBC_VERSION=23.26.2.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
 ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=org.apache.kafka:connect-file
-ARG KAFKA_CONNECT_FILE_VERSION=4.2.0
+ARG KAFKA_CONNECT_FILE_VERSION=4.3.0
 # renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
 ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
