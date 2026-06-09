@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.12...strimzi-kafka-connect-v2.0.0) (2026-06-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* KRaft Kafka API
+
+### Features
+
+* updates kafka connect to Kafka 4 ([#504](https://github.com/miracum/util-images/issues/504)) ([6d8b468](https://github.com/miracum/util-images/commit/6d8b468e0b0952b18011539bf553f6de657c1b2f))
+
 ## [1.8.12](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v1.8.11...strimzi-kafka-connect-v1.8.12) (2026-05-11)
 
 
