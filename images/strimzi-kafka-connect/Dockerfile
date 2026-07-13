@@ -1,4 +1,4 @@
-FROM quay.io/strimzi/kafka:1.0.0-kafka-4.2.0@sha256:87c6b1c1081bfc25f88a0490d580f5696f5e419482d686df612cdfdf04711059
+FROM quay.io/strimzi/kafka:1.1.0-kafka-4.2.0@sha256:79d91d6a9dc9dc08ea1e75cb8b5cf1a73069a1db265b67335f444b4043f72f5b
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
@@ -9,13 +9,13 @@ ARG ORACLE_OJDBC_VERSION=23.26.2.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
 ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=org.apache.kafka:connect-file
-ARG KAFKA_CONNECT_FILE_VERSION=4.3.0
+ARG KAFKA_CONNECT_FILE_VERSION=4.3.1
 # renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
 ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 # renovate: datasource=github-releases depName=streamthoughts/kafka-connect-file-pulse
-ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.17.0
+ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.18.0
 # renovate: datasource=maven depName=io.trino:trino-jdbc
 ARG TRINO_JDBC_VERSION=482
 
