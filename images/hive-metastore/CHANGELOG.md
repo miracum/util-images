@@ -11,6 +11,19 @@
 ### Chores & Updates
 
 * **master:** release hive-metastore 1.3.4 ([#516](https://github.com/miracum/util-images/issues/516)) ([fdc1c3a](https://github.com/miracum/util-images/commit/fdc1c3a03bf68e4fa517587311a0d2d9e0cb8fdb))
+* **master:** release hive-metastore 1.3.4 ([#524](https://github.com/miracum/util-images/issues/524)) ([bef6192](https://github.com/miracum/util-images/commit/bef6192a843c14f0304bd6f01036d8a91b667691))
+
+## [1.3.4](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.3...hive-metastore-v1.3.4) (2026-08-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#508](https://github.com/miracum/util-images/issues/508)) ([8ae3b62](https://github.com/miracum/util-images/commit/8ae3b62d7889368a6a622bdb57bb3431c5945f0c))
+
+
+### Chores & Updates
+
+* **master:** release hive-metastore 1.3.4 ([#516](https://github.com/miracum/util-images/issues/516)) ([fdc1c3a](https://github.com/miracum/util-images/commit/fdc1c3a03bf68e4fa517587311a0d2d9e0cb8fdb))
 
 ## [1.3.3](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.2...hive-metastore-v1.3.3) (2026-05-26)
 
