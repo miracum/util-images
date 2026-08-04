@@ -50,6 +50,10 @@
     "images/semantic-release": {
       "component": "semantic-release",
       "release-type": "simple"
+    },
+    "images/mlflow": {
+      "component": "mlflow",
+      "release-type": "simple"
     }
   }
 }
