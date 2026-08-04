@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.4](https://github.com/miracum/util-images/compare/apache-superset-v2.1.3...apache-superset-v2.1.4) (2026-07-22)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#508](https://github.com/miracum/util-images/issues/508)) ([8ae3b62](https://github.com/miracum/util-images/commit/8ae3b62d7889368a6a622bdb57bb3431c5945f0c))
+
+
+### Chores & Updates
+
+* **deps:** update dependency oracledb to v4 ([#517](https://github.com/miracum/util-images/issues/517)) ([4691a28](https://github.com/miracum/util-images/commit/4691a28ccf68d85e20dc81b66c3e96ffb54b3fa4))
+
 ## [2.1.3](https://github.com/miracum/util-images/compare/apache-superset-v2.1.2...apache-superset-v2.1.3) (2026-05-26)
 
 
