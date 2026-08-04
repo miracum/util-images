@@ -16,7 +16,7 @@ ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=io.trino:trino-jdbc
 ARG TRINO_JDBC_VERSION=482
 # renovate: datasource=maven depName=org.postgresql:postgresql
-ARG POSTGRESQL_VERSION=42.7.12
+ARG POSTGRESQL_VERSION=42.7.13
 
 WORKDIR /app/libs/
 
