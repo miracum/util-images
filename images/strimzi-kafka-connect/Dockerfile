@@ -11,7 +11,7 @@ ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=org.apache.kafka:connect-file
 ARG KAFKA_CONNECT_FILE_VERSION=4.3.1
 # renovate: datasource=github-releases depName=Aiven-Open/transforms-for-apache-kafka-connect
-ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.6.0
+ARG AIVEN_TRANSFORMS_FOR_APACHE_KAFKA_CONNECT_VERSION=1.7.0
 # renovate: datasource=maven depName=com.github.castorm:kafka-connect-http
 ARG CASTORM_KAFKA_CONNECT_HTTP_VERSION=0.8.11
 # renovate: datasource=github-releases depName=streamthoughts/kafka-connect-file-pulse

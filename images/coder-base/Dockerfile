@@ -51,7 +51,7 @@ RUN kubectl version --client
 
 # Helm
 # renovate: datasource=github-releases depName=helm/helm
-ARG HELM_VERSION=4.2.2
+ARG HELM_VERSION=4.2.3
 ENV HELM_URL=https://get.helm.sh/helm-v"${HELM_VERSION}"-linux-amd64.tar.gz
 RUN <<EOF
 curl -fLSs "$HELM_URL" | tar xz
@@ -62,7 +62,7 @@ EOF
 
 # cosign
 # renovate: datasource=github-releases depName=sigstore/cosign
-ARG COSIGN_VERSION=3.1.1
+ARG COSIGN_VERSION=3.1.2
 ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
 RUN <<EOF
 curl -fLSsO "$COSIGN_URL"
@@ -94,7 +94,7 @@ EOF
 
 # Argo CLI
 # renovate: datasource=github-releases depName=argoproj/argo-workflows
-ARG ARGO_VERSION=4.0.6
+ARG ARGO_VERSION=4.0.7
 ENV ARGO_URL=https://github.com/argoproj/argo-workflows/releases/download/v${ARGO_VERSION}/argo-linux-amd64.gz
 RUN <<EOF
 curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
