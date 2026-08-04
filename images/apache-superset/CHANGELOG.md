@@ -13,6 +13,21 @@
 * **deps:** update dependency oracledb to v4 ([#517](https://github.com/miracum/util-images/issues/517)) ([4691a28](https://github.com/miracum/util-images/commit/4691a28ccf68d85e20dc81b66c3e96ffb54b3fa4))
 * **master:** release apache-superset 2.1.4 ([#514](https://github.com/miracum/util-images/issues/514)) ([0d501ad](https://github.com/miracum/util-images/commit/0d501adaa0b8fb9d20d2c4d883a05552104c18ed))
 * **master:** release apache-superset 2.1.4 ([#525](https://github.com/miracum/util-images/issues/525)) ([d35971d](https://github.com/miracum/util-images/commit/d35971dd650f3dd2e0b3755b577cc2784d5ada25))
+* **master:** release apache-superset 2.1.4 ([#527](https://github.com/miracum/util-images/issues/527)) ([9bf7364](https://github.com/miracum/util-images/commit/9bf7364f31439ec46f11522db0b7c3b5667e27b1))
+
+## [2.1.4](https://github.com/miracum/util-images/compare/apache-superset-v2.1.3...apache-superset-v2.1.4) (2026-08-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#508](https://github.com/miracum/util-images/issues/508)) ([8ae3b62](https://github.com/miracum/util-images/commit/8ae3b62d7889368a6a622bdb57bb3431c5945f0c))
+
+
+### Chores & Updates
+
+* **deps:** update dependency oracledb to v4 ([#517](https://github.com/miracum/util-images/issues/517)) ([4691a28](https://github.com/miracum/util-images/commit/4691a28ccf68d85e20dc81b66c3e96ffb54b3fa4))
+* **master:** release apache-superset 2.1.4 ([#514](https://github.com/miracum/util-images/issues/514)) ([0d501ad](https://github.com/miracum/util-images/commit/0d501adaa0b8fb9d20d2c4d883a05552104c18ed))
+* **master:** release apache-superset 2.1.4 ([#525](https://github.com/miracum/util-images/issues/525)) ([d35971d](https://github.com/miracum/util-images/commit/d35971dd650f3dd2e0b3755b577cc2784d5ada25))
 
 ## [2.1.4](https://github.com/miracum/util-images/compare/apache-superset-v2.1.3...apache-superset-v2.1.4) (2026-08-04)
 
