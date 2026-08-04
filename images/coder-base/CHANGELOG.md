@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.1.5](https://github.com/miracum/util-images/compare/coder-base-v2.1.4...coder-base-v2.1.5) (2026-08-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#498](https://github.com/miracum/util-images/issues/498)) ([ba97e7c](https://github.com/miracum/util-images/commit/ba97e7c33198aec2372097a8b5595543597c6b3c))
+* **deps:** update all non-major dependencies ([#508](https://github.com/miracum/util-images/issues/508)) ([8ae3b62](https://github.com/miracum/util-images/commit/8ae3b62d7889368a6a622bdb57bb3431c5945f0c))
+
+
+### Chores & Updates
+
+* **deps:** update docker.io/library/ubuntu docker tag to v26 ([#520](https://github.com/miracum/util-images/issues/520)) ([633a843](https://github.com/miracum/util-images/commit/633a843ae78a902fee657f3c83a7752d95f4f36c))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to 4fbb8e6 ([#506](https://github.com/miracum/util-images/issues/506)) ([310356e](https://github.com/miracum/util-images/commit/310356e4f2886f875e95db876216e75027fe2367))
+* **deps:** update docker.io/library/ubuntu:24.04 docker digest to c4a8d55 ([#494](https://github.com/miracum/util-images/issues/494)) ([318c2f2](https://github.com/miracum/util-images/commit/318c2f2272d339c8129a2f9c9cfd02eb330c8cc7))
+
 ## [2.1.4](https://github.com/miracum/util-images/compare/coder-base-v2.1.3...coder-base-v2.1.4) (2026-05-13)
 
 
