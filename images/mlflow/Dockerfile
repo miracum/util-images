@@ -9,3 +9,5 @@ RUN <<EOF
 pip install --no-cache-dir -r requirements.txt
 EOF
 
+USER 65534:65534
+
