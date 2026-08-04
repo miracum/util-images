@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.5](https://github.com/miracum/util-images/compare/apache-superset-v2.1.4...apache-superset-v2.1.5) (2026-08-04)
+
+
+### Chores & Updates
+
+* **master:** release apache-superset 2.1.4 ([#525](https://github.com/miracum/util-images/issues/525)) ([d35971d](https://github.com/miracum/util-images/commit/d35971dd650f3dd2e0b3755b577cc2784d5ada25))
+* **master:** release apache-superset 2.1.4 ([#527](https://github.com/miracum/util-images/issues/527)) ([9bf7364](https://github.com/miracum/util-images/commit/9bf7364f31439ec46f11522db0b7c3b5667e27b1))
+* **master:** release apache-superset 2.1.4 ([#529](https://github.com/miracum/util-images/issues/529)) ([65584a5](https://github.com/miracum/util-images/commit/65584a5dbda533beac17bf72875b75f58c20db6d))
+
 ## [2.1.4](https://github.com/miracum/util-images/compare/apache-superset-v2.1.3...apache-superset-v2.1.4) (2026-08-04)
 
 
