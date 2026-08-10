@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.6](https://github.com/miracum/util-images/compare/apache-superset-v2.1.5...apache-superset-v2.1.6) (2026-08-10)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#534](https://github.com/miracum/util-images/issues/534)) ([f0b7bee](https://github.com/miracum/util-images/commit/f0b7bee540b8a7476bf0291bbf5255c44f773f94))
+
+
+### Chores & Updates
+
+* **deps:** added gevent package ([#538](https://github.com/miracum/util-images/issues/538)) ([76258a1](https://github.com/miracum/util-images/commit/76258a18f07b026bd0080d654a68c687c8b83a3e))
+
 ## [2.1.5](https://github.com/miracum/util-images/compare/apache-superset-v2.1.4...apache-superset-v2.1.5) (2026-08-04)
 
 
