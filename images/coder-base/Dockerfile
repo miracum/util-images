@@ -30,7 +30,7 @@ EOF
 
 # DuckDB
 # renovate: datasource=github-releases depName=duckdb/duckdb
-ARG DUCKDB_VERSION=1.5.4
+ARG DUCKDB_VERSION=1.5.5
 ENV DUCKDB_URL=https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip
 RUN <<EOF
 curl -fLSsO ${DUCKDB_URL}
@@ -94,7 +94,7 @@ EOF
 
 # Argo CLI
 # renovate: datasource=github-releases depName=argoproj/argo-workflows
-ARG ARGO_VERSION=4.0.7
+ARG ARGO_VERSION=4.0.8
 ENV ARGO_URL=https://github.com/argoproj/argo-workflows/releases/download/v${ARGO_VERSION}/argo-linux-amd64.gz
 RUN <<EOF
 curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
