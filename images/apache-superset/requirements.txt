@@ -5,4 +5,4 @@ psycopg2-binary==2.9.12
 oracledb==4.0.2
 mysqlclient==2.2.8
 apache-superset[fastmcp]==6.1.0
-gevent==26.8.0
+gevent==26.7.0
