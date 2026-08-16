@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.14](https://github.com/miracum/util-images/compare/semantic-release-v1.2.13...semantic-release-v1.2.14) (2026-08-11)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#540](https://github.com/miracum/util-images/issues/540)) ([034e6d7](https://github.com/miracum/util-images/commit/034e6d72d352abfe2a6a0add3adcc8d1d0eba1a6))
+
 ## [1.2.13](https://github.com/miracum/util-images/compare/semantic-release-v1.2.12...semantic-release-v1.2.13) (2026-08-10)
 
 
