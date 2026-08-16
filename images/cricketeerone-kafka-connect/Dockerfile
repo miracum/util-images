@@ -8,9 +8,9 @@ ARG REDHATINSIGHTS_EXPANDJSONSMT_VERSION=0.0.7
 # renovate: datasource=maven depName=com.mysql:mysql-connector-j
 ARG MYSQL_JDBC_VERSION=26.7.0
 # renovate: datasource=maven depName=org.mariadb.jdbc:mariadb-java-client
-ARG MARIADB_JDBC_VERSION=3.5.9
+ARG MARIADB_JDBC_VERSION=3.5.10
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
-ARG ORACLE_OJDBC_VERSION=23.26.2.0.0
+ARG ORACLE_OJDBC_VERSION=23.26.3.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
 ARG MSSQL_JDBC_VERSION=13.4.0.jre11
 # renovate: datasource=maven depName=io.trino:trino-jdbc

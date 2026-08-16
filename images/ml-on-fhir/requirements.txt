@@ -1,6 +1,6 @@
 pathling==9.8.0
-polars==1.42.1
+polars==1.43.2
 deltalake==1.6.2
 duckdb==1.5.5
 pyarrow==23.0.1
-jupyter-ai==3.1.1
+jupyter-ai==3.1.2
