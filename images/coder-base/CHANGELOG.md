@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.7](https://github.com/miracum/util-images/compare/coder-base-v2.1.6...coder-base-v2.1.7) (2026-08-17)
+
+
+### Chores & Updates
+
+* **master:** release coder-base 2.1.6 ([#551](https://github.com/miracum/util-images/issues/551)) ([8595930](https://github.com/miracum/util-images/commit/8595930e401b35fbe6d906b2c3aaabcaae8cf85b))
+
 ## [2.1.6](https://github.com/miracum/util-images/compare/coder-base-v2.1.5...coder-base-v2.1.6) (2026-08-17)
 
 
