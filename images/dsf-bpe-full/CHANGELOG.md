@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.4](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.3...dsf-bpe-full-v1.7.4) (2026-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#498](https://github.com/miracum/util-images/issues/498)) ([ba97e7c](https://github.com/miracum/util-images/commit/ba97e7c33198aec2372097a8b5595543597c6b3c))
+* **deps:** update all non-major dependencies ([#508](https://github.com/miracum/util-images/issues/508)) ([8ae3b62](https://github.com/miracum/util-images/commit/8ae3b62d7889368a6a622bdb57bb3431c5945f0c))
+
 ## [1.7.3](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.2...dsf-bpe-full-v1.7.3) (2026-02-06)
 
 
