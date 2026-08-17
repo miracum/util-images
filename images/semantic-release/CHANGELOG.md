@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.16](https://github.com/miracum/util-images/compare/semantic-release-v1.2.15...semantic-release-v1.2.16) (2026-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/git to v11 ([#530](https://github.com/miracum/util-images/issues/530)) ([b64c09f](https://github.com/miracum/util-images/commit/b64c09f876713fd02a80fa96f2e4309eec953506))
+
 ## [1.2.15](https://github.com/miracum/util-images/compare/semantic-release-v1.2.14...semantic-release-v1.2.15) (2026-08-16)
 
 
