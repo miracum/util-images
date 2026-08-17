@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.17](https://github.com/miracum/util-images/compare/semantic-release-v1.2.16...semantic-release-v1.2.17) (2026-08-17)
+
+
+### Chores & Updates
+
+* **deps:** lock file maintenance ([#553](https://github.com/miracum/util-images/issues/553)) ([9329493](https://github.com/miracum/util-images/commit/9329493bc2333f61531bfdd3bbc474c8eb12ec51))
+
 ## [1.2.16](https://github.com/miracum/util-images/compare/semantic-release-v1.2.15...semantic-release-v1.2.16) (2026-08-17)
 
 
