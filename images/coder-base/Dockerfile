@@ -2,7 +2,7 @@ FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8 \
     SDKMAN_DIR="/usr/local/sdkman" \
-    PATH="$PATH:/usr/local/sdkman/bin/:/home/coder/.local/bin/"
+    PATH="$PATH:/usr/local/sdkman/bin/:/home/coder/.local/bin/:/opt/coder-tools/node_modules/.bin"
 
 # not set as an env var so only available during build
 ARG DEBIAN_FRONTEND=noninteractive
@@ -60,6 +60,26 @@ chmod +x /usr/local/bin/helm
 helm version
 EOF
 
+# kustomize
+# renovate: datasource=github-releases depName=kubernetes-sigs/kustomize extractVersion=^kustomize/v(?<version>.*)$
+ARG KUSTOMIZE_VERSION=5.8.1
+ENV KUSTOMIZE_URL=https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v${KUSTOMIZE_VERSION}/kustomize_v${KUSTOMIZE_VERSION}_linux_amd64.tar.gz
+RUN <<EOF
+curl -fLSs "$KUSTOMIZE_URL" | tar xz -C /usr/local/bin
+chmod +x /usr/local/bin/kustomize
+kustomize version
+EOF
+
+# skaffold
+# renovate: datasource=github-releases depName=GoogleContainerTools/skaffold
+ARG SKAFFOLD_VERSION=2.24.0
+ENV SKAFFOLD_URL=https://github.com/GoogleContainerTools/skaffold/releases/download/v${SKAFFOLD_VERSION}/skaffold-linux-amd64
+RUN <<EOF
+curl -fLSs "$SKAFFOLD_URL" -o /usr/local/bin/skaffold
+chmod +x /usr/local/bin/skaffold
+skaffold version
+EOF
+
 # cosign
 # renovate: datasource=github-releases depName=sigstore/cosign
 ARG COSIGN_VERSION=3.1.2
@@ -101,6 +121,18 @@ curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
 chmod +x /usr/local/bin/argo
 argo version
 EOF
+
+# AI coding agents (crush, pi, opencode), pinned via package.json/package-lock.json
+RUN mkdir -p /opt/coder-tools
+WORKDIR /opt/coder-tools
+RUN --mount=type=bind,source=package.json,target=package.json \
+    --mount=type=bind,source=package-lock.json,target=package-lock.json <<EOF
+npm clean-install
+crush --version
+pi --version
+opencode --version
+EOF
+WORKDIR /home/coder
 
 # install uv globally
 RUN <<EOF
