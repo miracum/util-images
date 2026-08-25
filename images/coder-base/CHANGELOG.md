@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/miracum/util-images/compare/coder-base-v2.1.7...coder-base-v2.2.0) (2026-08-25)
+
+
+### Features
+
+* added ai coding agents, kustomize, skaffold ([#556](https://github.com/miracum/util-images/issues/556)) ([c14bf5b](https://github.com/miracum/util-images/commit/c14bf5befa8356c5a07ef25ff7ce7b12af26a618))
+
 ## [2.1.7](https://github.com/miracum/util-images/compare/coder-base-v2.1.6...coder-base-v2.1.7) (2026-08-17)
 
 
