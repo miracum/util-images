@@ -2,12 +2,12 @@ FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV LANG=en_US.UTF-8 \
     SDKMAN_DIR="/usr/local/sdkman" \
-    PATH="$PATH:/usr/local/sdkman/bin/:/home/coder/.local/bin/:/opt/coder-tools/node_modules/.bin"
+    PATH="$PATH:/usr/local/sdkman/bin/:/home/coder/.local/bin/:/usr/local/node_modules/.bin"
 
 # not set as an env var so only available during build
 ARG DEBIAN_FRONTEND=noninteractive
 
-USER root
+USER 0
 
 COPY packages.txt /tmp/setup/
 
@@ -123,8 +123,7 @@ argo version
 EOF
 
 # AI coding agents (crush, pi, opencode), pinned via package.json/package-lock.json
-RUN mkdir -p /opt/coder-tools
-WORKDIR /opt/coder-tools
+WORKDIR /usr/local
 RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json <<EOF
 npm clean-install
@@ -132,7 +131,6 @@ crush --version
 pi --version
 opencode --version
 EOF
-WORKDIR /home/coder
 
 # install uv globally
 RUN <<EOF
@@ -143,7 +141,7 @@ EOF
 # install sdkman globally
 RUN <<EOF
 curl -s "https://get.sdkman.io?ci=true" | bash
-source "/usr/local/sdkman/bin/sdkman-init.sh"
+. "/usr/local/sdkman/bin/sdkman-init.sh"
 sdk version
 echo "n" | sdk install java 17.0.18-tem
 echo "n" | sdk install java 21.0.9-tem
@@ -158,12 +156,12 @@ USER 10001:10001
 # hadolint ignore=SC2016
 RUN <<EOF
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
-echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && source "/usr/local/sdkman/bin/sdkman-init.sh"' >> ~/.bashrc
-source "/usr/local/sdkman/bin/sdkman-init.sh"
+echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && . "/usr/local/sdkman/bin/sdkman-init.sh"' >> ~/.bashrc
+. "/usr/local/sdkman/bin/sdkman-init.sh"
 java --version
 EOF
 
-USER root
+USER 0
 RUN cp /home/coder/.bashrc /etc/skel/
 
 USER 10001:10001
