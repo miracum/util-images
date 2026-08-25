@@ -1,0 +1,12 @@
+{
+  "name": "miracum-coder-base-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI coding agent CLIs bundled into the coder-base image",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@charmland/crush": "0.91.0",
+    "@earendil-works/pi-coding-agent": "0.84.2",
+    "opencode-ai": "1.18.21"
+  }
+}
