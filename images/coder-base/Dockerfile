@@ -41,7 +41,7 @@ EOF
 
 # MinIO client
 RUN <<EOF
-curl -f https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
+curl -f https://dl.min.io/aistor/mc/release/linux-amd64/mc -o /usr/local/bin/mc
 chmod +x /usr/local/bin/mc
 EOF
 
