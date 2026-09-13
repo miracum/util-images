@@ -1,4 +1,4 @@
-FROM docker.io/cricketeerone/apache-kafka-connect:4.0.0-confluent-hub@sha256:15454efc2dcff3e94317837f5fa72c02d10ec3d55faff4946929d1bc23bf4b26
+FROM docker.io/cricketeerone/apache-kafka-connect:4.3.1-confluent-hub@sha256:49789e700523e5e0cc789d105b8137af48c44d6b4ca45e943e7026b8fa5cdf13
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
