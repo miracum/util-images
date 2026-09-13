@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/miracum/util-images/compare/mlflow-v1.1.0...mlflow-v1.1.1) (2026-09-13)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#558](https://github.com/miracum/util-images/issues/558)) ([e5b73f2](https://github.com/miracum/util-images/commit/e5b73f2dc5e181d90808dc22ea0c7a35a9d47c80))
+
 ## [1.1.0](https://github.com/miracum/util-images/compare/mlflow-v1.0.0...mlflow-v1.1.0) (2026-08-04)
 
 
