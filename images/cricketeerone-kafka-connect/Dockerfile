@@ -12,7 +12,7 @@ ARG MARIADB_JDBC_VERSION=3.5.10
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ARG ORACLE_OJDBC_VERSION=23.26.3.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
-ARG MSSQL_JDBC_VERSION=13.4.0.jre11
+ARG MSSQL_JDBC_VERSION=13.6.0.jre11
 # renovate: datasource=maven depName=io.trino:trino-jdbc
 ARG TRINO_JDBC_VERSION=483
 # renovate: datasource=maven depName=org.postgresql:postgresql
