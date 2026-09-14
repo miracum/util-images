@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.8](https://github.com/miracum/util-images/compare/apache-superset-v2.1.7...apache-superset-v2.1.8) (2026-09-14)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#558](https://github.com/miracum/util-images/issues/558)) ([e5b73f2](https://github.com/miracum/util-images/commit/e5b73f2dc5e181d90808dc22ea0c7a35a9d47c80))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#565](https://github.com/miracum/util-images/issues/565)) ([6fc79ab](https://github.com/miracum/util-images/commit/6fc79abca816a850ac177062f174faf3e35b0deb))
+
 ## [2.1.7](https://github.com/miracum/util-images/compare/apache-superset-v2.1.6...apache-superset-v2.1.7) (2026-08-10)
 
 
