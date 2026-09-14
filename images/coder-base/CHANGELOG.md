@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/miracum/util-images/compare/coder-base-v2.2.1...coder-base-v2.2.2) (2026-09-14)
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#565](https://github.com/miracum/util-images/issues/565)) ([6fc79ab](https://github.com/miracum/util-images/commit/6fc79abca816a850ac177062f174faf3e35b0deb))
+
 ## [2.2.1](https://github.com/miracum/util-images/compare/coder-base-v2.2.0...coder-base-v2.2.1) (2026-09-13)
 
 
