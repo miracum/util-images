@@ -6,6 +6,6 @@
   "images/strimzi-kafka-connect": "2.0.1",
   "images/hive-metastore": "1.3.5",
   "images/dsf-bpe-full": "1.7.3",
-  "images/semantic-release": "1.2.17",
+  "images/semantic-release": "1.2.18",
   "images/mlflow": "1.1.1"
 }
