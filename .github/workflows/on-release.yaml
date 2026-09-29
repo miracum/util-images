@@ -48,6 +48,8 @@ jobs:
       pull-requests: write
       actions: read
       security-events: write
+      artifact-metadata: write
+      attestations: write
     with:
       image: ghcr.io/${{ github.repository }}/${{ needs.prepare.outputs.component-name }}
       build-context: images/${{ needs.prepare.outputs.component-name }}
