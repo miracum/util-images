@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.2...strimzi-kafka-connect-v2.0.3) (2026-09-29)
+
+
+### Chores & Updates
+
+* **deps:** confluent jdbc connect update ([#569](https://github.com/miracum/util-images/issues/569)) ([ec8a4d0](https://github.com/miracum/util-images/commit/ec8a4d002e46ffbec1396af479dccf674b495c8b))
+
 ## [2.0.2](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.1...strimzi-kafka-connect-v2.0.2) (2026-09-29)
 
 
