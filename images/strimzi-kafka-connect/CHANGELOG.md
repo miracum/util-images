@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.3...strimzi-kafka-connect-v2.0.4) (2026-09-29)
+
+
+### Chores & Updates
+
+* **deps:** bump mssql to trigger release ([ccfeb4e](https://github.com/miracum/util-images/commit/ccfeb4e6f9021245f5afb254467bba3ad08c6093))
+
 ## [2.0.3](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.2...strimzi-kafka-connect-v2.0.3) (2026-09-29)
 
 
