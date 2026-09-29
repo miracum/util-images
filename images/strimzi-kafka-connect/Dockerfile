@@ -51,7 +51,7 @@ curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/mi
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/org/apache/kafka/connect-file/${KAFKA_CONNECT_FILE_VERSION}/connect-file-${KAFKA_CONNECT_FILE_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/github/castorm/kafka-connect-http/${CASTORM_KAFKA_CONNECT_HTTP_VERSION}/kafka-connect-http-${CASTORM_KAFKA_CONNECT_HTTP_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/io/trino/trino-jdbc/${TRINO_JDBC_VERSION}/trino-jdbc-${TRINO_JDBC_VERSION}.jar"
-curl -fLsSO --output-dir /opt/kafka/libs/ "https://github.com/joshuagrisham/kafka-connect-expand-json-transform/releases/download/0.1.0/expand-json-transform-0.1.0.jar"
+curl -fLsSO --output-dir /opt/kafka/libs/ "https://github.com/chgl/kafka-connect-expand-json-transform/releases/download/0.2.0/expand-json-transform-0.2.0.jar"
 EOF
 
 USER 1001:1001
