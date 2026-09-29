@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.1...strimzi-kafka-connect-v2.0.2) (2026-09-29)
+
+
+### Bug Fixes
+
+* updated strimzi connect with transform jar with fixed npe ([#567](https://github.com/miracum/util-images/issues/567)) ([cbae77b](https://github.com/miracum/util-images/commit/cbae77bcdf3465d53bf387f58a44815e40faeec8))
+
 ## [2.0.1](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.0...strimzi-kafka-connect-v2.0.1) (2026-09-13)
 
 
