@@ -2,7 +2,7 @@ FROM quay.io/strimzi/kafka:1.2.0-kafka-4.2.0@sha256:57a8fc7f50d37a62c7dc1afbf830
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 ARG CONFLUENT_CONNECT_TRANSFORMS_VERSION=1.6.2
-ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.9.4
+ARG CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION=10.9.9
 
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
 ARG ORACLE_OJDBC_VERSION=23.26.3.0.0
