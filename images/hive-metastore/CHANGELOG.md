@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.5...hive-metastore-v1.4.0) (2026-10-11)
+
+
+### Features
+
+* **hive-metastore:** update to Hive 4.1.0 with Hadoop 3.4.1 and Delta 4.0.0 ([#573](https://github.com/miracum/util-images/issues/573)) ([491062d](https://github.com/miracum/util-images/commit/491062d5bc484d403f244448b0b143e6c6913986))
+
 ## [1.3.5](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.4...hive-metastore-v1.3.5) (2026-08-17)
 
 
