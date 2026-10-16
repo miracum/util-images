@@ -13,7 +13,7 @@
 
   <properties>
     <!-- must match `aws-java-sdk-v2.version` in https://github.com/apache/hadoop/blob/rel/release-3.4.1/hadoop-project/pom.xml -->
-    <aws-sdk-v2.version>2.55.11</aws-sdk-v2.version>
+    <aws-sdk-v2.version>2.56.0</aws-sdk-v2.version>
   </properties>
 
   <dependencies>
