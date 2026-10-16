@@ -1,4 +1,4 @@
-FROM docker.io/curlimages/curl:8.22.0@sha256:58adaa4e8dca9c988bae2aba4ab3434a0bb2da16bbe3f92dec39ec7785166777 AS downloader
+FROM docker.io/curlimages/curl:8.23.0@sha256:a134550be58ab783810e613ae96fd253c38f7bdd16d9bf9be350700c7a29ac06 AS downloader
 SHELL ["/bin/sh", "-eo", "pipefail", "-c"]
 WORKDIR /tmp/libs
 # the Delta Lake version should match the one used by Pathling (`pathling.deltaVersion` in <https://github.com/aehrc/pathling/blob/main/pom.xml>)
