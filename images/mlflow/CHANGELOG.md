@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.2](https://github.com/miracum/util-images/compare/mlflow-v1.1.1...mlflow-v1.1.2) (2026-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#572](https://github.com/miracum/util-images/issues/572)) ([52ec530](https://github.com/miracum/util-images/commit/52ec53007cf5c0fff7f76b754a99dd0c1b56690a))
+
+
+### Chores & Updates
+
+* **deps:** update dependency mlflow-oidc-auth to v9 ([#582](https://github.com/miracum/util-images/issues/582)) ([3cc9c19](https://github.com/miracum/util-images/commit/3cc9c193dd841b154aa6df3fbea0c4cc8f5093f2))
+
 ## [1.1.1](https://github.com/miracum/util-images/compare/mlflow-v1.1.0...mlflow-v1.1.1) (2026-09-13)
 
 
