@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.1](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.0...hive-metastore-v1.4.1) (2026-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#572](https://github.com/miracum/util-images/issues/572)) ([52ec530](https://github.com/miracum/util-images/commit/52ec53007cf5c0fff7f76b754a99dd0c1b56690a))
+* **deps:** update all non-major dependencies to v2.55.11 ([#589](https://github.com/miracum/util-images/issues/589)) ([28a9d05](https://github.com/miracum/util-images/commit/28a9d059b148fbf5afba72f9331db7781e5dac4f))
+
+
+### Chores & Updates
+
+* upgrade to hive metastore 4.2.1 and use standalone, minified image ([#575](https://github.com/miracum/util-images/issues/575)) ([7651174](https://github.com/miracum/util-images/commit/765117465718416e98414b4cd168dbdb1e5ca35e))
+
 ## [1.4.0](https://github.com/miracum/util-images/compare/hive-metastore-v1.3.5...hive-metastore-v1.4.0) (2026-10-11)
 
 
