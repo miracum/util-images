@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.1...hive-metastore-v1.4.2) (2026-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#593](https://github.com/miracum/util-images/issues/593)) ([8026da5](https://github.com/miracum/util-images/commit/8026da5b32823dc3c32740adf2bf447e880dda8a))
+
 ## [1.4.1](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.0...hive-metastore-v1.4.1) (2026-10-16)
 
 
