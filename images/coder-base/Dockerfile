@@ -30,7 +30,7 @@ EOF
 
 # DuckDB
 # renovate: datasource=github-releases depName=duckdb/duckdb
-ARG DUCKDB_VERSION=1.5.5
+ARG DUCKDB_VERSION=1.5.6
 ENV DUCKDB_URL=https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip
 RUN <<EOF
 curl -fLSsO ${DUCKDB_URL}
@@ -51,7 +51,7 @@ RUN kubectl version --client
 
 # Helm
 # renovate: datasource=github-releases depName=helm/helm
-ARG HELM_VERSION=4.2.4
+ARG HELM_VERSION=4.3.0
 ENV HELM_URL=https://get.helm.sh/helm-v"${HELM_VERSION}"-linux-amd64.tar.gz
 RUN <<EOF
 curl -fLSs "$HELM_URL" | tar xz
@@ -62,7 +62,7 @@ EOF
 
 # kustomize
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize extractVersion=^kustomize/v(?<version>.*)$
-ARG KUSTOMIZE_VERSION=5.8.1
+ARG KUSTOMIZE_VERSION=5.8.2
 ENV KUSTOMIZE_URL=https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v${KUSTOMIZE_VERSION}/kustomize_v${KUSTOMIZE_VERSION}_linux_amd64.tar.gz
 RUN <<EOF
 curl -fLSs "$KUSTOMIZE_URL" | tar xz -C /usr/local/bin
@@ -72,7 +72,7 @@ EOF
 
 # skaffold
 # renovate: datasource=github-releases depName=GoogleContainerTools/skaffold
-ARG SKAFFOLD_VERSION=2.24.0
+ARG SKAFFOLD_VERSION=2.25.0
 ENV SKAFFOLD_URL=https://github.com/GoogleContainerTools/skaffold/releases/download/v${SKAFFOLD_VERSION}/skaffold-linux-amd64
 RUN <<EOF
 curl -fLSs "$SKAFFOLD_URL" -o /usr/local/bin/skaffold
@@ -93,7 +93,7 @@ EOF
 
 # crane
 # renovate: datasource=github-releases depName=google/go-containerregistry
-ARG CRANE_VERSION=0.22.0
+ARG CRANE_VERSION=0.22.1
 ENV CRANE_URL=https://github.com/google/go-containerregistry/releases/download/v${CRANE_VERSION}/go-containerregistry_Linux_x86_64.tar.gz
 RUN <<EOF
 curl -fLSs "$CRANE_URL" | tar xz
@@ -114,7 +114,7 @@ EOF
 
 # Argo CLI
 # renovate: datasource=github-releases depName=argoproj/argo-workflows
-ARG ARGO_VERSION=4.1.2
+ARG ARGO_VERSION=4.1.4
 ENV ARGO_URL=https://github.com/argoproj/argo-workflows/releases/download/v${ARGO_VERSION}/argo-linux-amd64.gz
 RUN <<EOF
 curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
