@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.6](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.5...strimzi-kafka-connect-v2.0.6) (2026-10-16)
+
+
+### Chores & Updates
+
+* **deps:** update dependency io.trino:trino-jdbc to v484 ([#584](https://github.com/miracum/util-images/issues/584)) ([d7fe34a](https://github.com/miracum/util-images/commit/d7fe34ad63df46295d657278e58d8bca30fb4c7c))
+
 ## [2.0.5](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.4...strimzi-kafka-connect-v2.0.5) (2026-10-16)
 
 
