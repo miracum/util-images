@@ -76,6 +76,5 @@ jobs:
     with:
       enable-validate-gradle-wrapper: false
       enable-codeql: false
-      enable-verify-base-image-signature: false
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
