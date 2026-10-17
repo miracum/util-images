@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.11](https://github.com/miracum/util-images/compare/apache-superset-v2.1.10...apache-superset-v2.1.11) (2026-10-17)
+
+
+### Chores & Updates
+
+* **deps:** bumped oracle instant client ([#597](https://github.com/miracum/util-images/issues/597)) ([2515bd7](https://github.com/miracum/util-images/commit/2515bd7dd535c911008bf485b9397981597b0856))
+
 ## [2.1.10](https://github.com/miracum/util-images/compare/apache-superset-v2.1.9...apache-superset-v2.1.10) (2026-10-16)
 
 
