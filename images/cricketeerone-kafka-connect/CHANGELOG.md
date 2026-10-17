@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.8](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.7.7...cricketeerone-kafka-connect-v1.7.8) (2026-10-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#572](https://github.com/miracum/util-images/issues/572)) ([52ec530](https://github.com/miracum/util-images/commit/52ec53007cf5c0fff7f76b754a99dd0c1b56690a))
+* **deps:** update all non-major dependencies ([#593](https://github.com/miracum/util-images/issues/593)) ([8026da5](https://github.com/miracum/util-images/commit/8026da5b32823dc3c32740adf2bf447e880dda8a))
+
+
+### Chores & Updates
+
+* **deps:** update dependency io.trino:trino-jdbc to v484 ([#584](https://github.com/miracum/util-images/issues/584)) ([d7fe34a](https://github.com/miracum/util-images/commit/d7fe34ad63df46295d657278e58d8bca30fb4c7c))
+
 ## [1.7.7](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.7.6...cricketeerone-kafka-connect-v1.7.7) (2026-09-13)
 
 
