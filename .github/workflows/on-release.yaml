@@ -59,5 +59,7 @@ jobs:
       image-tags: |
         type=semver,pattern={{raw}},value=${{ needs.prepare.outputs.component-version }}
       enable-trivy-scan: ${{ needs.prepare.outputs.component-name != 'ml-on-fhir' }}
+      # exporting the registry build cache OOM-kills buildkitd for this image
+      enable-build-cache: ${{ needs.prepare.outputs.component-name != 'apache-superset' }}
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -61,6 +61,8 @@ jobs:
       enable-upload-test-image: false
       enable-upload-image: false
       enable-trivy-scan: ${{ matrix.image != 'ml-on-fhir' }}
+      # exporting the registry build cache OOM-kills buildkitd for this image
+      enable-build-cache: ${{ matrix.image != 'apache-superset' }}
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
