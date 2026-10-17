@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.9](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.8...ml-on-fhir-v2.0.9) (2026-10-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#548](https://github.com/miracum/util-images/issues/548)) ([2303496](https://github.com/miracum/util-images/commit/2303496403302a0c5b08578f25621029eb1ee435))
+* **deps:** update all non-major dependencies ([#558](https://github.com/miracum/util-images/issues/558)) ([e5b73f2](https://github.com/miracum/util-images/commit/e5b73f2dc5e181d90808dc22ea0c7a35a9d47c80))
+* **deps:** update all non-major dependencies ([#572](https://github.com/miracum/util-images/issues/572)) ([52ec530](https://github.com/miracum/util-images/commit/52ec53007cf5c0fff7f76b754a99dd0c1b56690a))
+
+
+### Chores & Updates
+
+* **deps:** update dependency polars to v2 ([#585](https://github.com/miracum/util-images/issues/585)) ([3385f2b](https://github.com/miracum/util-images/commit/3385f2b6d034050e19871a9974419a8b8e0999fa))
+
 ## [2.0.8](https://github.com/miracum/util-images/compare/ml-on-fhir-v2.0.7...ml-on-fhir-v2.0.8) (2026-08-11)
 
 
