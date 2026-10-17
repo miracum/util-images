@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.2.2](https://github.com/miracum/util-images/compare/coder-base-v2.2.1...coder-base-v2.2.2) (2026-10-17)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#572](https://github.com/miracum/util-images/issues/572)) ([52ec530](https://github.com/miracum/util-images/commit/52ec53007cf5c0fff7f76b754a99dd0c1b56690a))
+* **deps:** update all non-major dependencies ([#593](https://github.com/miracum/util-images/issues/593)) ([8026da5](https://github.com/miracum/util-images/commit/8026da5b32823dc3c32740adf2bf447e880dda8a))
+* **deps:** update dependency @earendil-works/pi-coding-agent to v1 ([#586](https://github.com/miracum/util-images/issues/586)) ([aa3f5cf](https://github.com/miracum/util-images/commit/aa3f5cf16350dbbd50925b3db3a3a634677b4436))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([#565](https://github.com/miracum/util-images/issues/565)) ([6fc79ab](https://github.com/miracum/util-images/commit/6fc79abca816a850ac177062f174faf3e35b0deb))
+* **deps:** update docker.io/library/ubuntu:26.04 docker digest to f144425 ([#583](https://github.com/miracum/util-images/issues/583)) ([f3199b2](https://github.com/miracum/util-images/commit/f3199b2bd4f921d7849c3ca5e9fdc500e35b81d1))
+
 ## [2.2.1](https://github.com/miracum/util-images/compare/coder-base-v2.2.0...coder-base-v2.2.1) (2026-09-13)
 
 
