@@ -16,7 +16,7 @@ EOF
 # The standalone-metastore base image ships hadoop-aws but not the AWS SDK v2 it needs, nor the 560MB `bundle` artifact.
 # Instead of adding the bundle back, only the S3 modules and their dependencies are resolved, see pom.xml.
 # Netty, Apache HttpClient, commons-* and SLF4J are excluded since the base image already contains the exact same versions.
-FROM docker.io/library/maven:3-eclipse-temurin-21@sha256:9b4877723dadf350b452dd97d9a6401e7b56f98fa9dfe420c32ad909989c7e4c AS aws-sdk
+FROM docker.io/library/maven:3-eclipse-temurin-21@sha256:d23342b1a070a07555f4ef20c085a81aa40e5f5b3288ebf8ddae2f67e9d760c8 AS aws-sdk
 WORKDIR /build
 COPY pom.xml .
 RUN mvn --batch-mode --quiet dependency:copy-dependencies \
