@@ -11,18 +11,10 @@ curl -fLsSO "https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.13/po
 # housekeeping tasks start and the log shows `NoClassDefFoundError: org/apache/hadoop/yarn/util/SystemClock`.
 curl -fLsSO "https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/3.4.1/hadoop-yarn-api-3.4.1.jar"
 curl -fLsSO "https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/3.4.1/hadoop-yarn-common-3.4.1.jar"
+# hadoop-aws needs the AWS SDK v2, which the standalone-metastore base image doesn't ship. The version must match
+# `aws-java-sdk-v2.version` in <https://github.com/apache/hadoop/blob/rel/release-3.4.1/hadoop-project/pom.xml>.
+curl -fLsSO "https://repo1.maven.org/maven2/software/amazon/awssdk/bundle/2.24.6/bundle-2.24.6.jar"
 EOF
-
-# The standalone-metastore base image ships hadoop-aws but not the AWS SDK v2 it needs, nor the 560MB `bundle` artifact.
-# Instead of adding the bundle back, only the S3 modules and their dependencies are resolved, see pom.xml.
-# Netty, Apache HttpClient, commons-* and SLF4J are excluded since the base image already contains the exact same versions.
-FROM docker.io/library/maven:3-eclipse-temurin-21@sha256:9b4877723dadf350b452dd97d9a6401e7b56f98fa9dfe420c32ad909989c7e4c AS aws-sdk
-WORKDIR /build
-COPY pom.xml .
-RUN mvn --batch-mode --quiet dependency:copy-dependencies \
-  -DoutputDirectory=/libs \
-  -DincludeScope=runtime \
-  -DexcludeGroupIds=io.netty,org.slf4j,commons-codec,commons-logging,org.apache.httpcomponents
 
 # The standalone-metastore variant only contains the metastore service, without Tez, HiveServer2, beeline, etc.,
 # which makes it much smaller than the full `apache/hive` image. Ships with Hadoop 3.4.1, the same version used by
@@ -45,5 +37,4 @@ ln -s "${HADOOP_HOME}/share/hadoop/tools/lib/hadoop-aws-3.4.1.jar" "${HIVE_HOME}
 EOF
 
 COPY --from=downloader --chown=0:0 /tmp/libs/*.jar /opt/hive/lib/
-COPY --from=aws-sdk --chown=0:0 /libs/*.jar /opt/hive/lib/
 USER 1000:1000
