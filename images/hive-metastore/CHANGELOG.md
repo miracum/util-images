@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.2...hive-metastore-v1.4.3) (2026-10-19)
+
+
+### Bug Fixes
+
+* metastore image missing aws libs ([#599](https://github.com/miracum/util-images/issues/599)) ([6e05a5d](https://github.com/miracum/util-images/commit/6e05a5d6f57fa2d60cc686e5cf74d51abc74e7e2))
+
 ## [1.4.2](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.1...hive-metastore-v1.4.2) (2026-10-16)
 
 
