@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/miracum/util-images/compare/omnigent-server-v1.1.0...omnigent-server-v1.1.1) (2026-10-24)
+
+
+### Chores & Updates
+
+* **deps,omnigent:** added openshell ([#607](https://github.com/miracum/util-images/issues/607)) ([a2c04bf](https://github.com/miracum/util-images/commit/a2c04bf681501873e3376a63bb916b269c08813d))
+
 ## [1.1.0](https://github.com/miracum/util-images/compare/omnigent-server-v1.0.0...omnigent-server-v1.1.0) (2026-10-24)
 
 
