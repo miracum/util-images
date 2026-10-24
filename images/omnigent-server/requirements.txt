@@ -7,3 +7,4 @@ opentelemetry-instrumentation-fastapi==0.66b1
 opentelemetry-instrumentation-httpx==0.66b1
 opentelemetry-instrumentation-sqlalchemy==0.66b1
 kubernetes==36.0.3
+openshell==0.1.5
