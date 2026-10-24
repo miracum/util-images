@@ -1,3 +1,5 @@
 ignored:
   # Multiple consecutive RUN instructions. Consider consolidation.
   - DL3059
+  # Non-numeric user-id may not be resolvable by host system
+  - DL3066

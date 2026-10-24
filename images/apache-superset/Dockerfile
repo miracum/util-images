@@ -1,7 +1,7 @@
 FROM docker.io/apache/superset:6.1.0@sha256:16b50bbef6648912a79e3293d418fefa743ce555d36c5af6b85d859119ed7f88
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
-USER root
+USER 0
 
 # via https://help.ubuntu.com/community/Oracle%20Instant%20Client
 # hadolint ignore=DL3008

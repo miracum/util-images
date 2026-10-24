@@ -3,9 +3,10 @@ SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 COPY requirements.txt /tmp/requirements.txt
 
-# adds the dependencies of the upstream `s3` and `tracing` extras, i.e. the equivalent of building the
-# upstream image with `--build-arg OMNIGENT_EXTRAS=s3,tracing`. Required to store artifacts in S3
-# (`OMNIGENT_ARTIFACT_URI=s3://...`) and to export metrics and traces via OTLP.
+# adds the dependencies of the upstream `s3`, `tracing`, and `kubernetes` extras, i.e. the equivalent of building the
+# upstream image with `--build-arg OMNIGENT_EXTRAS=s3,tracing,kubernetes`. Required to store artifacts in S3
+# (`OMNIGENT_ARTIFACT_URI=s3://...`), to export metrics and traces via OTLP, and to launch managed sandboxes
+# (`sandbox.provider: kubernetes` or `agent_sandbox`).
 RUN <<EOF
 pip install --no-cache-dir -r /tmp/requirements.txt
 rm /tmp/requirements.txt
