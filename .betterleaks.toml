@@ -1,9 +1,0 @@
-# tika-mimetypes.xml inside the vendored jar contains PEM header magic bytes, not actual keys
-prefilter = '''
-matchesAny(attributes["path"], [
-  `(?:^|/)images/dsf-bpe-full/[^/]+\.jar(?:!.*)?$`
-])
-'''
-
-[extend]
-useDefault = true

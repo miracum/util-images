@@ -34,5 +34,10 @@ REPOSITORY_KICS_ARGUMENTS:
 DISABLE_ERRORS_LINTERS:
   - REPOSITORY_TRIVY
 
+# tika-mimetypes.xml inside the vendored jar contains PEM header magic bytes, not actual keys
+REPOSITORY_KINGFISHER_ARGUMENTS:
+  - --exclude
+  - "**/dsf-bpe-full/*.jar"
+
 ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
   - GITHUB_TOKEN
