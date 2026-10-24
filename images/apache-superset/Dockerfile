@@ -25,4 +25,5 @@ source /app/.venv/bin/activate
 uv pip install --no-cache-dir -r requirements.txt
 EOF
 
+# hadolint ignore=DL3066
 USER superset
