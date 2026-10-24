@@ -8,5 +8,5 @@
   "images/dsf-bpe-full": "1.7.3",
   "images/semantic-release": "1.2.18",
   "images/mlflow": "1.1.3",
-  "images/omnigent-server": "1.1.0"
+  "images/omnigent-server": "1.1.1"
 }
