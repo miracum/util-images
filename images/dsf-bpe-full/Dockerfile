@@ -17,7 +17,7 @@ ARG DSF_PROCESS_MII_DATA_TRANSFER
 ARG DSF_PROCESS_MII_DATA_SHARING
 ARG DSF_PROCESS_NCT_DATA_TRANSFER
 
-USER root
+USER 0
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN mkdir -p /process && \
@@ -38,7 +38,7 @@ USER 1000
 
 FROM ghcr.io/datasharingframework/bpe:1.9.0@sha256:17b7e6f57552ccfe653e6427787f5d87f952b8654fc779710d33c7c802cd9f5e
 
-USER root
+USER 0
 
 COPY --from=deps /process/*.jar /opt/bpe/process/
 

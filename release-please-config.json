@@ -54,6 +54,10 @@
     "images/mlflow": {
       "component": "mlflow",
       "release-type": "simple"
+    },
+    "images/omnigent-server": {
+      "component": "omnigent-server",
+      "release-type": "simple"
     }
   }
 }

@@ -19,7 +19,7 @@ ARG KAFKA_CONNECT_FILE_PULSE_VERSION=2.18.0
 # renovate: datasource=maven depName=io.trino:trino-jdbc
 ARG TRINO_JDBC_VERSION=484
 
-USER root
+USER 0
 
 # hadolint ignore=DL3041
 RUN <<EOF
