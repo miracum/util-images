@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.4](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.3...hive-metastore-v1.4.4) (2026-11-05)
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+* **deps:** update node.js to 925de64 ([#610](https://github.com/miracum/util-images/issues/610)) ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+
 ## [1.4.3](https://github.com/miracum/util-images/compare/hive-metastore-v1.4.2...hive-metastore-v1.4.3) (2026-10-19)
 
 
