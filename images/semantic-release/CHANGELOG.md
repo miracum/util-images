@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.19](https://github.com/miracum/util-images/compare/semantic-release-v1.2.18...semantic-release-v1.2.19) (2026-11-05)
+
+
+### Bug Fixes
+
+* possible fix for version conflict ([#601](https://github.com/miracum/util-images/issues/601)) ([6236826](https://github.com/miracum/util-images/commit/62368267358265e45fb768c7d594ac4347d9f532))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+* **deps:** update node.js to 925de64 ([#610](https://github.com/miracum/util-images/issues/610)) ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+
 ## [1.2.18](https://github.com/miracum/util-images/compare/semantic-release-v1.2.17...semantic-release-v1.2.18) (2026-10-17)
 
 
