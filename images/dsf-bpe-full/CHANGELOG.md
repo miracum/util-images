@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.8.0](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.3...dsf-bpe-full-v1.8.0) (2026-11-05)
+
+
+### Features
+
+* added omnigent with s3 pre-installed ([#602](https://github.com/miracum/util-images/issues/602)) ([1754647](https://github.com/miracum/util-images/commit/1754647dba2d9714bfccbf5c788902689c844771))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#498](https://github.com/miracum/util-images/issues/498)) ([ba97e7c](https://github.com/miracum/util-images/commit/ba97e7c33198aec2372097a8b5595543597c6b3c))
+* **deps:** update all non-major dependencies ([#508](https://github.com/miracum/util-images/issues/508)) ([8ae3b62](https://github.com/miracum/util-images/commit/8ae3b62d7889368a6a622bdb57bb3431c5945f0c))
+* **deps:** update all non-major dependencies ([#572](https://github.com/miracum/util-images/issues/572)) ([52ec530](https://github.com/miracum/util-images/commit/52ec53007cf5c0fff7f76b754a99dd0c1b56690a))
+* **deps:** update all non-major dependencies ([#593](https://github.com/miracum/util-images/issues/593)) ([8026da5](https://github.com/miracum/util-images/commit/8026da5b32823dc3c32740adf2bf447e880dda8a))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+* **deps:** update all digest updates ([#621](https://github.com/miracum/util-images/issues/621)) ([b043f06](https://github.com/miracum/util-images/commit/b043f06ac4e674ec4903f91cb32c40459b4262f9))
+* **deps:** update node.js to 925de64 ([#610](https://github.com/miracum/util-images/issues/610)) ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+
 ## [1.7.3](https://github.com/miracum/util-images/compare/dsf-bpe-full-v1.7.2...dsf-bpe-full-v1.7.3) (2026-02-06)
 
 
