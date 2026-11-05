@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.2.3](https://github.com/miracum/util-images/compare/coder-base-v2.2.2...coder-base-v2.2.3) (2026-11-05)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#615](https://github.com/miracum/util-images/issues/615)) ([ca59f75](https://github.com/miracum/util-images/commit/ca59f75820096ab53babf03ba8481ad21875e98a))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+* **deps:** update node.js to 925de64 ([#610](https://github.com/miracum/util-images/issues/610)) ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+
 ## [2.2.2](https://github.com/miracum/util-images/compare/coder-base-v2.2.1...coder-base-v2.2.2) (2026-10-17)
 
 
