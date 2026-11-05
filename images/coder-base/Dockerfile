@@ -82,7 +82,7 @@ EOF
 
 # cosign
 # renovate: datasource=github-releases depName=sigstore/cosign
-ARG COSIGN_VERSION=3.1.3
+ARG COSIGN_VERSION=3.1.4
 ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
 RUN <<EOF
 curl -fLSsO "$COSIGN_URL"
@@ -114,7 +114,7 @@ EOF
 
 # Argo CLI
 # renovate: datasource=github-releases depName=argoproj/argo-workflows
-ARG ARGO_VERSION=4.1.5
+ARG ARGO_VERSION=4.1.6
 ENV ARGO_URL=https://github.com/argoproj/argo-workflows/releases/download/v${ARGO_VERSION}/argo-linux-amd64.gz
 RUN <<EOF
 curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo

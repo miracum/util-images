@@ -1,4 +1,4 @@
-FROM ghcr.io/mlflow/mlflow:v3.17.1-full@sha256:190306b1739b9646d6d39333594334b69ba14ab843db927712c790b50892f262
+FROM ghcr.io/mlflow/mlflow:v3.18.0-full@sha256:a8459ca08b1e8a0dc287b4e226d4f2338f56052d7e2d333a4aa5891be0670919
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 WORKDIR /
 
