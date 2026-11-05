@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/miracum/util-images/compare/mlflow-v1.1.4...mlflow-v1.1.5) (2026-11-05)
+
+
+### Chores & Updates
+
+* **deps:** update mlflow-oidc-auth to version 11.0.5 ([#619](https://github.com/miracum/util-images/issues/619)) ([fa85279](https://github.com/miracum/util-images/commit/fa85279920197db1b13abd686920dfb88ebedd9a))
+
 ## [1.1.4](https://github.com/miracum/util-images/compare/mlflow-v1.1.3...mlflow-v1.1.4) (2026-11-05)
 
 
