@@ -3,7 +3,7 @@
   "images/apache-superset": "2.1.11",
   "images/cricketeerone-kafka-connect": "1.7.8",
   "images/ml-on-fhir": "2.0.8",
-  "images/strimzi-kafka-connect": "2.0.7",
+  "images/strimzi-kafka-connect": "2.1.0",
   "images/hive-metastore": "1.4.3",
   "images/dsf-bpe-full": "1.7.3",
   "images/semantic-release": "1.2.18",

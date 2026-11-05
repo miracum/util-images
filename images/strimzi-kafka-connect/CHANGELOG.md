@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.7...strimzi-kafka-connect-v2.1.0) (2026-11-05)
+
+
+### Features
+
+* added omnigent with s3 pre-installed ([#602](https://github.com/miracum/util-images/issues/602)) ([1754647](https://github.com/miracum/util-images/commit/1754647dba2d9714bfccbf5c788902689c844771))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#615](https://github.com/miracum/util-images/issues/615)) ([ca59f75](https://github.com/miracum/util-images/commit/ca59f75820096ab53babf03ba8481ad21875e98a))
+
 ## [2.0.7](https://github.com/miracum/util-images/compare/strimzi-kafka-connect-v2.0.6...strimzi-kafka-connect-v2.0.7) (2026-10-17)
 
 
