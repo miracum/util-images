@@ -10,7 +10,7 @@ ARG MYSQL_JDBC_VERSION=26.10.0
 # renovate: datasource=maven depName=org.mariadb.jdbc:mariadb-java-client
 ARG MARIADB_JDBC_VERSION=3.5.11
 # renovate: datasource=maven depName=com.oracle.database.jdbc:ojdbc11
-ARG ORACLE_OJDBC_VERSION=23.26.3.0.0
+ARG ORACLE_OJDBC_VERSION=23.26.4.0.0
 # renovate: datasource=maven depName=com.microsoft.sqlserver:mssql-jdbc
 ARG MSSQL_JDBC_VERSION=13.6.1.jre11
 # renovate: datasource=maven depName=io.trino:trino-jdbc
