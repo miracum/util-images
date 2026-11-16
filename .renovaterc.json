@@ -2,6 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>miracum/.github//renovate/default"],
   "ignoreDeps": ["docker.io/apache/hive"],
+  "packageRules": [
+    {
+      "description": "omnigent-server and omnigent-host must always run the same upstream release",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "ghcr.io/omnigent-ai/omnigent-server",
+        "ghcr.io/omnigent-ai/omnigent-host"
+      ],
+      "groupName": "omnigent"
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
