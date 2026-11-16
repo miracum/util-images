@@ -58,6 +58,10 @@
     "images/omnigent-server": {
       "component": "omnigent-server",
       "release-type": "simple"
+    },
+    "images/omnigent-host": {
+      "component": "omnigent-host",
+      "release-type": "simple"
     }
   }
 }
