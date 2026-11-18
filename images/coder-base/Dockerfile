@@ -39,10 +39,16 @@ mv duckdb /usr/local/bin
 duckdb --version
 EOF
 
-# MinIO client
+# AWS CLI
+# renovate: datasource=github-tags depName=aws/aws-cli
+ARG AWS_CLI_VERSION=2.41.0
+ENV AWS_CLI_URL=https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWS_CLI_VERSION}.zip
 RUN <<EOF
-curl -f https://dl.min.io/aistor/mc/release/linux-amd64/mc -o /usr/local/bin/mc
-chmod +x /usr/local/bin/mc
+curl -fLSs "$AWS_CLI_URL" -o /tmp/awscliv2.zip
+unzip -q /tmp/awscliv2.zip -d /tmp
+/tmp/aws/install --install-dir /usr/local/aws-cli --bin-dir /usr/local/bin
+rm -rf /tmp/awscliv2.zip /tmp/aws
+aws --version
 EOF
 
 # kubectl
@@ -120,6 +126,17 @@ RUN <<EOF
 curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
 chmod +x /usr/local/bin/argo
 argo version
+EOF
+
+# code-server
+# renovate: datasource=github-releases depName=coder/code-server
+ARG CODE_SERVER_VERSION=4.145.2
+ENV CODE_SERVER_URL=https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSION}/code-server-${CODE_SERVER_VERSION}-linux-amd64.tar.gz
+RUN <<EOF
+mkdir -p /usr/local/lib/code-server
+curl -fLSs "$CODE_SERVER_URL" | tar xz --strip-components=1 -C /usr/local/lib/code-server
+ln -s /usr/local/lib/code-server/bin/code-server /usr/local/bin/code-server
+code-server --version
 EOF
 
 # AI coding agents (crush, pi, opencode), pinned via package.json/package-lock.json
