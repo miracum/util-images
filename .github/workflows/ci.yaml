@@ -39,7 +39,7 @@ jobs:
           echo "${CHANGED_FILES_LIST}"
 
   build:
-    uses: miracum/.github/.github/workflows/standard-build.yaml@704047074ac99fc4c0990f8b8377086069323116 # v1.30.0
+    uses: miracum/.github/.github/workflows/standard-build.yaml@b1cdbae2ba7b6c3603b4f4f700a31053a84fb058 # v1.33.0
     needs:
       - get-changed-images
     permissions:
@@ -67,7 +67,7 @@ jobs:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
   lint:
-    uses: miracum/.github/.github/workflows/standard-lint.yaml@704047074ac99fc4c0990f8b8377086069323116 # v1.30.0
+    uses: miracum/.github/.github/workflows/standard-lint.yaml@b1cdbae2ba7b6c3603b4f4f700a31053a84fb058 # v1.33.0
     if: ${{ !contains(github.event.pull_request.labels.*.name, 'release-please') }}
     permissions:
       contents: read

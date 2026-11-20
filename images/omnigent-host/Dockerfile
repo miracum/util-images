@@ -1,4 +1,4 @@
-FROM ghcr.io/omnigent-ai/omnigent-host:v0.21.0@sha256:da9265d28a920d876c89d464b599d4bdcf4647bc338e3c4f79e3e2714570c7e5
+FROM ghcr.io/omnigent-ai/omnigent-host:v0.23.0@sha256:78a05d1443fb01f5a67f8a3796427c851358386d220875a0a03533166c1ce78d
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 ENV SDKMAN_DIR="/usr/local/sdkman" \
     PATH="$PATH:/usr/local/sdkman/bin"
@@ -7,10 +7,20 @@ ENV SDKMAN_DIR="/usr/local/sdkman" \
 ARG DEBIAN_FRONTEND=noninteractive
 
 # the upstream image already ships curl, unzip, and git. `zip` is required by the SDKMAN installer.
+# build-essential is included so pip/npm packages with native extensions can be built.
 # hadolint ignore=DL3008
 RUN <<EOF
 apt-get update
-apt-get install -y --no-install-recommends zip
+apt-get install -y --no-install-recommends \
+  zip \
+  jq \
+  ripgrep \
+  git-lfs \
+  less \
+  tree \
+  wget \
+  shellcheck \
+  build-essential
 apt-get clean
 rm -rf /var/lib/apt/lists/*
 EOF
@@ -31,7 +41,7 @@ EOF
 
 # AWS CLI v2
 # renovate: datasource=github-tags depName=aws/aws-cli extractVersion=^(?<version>.*)$
-ARG AWS_CLI_VERSION=2.39.0
+ARG AWS_CLI_VERSION=2.41.0
 ENV AWS_CLI_URL=https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWS_CLI_VERSION}.zip
 RUN <<EOF
 curl -fLSs "$AWS_CLI_URL" -o awscliv2.zip
@@ -66,6 +76,90 @@ curl -fLSs "$CRANE_URL" | tar xz crane
 mv ./crane /usr/local/bin/crane
 chmod +x /usr/local/bin/crane
 crane version
+EOF
+
+# yq
+# renovate: datasource=github-releases depName=mikefarah/yq
+ARG YQ_VERSION=4.54.3
+ENV YQ_URL=https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/yq_linux_amd64
+RUN <<EOF
+curl -fLSs "$YQ_URL" -o /usr/local/bin/yq
+chmod +x /usr/local/bin/yq
+yq --version
+EOF
+
+# kustomize
+# renovate: datasource=github-releases depName=kubernetes-sigs/kustomize extractVersion=^kustomize/v(?<version>.*)$
+ARG KUSTOMIZE_VERSION=5.8.3
+ENV KUSTOMIZE_URL=https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v${KUSTOMIZE_VERSION}/kustomize_v${KUSTOMIZE_VERSION}_linux_amd64.tar.gz
+RUN <<EOF
+curl -fLSs "$KUSTOMIZE_URL" | tar xz -C /usr/local/bin kustomize
+chmod +x /usr/local/bin/kustomize
+kustomize version
+EOF
+
+# skaffold
+# renovate: datasource=github-releases depName=GoogleContainerTools/skaffold
+ARG SKAFFOLD_VERSION=2.25.0
+ENV SKAFFOLD_URL=https://github.com/GoogleContainerTools/skaffold/releases/download/v${SKAFFOLD_VERSION}/skaffold-linux-amd64
+RUN <<EOF
+curl -fLSs "$SKAFFOLD_URL" -o /usr/local/bin/skaffold
+chmod +x /usr/local/bin/skaffold
+skaffold version
+EOF
+
+# cosign
+# renovate: datasource=github-releases depName=sigstore/cosign
+ARG COSIGN_VERSION=3.1.4
+ENV COSIGN_URL=https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-amd64
+RUN <<EOF
+curl -fLSs "$COSIGN_URL" -o /usr/local/bin/cosign
+chmod +x /usr/local/bin/cosign
+cosign version
+EOF
+
+# s5cmd
+# renovate: datasource=github-releases depName=peak/s5cmd
+ARG S5CMD_VERSION=2.3.0
+ENV S5CMD_URL=https://github.com/peak/s5cmd/releases/download/v${S5CMD_VERSION}/s5cmd_${S5CMD_VERSION}_linux_amd64.deb
+RUN <<EOF
+curl -fLSsO "$S5CMD_URL"
+dpkg --install "s5cmd_${S5CMD_VERSION}_linux_amd64.deb"
+rm "s5cmd_${S5CMD_VERSION}_linux_amd64.deb"
+s5cmd version
+EOF
+
+# Argo Workflows CLI
+# renovate: datasource=github-releases depName=argoproj/argo-workflows
+ARG ARGO_VERSION=4.1.6
+ENV ARGO_URL=https://github.com/argoproj/argo-workflows/releases/download/v${ARGO_VERSION}/argo-linux-amd64.gz
+RUN <<EOF
+curl -fLSs "$ARGO_URL" | gunzip > /usr/local/bin/argo
+chmod +x /usr/local/bin/argo
+argo version
+EOF
+
+# Argo CD CLI
+# renovate: datasource=github-releases depName=argoproj/argo-cd
+ARG ARGOCD_VERSION=3.6.2
+ENV ARGOCD_URL=https://github.com/argoproj/argo-cd/releases/download/v${ARGOCD_VERSION}/argocd-linux-amd64
+RUN <<EOF
+curl -fLSs "$ARGOCD_URL" -o /usr/local/bin/argocd
+chmod +x /usr/local/bin/argocd
+argocd version --client
+EOF
+
+# GitLab CLI
+# renovate: datasource=gitlab-releases depName=gitlab-org/cli
+ARG GLAB_VERSION=1.131.0
+ENV GLAB_URL=https://gitlab.com/gitlab-org/cli/-/releases/v${GLAB_VERSION}/downloads/glab_${GLAB_VERSION}_linux_amd64.tar.gz
+RUN <<EOF
+curl -fLSs "$GLAB_URL" | tar xz bin/glab
+mv ./bin/glab /usr/local/bin/glab
+chmod +x /usr/local/bin/glab
+rm -rf bin
+glab --version
+gh --version
 EOF
 
 # uv
