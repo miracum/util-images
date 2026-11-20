@@ -1,4 +1,4 @@
-FROM ghcr.io/omnigent-ai/omnigent-server:v0.21.0@sha256:9bba2964f015ddbb61da0924267effd1801c0db8f44ecec95f401f24d9a3f90c
+FROM ghcr.io/omnigent-ai/omnigent-server:v0.23.0@sha256:9532f3f73c176342c748f8a1fd3632e73480cb4cc7a64446be6a835e252f2081
 SHELL ["/bin/bash", "-eo", "pipefail", "-c"]
 
 COPY requirements.txt /tmp/requirements.txt
