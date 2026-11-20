@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/miracum/util-images/compare/omnigent-server-v1.1.2...omnigent-server-v1.1.3) (2026-11-20)
+
+
+### Chores & Updates
+
+* **deps:** updated omnigent server to v0.23 ([9728ee7](https://github.com/miracum/util-images/commit/9728ee7ba6e5cf206be00d6491b0e41bb8a3570d))
+
 ## [1.1.2](https://github.com/miracum/util-images/compare/omnigent-server-v1.1.1...omnigent-server-v1.1.2) (2026-11-05)
 
 
