@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/miracum/util-images/compare/omnigent-host-v1.1.0...omnigent-host-v1.1.1) (2026-11-20)
+
+
+### Chores & Updates
+
+* **deps:** added more tools ([#628](https://github.com/miracum/util-images/issues/628)) ([baad913](https://github.com/miracum/util-images/commit/baad91349a03426938c4c3aad12599467e151a19))
+
 ## [1.1.0](https://github.com/miracum/util-images/compare/omnigent-host-v1.0.0...omnigent-host-v1.1.0) (2026-11-16)
 
 
