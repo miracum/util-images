@@ -186,8 +186,13 @@ echo "n" | sdk install java "${JAVA_21_VERSION}"
 sdk default java "${JAVA_21_VERSION}"
 sdk flush tmp
 chown -R sandbox:sandbox "${SDKMAN_DIR}"
-echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && . "/usr/local/sdkman/bin/sdkman-init.sh"' > /etc/profile.d/sdkman.sh
-echo '[[ -s "/usr/local/sdkman/bin/sdkman-init.sh" ]] && . "/usr/local/sdkman/bin/sdkman-init.sh"' >> /etc/bash.bashrc
+# SDKMAN_DIR is set explicitly: omnigent starts terminals without the image's ENV, and sdkman-init.sh would
+# otherwise fall back to the not existing ~/.sdkman
+cat > /etc/profile.d/sdkman.sh <<'SH'
+export SDKMAN_DIR="/usr/local/sdkman"
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && . "${SDKMAN_DIR}/bin/sdkman-init.sh"
+SH
+echo '. /etc/profile.d/sdkman.sh' >> /etc/bash.bashrc
 EOF
 
 # only set after the installation: SDKMAN fails if the PATH references the not yet existing `current` candidate
