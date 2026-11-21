@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.5](https://github.com/miracum/util-images/compare/coder-base-v2.2.4...coder-base-v2.2.5) (2026-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#622](https://github.com/miracum/util-images/issues/622)) ([2710603](https://github.com/miracum/util-images/commit/27106034f3d1416e3d6ff83bbbca888d82f1e717))
+
 ## [2.2.4](https://github.com/miracum/util-images/compare/coder-base-v2.2.3...coder-base-v2.2.4) (2026-11-18)
 
 
