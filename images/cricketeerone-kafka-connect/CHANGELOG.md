@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.10](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.7.9...cricketeerone-kafka-connect-v1.7.10) (2026-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#622](https://github.com/miracum/util-images/issues/622)) ([2710603](https://github.com/miracum/util-images/commit/27106034f3d1416e3d6ff83bbbca888d82f1e717))
+
 ## [1.7.9](https://github.com/miracum/util-images/compare/cricketeerone-kafka-connect-v1.7.8...cricketeerone-kafka-connect-v1.7.9) (2026-11-05)
 
 
