@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/miracum/util-images/compare/omnigent-server-v1.1.3...omnigent-server-v1.1.4) (2026-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#622](https://github.com/miracum/util-images/issues/622)) ([2710603](https://github.com/miracum/util-images/commit/27106034f3d1416e3d6ff83bbbca888d82f1e717))
+
 ## [1.1.3](https://github.com/miracum/util-images/compare/omnigent-server-v1.1.2...omnigent-server-v1.1.3) (2026-11-20)
 
 
