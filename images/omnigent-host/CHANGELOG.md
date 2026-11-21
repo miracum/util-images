@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/miracum/util-images/compare/omnigent-host-v1.1.1...omnigent-host-v1.1.2) (2026-11-21)
+
+
+### Bug Fixes
+
+* omnigent ([#631](https://github.com/miracum/util-images/issues/631)) ([98ec9a0](https://github.com/miracum/util-images/commit/98ec9a06ff8a91af502cc6a7a237468122a444c7))
+
 ## [1.1.1](https://github.com/miracum/util-images/compare/omnigent-host-v1.1.0...omnigent-host-v1.1.1) (2026-11-20)
 
 
