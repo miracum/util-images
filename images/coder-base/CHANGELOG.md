@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/miracum/util-images/compare/coder-base-v2.2.5...coder-base-v2.3.0) (2026-11-24)
+
+
+### Features
+
+* **coder-base:** add GitHub and GitLab CLIs ([#637](https://github.com/miracum/util-images/issues/637)) ([e3d8e5d](https://github.com/miracum/util-images/commit/e3d8e5de195e231897b03075904b78078357c069))
+
 ## [2.2.5](https://github.com/miracum/util-images/compare/coder-base-v2.2.4...coder-base-v2.2.5) (2026-11-21)
 
 
