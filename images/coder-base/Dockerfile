@@ -28,6 +28,24 @@ echo "ca_certificate=/etc/ssl/certs/ca-certificates.crt" >> /etc/wgetrc
 useradd coder --create-home --shell=/bin/bash --uid=10001 --user-group
 EOF
 
+# GitHub CLI
+# renovate: datasource=github-releases depName=cli/cli
+ARG GH_VERSION=2.105.0
+ENV GH_URL=https://github.com/cli/cli/releases/download/v${GH_VERSION}/gh_${GH_VERSION}_linux_amd64.tar.gz
+RUN <<EOF
+curl -fLSs "$GH_URL" | tar xz --strip-components=2 -C /usr/local/bin "gh_${GH_VERSION}_linux_amd64/bin/gh"
+gh --version
+EOF
+
+# GitLab CLI
+# renovate: datasource=gitlab-releases depName=gitlab-org/cli
+ARG GLAB_VERSION=1.131.0
+ENV GLAB_URL=https://gitlab.com/gitlab-org/cli/-/releases/v${GLAB_VERSION}/downloads/glab_${GLAB_VERSION}_linux_amd64.tar.gz
+RUN <<EOF
+curl -fLSs "$GLAB_URL" | tar xz --strip-components=1 -C /usr/local/bin bin/glab
+glab --version
+EOF
+
 # DuckDB
 # renovate: datasource=github-releases depName=duckdb/duckdb
 ARG DUCKDB_VERSION=1.5.6
