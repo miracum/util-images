@@ -2,6 +2,8 @@ jq
 zip
 unzip
 git
+gh
+glab
 curl
 wget
 python3
