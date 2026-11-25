@@ -34,6 +34,12 @@ mkdir -p /opt/kafka/plugins/
 # unzip confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip -d /opt/kafka/plugins/
 # rm confluentinc-kafka-connect-jdbc-${CONFLUENT_KAFKA_CONNECT_JDBC_PLUGIN_VERSION}.zip
 
+# fork of the Confluent JDBC connector with shared connection pool support.
+# Installed as a plugin zip since it bundles its dependencies (jsqlparser, re2j, HikariCP, JDBC drivers).
+curl -fLsSO https://github.com/chgl/kafka-connect-jdbc/releases/download/10.10.0-SNAPSHOT/confluentinc-kafka-connect-jdbc-10.10.0-SNAPSHOT.zip
+unzip confluentinc-kafka-connect-jdbc-10.10.0-SNAPSHOT.zip -d /opt/kafka/plugins/
+rm confluentinc-kafka-connect-jdbc-10.10.0-SNAPSHOT.zip
+
 curl -fLsSO https://hub-downloads.confluent.io/api/plugins/confluentinc/connect-transforms/versions/${CONFLUENT_CONNECT_TRANSFORMS_VERSION}/confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip
 unzip confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip -d /opt/kafka/plugins/
 rm confluentinc-connect-transforms-${CONFLUENT_CONNECT_TRANSFORMS_VERSION}.zip
@@ -52,7 +58,6 @@ curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/org/ap
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/com/github/castorm/kafka-connect-http/${CASTORM_KAFKA_CONNECT_HTTP_VERSION}/kafka-connect-http-${CASTORM_KAFKA_CONNECT_HTTP_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://repo1.maven.org/maven2/io/trino/trino-jdbc/${TRINO_JDBC_VERSION}/trino-jdbc-${TRINO_JDBC_VERSION}.jar"
 curl -fLsSO --output-dir /opt/kafka/libs/ "https://github.com/chgl/kafka-connect-expand-json-transform/releases/download/0.2.1/expand-json-transform-0.2.1.jar"
-curl -fLsSO --output-dir /opt/kafka/libs/ https://github.com/chgl/kafka-connect-jdbc/releases/download/10.10.0-SNAPSHOT/kafka-connect-jdbc-10.10.0-SNAPSHOT.jar
 EOF
 
 USER 1001:1001
