@@ -73,6 +73,18 @@ EOF
 COPY --from=docker.io/rancher/kubectl:v1.36.2@sha256:06c7a7a9772737494ae1e0c3af90f1b5385630c147e47c1c7cea92f4bed55fbe /bin/kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
 
+# kubectl oidc-login (kubelogin)
+# renovate: datasource=github-releases depName=int128/kubelogin
+ARG KUBELOGIN_VERSION=1.36.4
+ENV KUBELOGIN_URL=https://github.com/int128/kubelogin/releases/download/v${KUBELOGIN_VERSION}/kubelogin_linux_amd64.zip
+RUN <<EOF
+curl -fLSs "$KUBELOGIN_URL" -o /tmp/kubelogin.zip
+unzip -q /tmp/kubelogin.zip kubelogin -d /usr/local/bin
+mv /usr/local/bin/kubelogin /usr/local/bin/kubectl-oidc_login
+rm /tmp/kubelogin.zip
+kubectl oidc-login --version
+EOF
+
 # Helm
 # renovate: datasource=github-releases depName=helm/helm
 ARG HELM_VERSION=4.3.1
