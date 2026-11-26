@@ -5,8 +5,8 @@
   "description": "AI coding agent CLIs bundled into the coder-base image",
   "license": "Apache-2.0",
   "dependencies": {
-    "@charmland/crush": "0.101.0",
-    "@earendil-works/pi-coding-agent": "1.5.2",
+    "@charmland/crush": "0.102.0",
+    "@earendil-works/pi-coding-agent": "1.6.0",
     "opencode-ai": "1.19.6"
   }
 }
