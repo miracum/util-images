@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.2.19](https://github.com/miracum/util-images/compare/semantic-release-v1.2.18...semantic-release-v1.2.19) (2026-11-27)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#622](https://github.com/miracum/util-images/issues/622)) ([2710603](https://github.com/miracum/util-images/commit/27106034f3d1416e3d6ff83bbbca888d82f1e717))
+* **deps:** update all non-major dependencies ([#640](https://github.com/miracum/util-images/issues/640)) ([5d71fa3](https://github.com/miracum/util-images/commit/5d71fa3e25938783faa4f6873e001ef11482875b))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v10 ([#641](https://github.com/miracum/util-images/issues/641)) ([34d605b](https://github.com/miracum/util-images/commit/34d605b2e8a9ed1d7ab865cebfdf5b03051f11a1))
+* possible fix for version conflict ([#601](https://github.com/miracum/util-images/issues/601)) ([6236826](https://github.com/miracum/util-images/commit/62368267358265e45fb768c7d594ac4347d9f532))
+
+
+### Chores & Updates
+
+* **deps:** update all digest updates ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+* **deps:** update node.js to 925de64 ([#610](https://github.com/miracum/util-images/issues/610)) ([cb7feca](https://github.com/miracum/util-images/commit/cb7feca188d607a2448e927f2680b04598fd7715))
+
 ## [1.2.18](https://github.com/miracum/util-images/compare/semantic-release-v1.2.17...semantic-release-v1.2.18) (2026-10-17)
 
 
