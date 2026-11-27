@@ -185,6 +185,24 @@ curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="/usr/loca
 uv --version
 EOF
 
+# JupyterLab, in its own venv under /opt/jupyterlab.
+# The venv uses --system-site-packages so the user site (~/.local, on the
+# persistent home volume) is active: `%pip install` in a notebook falls back
+# to a user install there and survives workspace restarts. --seed adds pip,
+# which the %pip magic needs.
+# renovate: datasource=pypi depName=jupyterlab
+ARG JUPYTERLAB_VERSION=4.6.6
+# renovate: datasource=pypi depName=ipykernel
+ARG IPYKERNEL_VERSION=7.4.0
+RUN <<EOF
+uv venv --seed --system-site-packages --python /usr/bin/python3 /opt/jupyterlab
+uv pip install --no-cache --python /opt/jupyterlab/bin/python \
+  "jupyterlab==${JUPYTERLAB_VERSION}" \
+  "ipykernel==${IPYKERNEL_VERSION}"
+ln -s /opt/jupyterlab/bin/jupyter /opt/jupyterlab/bin/jupyter-lab /usr/local/bin/
+jupyter-lab --version
+EOF
+
 # install sdkman globally
 RUN <<EOF
 curl -s "https://get.sdkman.io?ci=true" | bash
