@@ -36,7 +36,7 @@ RUN chmod 440  /process/*
 USER 1000
 
 
-FROM ghcr.io/datasharingframework/bpe:1.9.0@sha256:17b7e6f57552ccfe653e6427787f5d87f952b8654fc779710d33c7c802cd9f5e
+FROM ghcr.io/datasharingframework/bpe:2.1.3@sha256:faea3800b035b0565f139b2c85fff3bb98fdba961dc4ad1759269e26fe63e703
 
 USER 0
 
