@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.2.0](https://github.com/miracum/util-images/compare/apache-superset-v2.1.11...apache-superset-v2.2.0) (2026-11-27)
+
+
+### Features
+
+* added omnigent with s3 pre-installed ([#602](https://github.com/miracum/util-images/issues/602)) ([1754647](https://github.com/miracum/util-images/commit/1754647dba2d9714bfccbf5c788902689c844771))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#622](https://github.com/miracum/util-images/issues/622)) ([2710603](https://github.com/miracum/util-images/commit/27106034f3d1416e3d6ff83bbbca888d82f1e717))
+* **deps:** update all non-major dependencies ([#640](https://github.com/miracum/util-images/issues/640)) ([5d71fa3](https://github.com/miracum/util-images/commit/5d71fa3e25938783faa4f6873e001ef11482875b))
+
 ## [2.1.11](https://github.com/miracum/util-images/compare/apache-superset-v2.1.10...apache-superset-v2.1.11) (2026-10-17)
 
 
