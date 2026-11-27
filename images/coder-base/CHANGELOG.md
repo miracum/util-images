@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.4.0](https://github.com/miracum/util-images/compare/coder-base-v2.3.0...coder-base-v2.4.0) (2026-11-27)
+
+
+### Features
+
+* added JupyterLab and ipykernel in Dockerfile ([#646](https://github.com/miracum/util-images/issues/646)) ([3121f50](https://github.com/miracum/util-images/commit/3121f500739a221d2feb59849c98e06ad3a6427b))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#640](https://github.com/miracum/util-images/issues/640)) ([5d71fa3](https://github.com/miracum/util-images/commit/5d71fa3e25938783faa4f6873e001ef11482875b))
+
+
+### Chores & Updates
+
+* **deps:** added kubectl OIDC login plugin ([#642](https://github.com/miracum/util-images/issues/642)) ([c881844](https://github.com/miracum/util-images/commit/c88184486b533c8463d404faaacc8b8ed54ca2e4))
+
 ## [2.3.0](https://github.com/miracum/util-images/compare/coder-base-v2.2.5...coder-base-v2.3.0) (2026-11-24)
 
 
