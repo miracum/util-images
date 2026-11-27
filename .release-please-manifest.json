@@ -7,7 +7,7 @@
   "images/hive-metastore": "1.4.5",
   "images/dsf-bpe-full": "1.7.3",
   "images/semantic-release": "1.2.18",
-  "images/omnigent-server": "1.1.4",
+  "images/omnigent-server": "1.1.5",
   "images/mlflow": "1.1.5",
   "images/omnigent-host": "1.1.2"
 }
